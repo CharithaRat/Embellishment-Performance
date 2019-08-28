@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a7ab88c2-b7f8-4927-89fc-4fc161d4a571">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="EMBP" whenResourceMissingType="Empty" uuid="3bf4876b-915b-449e-b865-a4637332ed93">
+		<parameter name="list" class="java.util.List">
+			<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+		</parameter>
+		<queryString>
+			<![CDATA[SELECT
+     avg(InsSbqaDet."SQA_PassPt") AS InsSbqaDet_Sbqa_PassPt,
+     avg(InsSbqaDet."SQA_FailPt") AS InsSbqaDet_Sbqa_FailPt,
+     avg(InsSbqaDet."SQA_DefPt") AS InsSbqaDet_Sbqa_DefPt,
+     InsGeneralDet."Ins_Year" AS InsGeneralDet_Ins_Year,
+     InsGeneralDet."Ins_Month" AS InsGeneralDet_Ins_Month,
+     InsGeneralDet."Ins_Week" AS InsGeneralDet_Ins_Week,
+     InsGeneralDet."Ins_Customer" AS InsGeneralDet_Ins_Customer,
+     InsGeneralDet."Ins_Printer" AS InsGeneralDet_Ins_Printer
+FROM
+     "dbo"."InsGeneralDet" InsGeneralDet INNER JOIN "dbo"."InsSbqaDet" InsSbqaDet ON InsGeneralDet."Ins_Id" = InsSbqaDet."Ins_Id"
+WHERE
+      $X{IN,Ins_Year,list} and $X{IN,Ins_Month,list} and $X{IN,Ins_Week,list} and $X{IN,Ins_Printer,list}
+GROUP BY
+     InsGeneralDet.Ins_Year,
+     InsGeneralDet.Ins_Month,
+     InsGeneralDet.Ins_Week,
+     InsGeneralDet.Ins_Customer,
+     InsGeneralDet.Ins_Printer
+ORDER BY
+InsGeneralDet.Ins_Month;]]>
+		</queryString>
+		<field name="InsSbqaDet_Sbqa_PassPt" class="java.lang.Double"/>
+		<field name="InsSbqaDet_Sbqa_FailPt" class="java.lang.Double"/>
+		<field name="InsSbqaDet_Sbqa_DefPt" class="java.lang.Double"/>
+		<field name="InsGeneralDet_Ins_Year" class="java.lang.String"/>
+		<field name="InsGeneralDet_Ins_Month" class="java.lang.String"/>
+		<field name="InsGeneralDet_Ins_Week" class="java.lang.String"/>
+		<field name="InsGeneralDet_Ins_Customer" class="java.lang.String"/>
+		<field name="InsGeneralDet_Ins_Printer" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="dataset2" uuid="904fc05c-f2ed-41e4-ad3d-7c621f3fb4ca"/>
+	<parameter name="list" class="java.util.List">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     avg(InsSbqaDet."SQA_PassPt") AS InsSbqaDet_Sbqa_PassPt,
+     avg(InsSbqaDet."SQA_FailPt") AS InsSbqaDet_Sbqa_FailPt,
+     avg(InsSbqaDet."SQA_DefPt") AS InsSbqaDet_Sbqa_DefPt,
+     InsGeneralDet."Ins_Year" AS InsGeneralDet_Ins_Year,
+     InsGeneralDet."Ins_Month" AS InsGeneralDet_Ins_Month,
+     InsGeneralDet."Ins_Week" AS InsGeneralDet_Ins_Week,
+     InsGeneralDet."Ins_Customer" AS InsGeneralDet_Ins_Customer,
+     InsGeneralDet."Ins_Printer" AS InsGeneralDet_Ins_Printer
+FROM
+     "dbo"."InsGeneralDet" InsGeneralDet INNER JOIN "dbo"."InsSbqaDet" InsSbqaDet ON InsGeneralDet."Ins_Id" = InsSbqaDet."Ins_Id"
+WHERE
+      $X{IN,Ins_Year,list} and $X{IN,Ins_Month,list} and $X{IN,Ins_Week,list} and $X{IN,Ins_Printer,list}
+GROUP BY
+     InsGeneralDet.Ins_Year,
+     InsGeneralDet.Ins_Month,
+     InsGeneralDet.Ins_Week,
+     InsGeneralDet.Ins_Customer,
+     InsGeneralDet.Ins_Printer
+ORDER BY
+InsGeneralDet.Ins_Week;]]>
+	</queryString>
+	<field name="InsSbqaDet_Sbqa_PassPt" class="java.lang.Double"/>
+	<field name="InsSbqaDet_Sbqa_FailPt" class="java.lang.Double"/>
+	<field name="InsSbqaDet_Sbqa_DefPt" class="java.lang.Double"/>
+	<field name="InsGeneralDet_Ins_Year" class="java.lang.String"/>
+	<field name="InsGeneralDet_Ins_Month" class="java.lang.String"/>
+	<field name="InsGeneralDet_Ins_Week" class="java.lang.String"/>
+	<field name="InsGeneralDet_Ins_Customer" class="java.lang.String"/>
+	<field name="InsGeneralDet_Ins_Printer" class="java.lang.String"/>
+	<variable name="InsSbqaDet_Sbqa_PassPt_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{InsSbqaDet_Sbqa_PassPt}]]></variableExpression>
+	</variable>
+	<variable name="InsSbqaDet_Sbqa_FailPt_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{InsSbqaDet_Sbqa_FailPt}]]></variableExpression>
+	</variable>
+	<variable name="InsSbqaDet_Sbqa_DefPt_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{InsSbqaDet_Sbqa_DefPt}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="56" splitType="Stretch">
+			<image>
+				<reportElement x="1" y="2" width="99" height="34" uuid="0f11bbd8-611c-4a33-8b6e-124d4866141e"/>
+				<imageExpression><![CDATA["E:\\Embellishment Performance Monitor\\src\\Reports\\MAS.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="124" y="2" width="431" height="34" uuid="2c87081a-6393-4de5-a27c-07bc11a39f21"/>
+				<textElement textAlignment="Right">
+					<font fontName="Trebuchet MS" size="24"/>
+				</textElement>
+				<text><![CDATA[SUB QA PERFORMANCE]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="4" splitType="Stretch">
+			<line>
+				<reportElement x="1" y="3" width="555" height="1" forecolor="#3300CC" uuid="d3a1aec6-fbb7-434f-a4ef-284e263a0724"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="29" splitType="Stretch">
+			<line>
+				<reportElement x="1" y="25" width="555" height="1" forecolor="#3300CC" uuid="745da575-4149-4dee-9da8-91fe865a939a"/>
+			</line>
+			<staticText>
+				<reportElement x="1" y="4" width="38" height="20" uuid="fb56988b-efdd-4fd5-acdc-8c3de2222e43"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[YEAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="152" y="4" width="62" height="20" uuid="a7d53123-2f01-43b6-8e86-4a4c322ac257"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CUSTOMER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="214" y="4" width="121" height="20" uuid="93fd2f5c-949a-49a6-a104-b3a8e9b1d09c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRINTER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="4" width="59" height="20" uuid="fea0c686-55b4-4d3f-b0e0-b70921dd52d4"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[MONTH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="335" y="4" width="76" height="20" backcolor="#99FF99" uuid="d2d1cc54-b85f-430d-9858-e86f38a58891"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PASS(%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="475" y="4" width="79" height="20" backcolor="#FFFF33" uuid="101de5a9-3e43-48d2-a351-5b4a89c4f754"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DEFECT(%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="411" y="4" width="64" height="20" backcolor="#FF0000" uuid="850bb8eb-ee44-4112-a0f4-77e7de699b7e"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[FAIL(%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="4" width="54" height="20" uuid="7d045c3c-d7c4-4647-b471-34e14b75182d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[WEEK NO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="291" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="3" width="58" height="20" uuid="3644715a-1348-47d8-abeb-a203d93d94a2"/>
+				<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Month}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="96" y="3" width="53" height="20" uuid="b482eef9-1b84-4ad8-90a6-3dd35d829579"/>
+				<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Week}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="151" y="3" width="60" height="20" uuid="55c84509-d256-4711-b057-8223f7bac949"/>
+				<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Customer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="211" y="3" width="124" height="20" uuid="3f788921-f1bf-40a7-bef2-07604d8f591a"/>
+				<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto" pattern="#,##0.00%">
+				<reportElement mode="Opaque" x="335" y="3" width="75" height="20" backcolor="#99FF99" uuid="27e4604a-37b7-4b05-b48d-d32f1472ebf3"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[new Double( $F{InsSbqaDet_Sbqa_PassPt}.doubleValue())/100]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto" pattern="#,##0.00%">
+				<reportElement mode="Opaque" x="411" y="3" width="63" height="20" backcolor="#FF0000" uuid="82a97d68-26d5-4cb3-9afd-b283b2b4489b"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[new Double( $F{InsSbqaDet_Sbqa_FailPt}.doubleValue())/100]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto" pattern="#,##0.00%">
+				<reportElement mode="Opaque" x="474" y="3" width="80" height="20" backcolor="#FFFF33" uuid="bee21b1a-5084-4e68-9735-757486060abe"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[new Double( $F{InsSbqaDet_Sbqa_DefPt}.doubleValue())/100]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2" y="3" width="38" height="20" uuid="b2142422-79e7-42e9-87a2-b6f3de863b18"/>
+				<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Year}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="2" y="23" width="555" height="1" forecolor="#3300CC" uuid="b13ccef4-8d89-48b4-9302-d85e7a44d6ab"/>
+			</line>
+			<bar3DChart>
+				<chart>
+					<reportElement x="100" y="92" width="356" height="199" uuid="ef38fd6d-4be0-417b-ad40-02a43e6d2c41"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["SUB QA PASS(%)"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{InsSbqaDet_Sbqa_PassPt}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["SUB QA FAIL(%)"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{InsSbqaDet_Sbqa_FailPt}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["SUB QA DEFECT(%)"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{InsSbqaDet_Sbqa_DefPt}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</bar3DChart>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="19" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="454" y="0" width="100" height="20" uuid="6b58a384-4c95-4607-b308-5958ad12d1fd"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="0" y="0" width="100" height="20" uuid="5ef85275-c988-4a74-89f8-095db59bfe9c"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="22" splitType="Stretch"/>
+	</summary>
+</jasperReport>

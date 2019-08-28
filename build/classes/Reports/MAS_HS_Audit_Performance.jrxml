@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MAS_HS_Audit_Performance" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="77ca01b4-27b5-495e-b5f5-6e8c3de6be8b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="list" class="java.util.List">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     MAS_HS_Audits."Year" AS MAS_HS_Audits_Year,
+     MAS_HS_Audits."Month" AS MAS_HS_Audits_Month,
+     MAS_HS_Audits."Customer" AS MAS_HS_Audits_Customer,
+     MAS_HS_Audits."Style" AS MAS_HS_Audits_Style,
+     MAS_HS_Audits."Graphic" AS MAS_HS_Audits_Graphic,
+     MAS_HS_Audits."Combo" AS MAS_HS_Audits_Combo,
+     sum(MAS_HS_Audits."Lot_Size") AS MAS_HS_Audits_Lot_Size,
+     sum(MAS_HS_Audits."Sam_Size") AS MAS_HS_Audits_Sam_Size,
+     sum(MAS_HS_Audits."Def_QTY") AS MAS_HS_Audits_Def_QTY,
+     MAS_HS_Audits."Def_Type" AS MAS_HS_Audits_Def_Type,
+     avg(MAS_HS_Audits."Def_Pec") AS MAS_HS_Audits_Def_Pec,
+     MAS_HS_Audits."Aud_Comment" AS MAS_HS_Audits_Aud_Comment
+FROM
+     "dbo"."MAS_HS_Audits" MAS_HS_Audits
+WHERE
+     $X{ IN ,Year,list}
+     and $X{ IN ,Month,list}
+     and $X{ IN ,Customer,list}
+     and $X{ IN ,Style,list}
+     and $X{ IN ,Graphic,list}
+     and $X{ IN ,Combo,list}
+GROUP BY
+     MAS_HS_Audits.Year,
+     MAS_HS_Audits.Month,
+     MAS_HS_Audits.Customer,
+     MAS_HS_Audits.Style,
+     MAS_HS_Audits.Graphic,
+     MAS_HS_Audits.Combo,
+     MAS_HS_Audits.Def_Type,
+     MAS_HS_Audits.Aud_Comment]]>
+	</queryString>
+	<field name="MAS_HS_Audits_Year" class="java.lang.String"/>
+	<field name="MAS_HS_Audits_Month" class="java.lang.String"/>
+	<field name="MAS_HS_Audits_Customer" class="java.lang.String"/>
+	<field name="MAS_HS_Audits_Style" class="java.lang.String"/>
+	<field name="MAS_HS_Audits_Graphic" class="java.lang.String"/>
+	<field name="MAS_HS_Audits_Combo" class="java.lang.String"/>
+	<field name="MAS_HS_Audits_Lot_Size" class="java.lang.Double"/>
+	<field name="MAS_HS_Audits_Sam_Size" class="java.lang.Double"/>
+	<field name="MAS_HS_Audits_Def_QTY" class="java.lang.Double"/>
+	<field name="MAS_HS_Audits_Def_Type" class="java.lang.String"/>
+	<field name="MAS_HS_Audits_Def_Pec" class="java.lang.Double"/>
+	<field name="MAS_HS_Audits_Aud_Comment" class="java.lang.String"/>
+	<variable name="MAS_HS_Audits_Def_Pec_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{MAS_HS_Audits_Def_Pec}]]></variableExpression>
+	</variable>
+	<group name="MAS_HS_Audits_Year">
+		<groupExpression><![CDATA[$F{MAS_HS_Audits_Year}]]></groupExpression>
+	</group>
+	<group name="MAS_HS_Audits_Month">
+		<groupExpression><![CDATA[$F{MAS_HS_Audits_Month}]]></groupExpression>
+	</group>
+	<group name="MAS_HS_Audits_Customer">
+		<groupExpression><![CDATA[$F{MAS_HS_Audits_Customer}]]></groupExpression>
+	</group>
+	<group name="MAS_HS_Audits_Style">
+		<groupExpression><![CDATA[$F{MAS_HS_Audits_Style}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement x="178" y="0" width="624" height="32" uuid="34cd36a6-68dc-4254-879b-a6d8626317d1"/>
+				<textElement textAlignment="Right">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MAS H/S AUDIT PERFORMANCE]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="178" height="32" uuid="38cbf400-13d9-459c-9a19-fab4804f4fc0"/>
+				<imageExpression><![CDATA["E:\\Embellishment Performance Monitor\\src\\Reports\\MAS Logo.jpg"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="0" y="32" width="802" height="1" uuid="8d05d4cb-6f68-4e84-9a5c-0f36c8fb95b3"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="4" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="36" height="20" uuid="adfeaaec-79e0-481d-8239-6ed72e18454a"/>
+				<text><![CDATA[YEAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="0" width="61" height="20" uuid="624c0356-9743-4c18-bfa1-6c277f28a6b7"/>
+				<text><![CDATA[MONTH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="97" y="0" width="68" height="20" uuid="e1645cc9-8db6-4317-b6ee-86d0f8538ada"/>
+				<text><![CDATA[CUSTOMER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="165" y="0" width="77" height="20" uuid="f02d9e55-8900-4900-9bc5-3a95658d0235"/>
+				<text><![CDATA[STYLE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="242" y="0" width="58" height="20" uuid="35760285-6f06-40cf-b6ae-03f974576e4f"/>
+				<text><![CDATA[GRAPHIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="41" height="20" uuid="e3c808de-6d83-4bef-a660-5115f507dfa2"/>
+				<text><![CDATA[COMBO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="341" y="0" width="53" height="20" uuid="8b4751d9-e4b6-4111-8db0-65b94f2db41b"/>
+				<text><![CDATA[LOT SIZE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="394" y="0" width="76" height="20" uuid="a01d4fb8-6bde-4564-a9fa-fe399900e8ee"/>
+				<text><![CDATA[SAMPLE SIZE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="0" width="72" height="20" uuid="3820d77d-4ecb-4a7f-b994-988be57fd410"/>
+				<text><![CDATA[DEFECT QTY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="542" y="0" width="81" height="20" backcolor="#9999FF" uuid="d070a3c4-9544-4997-abc9-3e33168a4556"/>
+				<text><![CDATA[DEFECT TYPE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="623" y="0" width="63" height="20" backcolor="#FF0000" uuid="da6a7ac8-02c5-40cf-bee4-0bd4dd7b2b58"/>
+				<text><![CDATA[DEFECT(%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="686" y="0" width="116" height="20" backcolor="#FFFFCC" uuid="4f0e7f00-1eb7-4f01-a46a-4a0bde370c51"/>
+				<text><![CDATA[AUDITOR COMMENTS]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="20" width="802" height="1" uuid="8b06b858-2625-448d-a744-0abc4dcff902"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="36" height="20" uuid="d4845970-b741-4d34-94ac-852da78a5464"/>
+				<textFieldExpression><![CDATA[$F{MAS_HS_Audits_Year}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="0" width="61" height="20" uuid="7d0c6e57-2bb7-4dcb-8c8e-3a63bd471908"/>
+				<textFieldExpression><![CDATA[$F{MAS_HS_Audits_Month}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="97" y="0" width="68" height="20" uuid="05f2d966-8ebc-43b8-99cf-2aa5a1af08e2"/>
+				<textFieldExpression><![CDATA[$F{MAS_HS_Audits_Customer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="0" width="77" height="20" uuid="c35716fb-a40d-4c09-9aba-40ff966b6134"/>
+				<textFieldExpression><![CDATA[$F{MAS_HS_Audits_Style}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="241" y="0" width="59" height="20" uuid="32b3882f-57ff-467d-aab0-b3ef19181b98"/>
+				<textFieldExpression><![CDATA[$F{MAS_HS_Audits_Graphic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="41" height="20" uuid="3d06589b-ec48-47e2-b4b9-4bfe2a2bf353"/>
+				<textFieldExpression><![CDATA[$F{MAS_HS_Audits_Combo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="341" y="0" width="53" height="20" uuid="b8508021-86eb-4b65-848b-0ca224338d43"/>
+				<textFieldExpression><![CDATA[$F{MAS_HS_Audits_Lot_Size}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="394" y="0" width="76" height="20" uuid="08c04aba-14be-459d-91bb-16f95caa3b9a"/>
+				<textFieldExpression><![CDATA[$F{MAS_HS_Audits_Sam_Size}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="0" width="72" height="20" uuid="d1740776-4534-48ea-a95e-32d60bfe8b79"/>
+				<textFieldExpression><![CDATA[$F{MAS_HS_Audits_Def_QTY}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="542" y="0" width="81" height="20" backcolor="#9999FF" uuid="cfc07275-2880-4f51-ae4d-4e21fb2bdaf7"/>
+				<textFieldExpression><![CDATA[$F{MAS_HS_Audits_Def_Type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="686" y="0" width="116" height="20" backcolor="#FFFFCC" uuid="687a8259-68f6-4335-87f8-1180859ad6c4"/>
+				<textFieldExpression><![CDATA[$F{MAS_HS_Audits_Aud_Comment}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto" pattern="#,##0.00%">
+				<reportElement mode="Opaque" x="623" y="0" width="63" height="20" backcolor="#FF0000" uuid="ff99ebcb-999d-4654-9682-733424f2b5c4"/>
+				<textFieldExpression><![CDATA[new Double( $F{MAS_HS_Audits_Def_Pec}.doubleValue()) / 100]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="17" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement x="702" y="0" width="100" height="20" uuid="a2492980-1221-4651-8c69-fae8ff71b682"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="0" y="0" width="100" height="20" uuid="1d352566-9162-44c1-9663-e37db68db840"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="210" splitType="Stretch">
+			<pie3DChart>
+				<chart>
+					<reportElement x="236" y="0" width="387" height="208" uuid="33e59c37-35f3-42a1-abf6-6beb9b192717"/>
+					<chartTitle>
+						<titleExpression><![CDATA[$F{MAS_HS_Audits_Graphic}]]></titleExpression>
+					</chartTitle>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<pieDataset>
+					<keyExpression><![CDATA[$F{MAS_HS_Audits_Def_Type}]]></keyExpression>
+					<valueExpression><![CDATA[$F{MAS_HS_Audits_Def_Pec}]]></valueExpression>
+					<labelExpression><![CDATA[$F{MAS_HS_Audits_Def_Type}]]></labelExpression>
+				</pieDataset>
+				<pie3DPlot>
+					<plot/>
+					<itemLabel/>
+				</pie3DPlot>
+			</pie3DChart>
+		</band>
+	</summary>
+</jasperReport>

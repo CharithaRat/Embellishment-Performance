@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ALL_QA_AUDIT_PERFORMANCE" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="57854517-008e-4e8e-9b96-7296323e7716">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="list" class="java.util.List">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     avg(InsEcaDet."Eca_PassPt") AS InsEcaDet_Eca_PassPt,
+     avg(InsEcaDet."Eca_FailPt") AS InsEcaDet_Eca_FailPt,
+     avg(InsEcaDet."Eca_DefPt") AS InsEcaDet_Eca_DefPt,
+     avg(InsSbqaDet."SQA_PassPt") AS InsSbqaDet_Sbqa_PassPt,
+     avg(InsSbqaDet."SQA_FailPt") AS InsSbqaDet_Sbqa_FailPt,
+     avg(InsSbqaDet."SQA_DefPt") AS InsSbqaDet_Sbqa_DefPt,
+     avg(InsIhqaDet."IHQA_PassPt") AS InsIhqaDet_IHQA_PassPt,
+     avg(InsIhqaDet."IHQA_FailPt") AS InsIhqaDet_IHQA_FailPt,
+     avg(InsIhqaDet."IHQA_DefPt") AS InsIhqaDet_IHQA_DefPt,
+     sum(InsGeneralDet."Ins_GpQTY") AS InsGeneralDet_Ins_GpQTY,
+     InsGeneralDet."Ins_Year" AS InsGeneralDet_Ins_Year,
+     InsGeneralDet."Ins_Month" AS InsGeneralDet_Ins_Month,
+     InsGeneralDet."Ins_Week" AS InsGeneralDet_Ins_Week,
+     InsGeneralDet."Ins_Printer" AS InsGeneralDet_Ins_Printer,
+     InsGeneralDet."Ins_Customer" AS InsGeneralDet_Ins_Customer
+FROM
+     "dbo"."InsEcaDet" InsEcaDet INNER JOIN "dbo"."InsGeneralDet" InsGeneralDet ON InsEcaDet."Ins_Id" = InsGeneralDet."Ins_Id"
+     INNER JOIN "dbo"."InsSbqaDet" InsSbqaDet ON InsEcaDet."Ins_Id" = InsSbqaDet."Ins_Id"
+     INNER JOIN "dbo"."InsIhqaDet" InsIhqaDet ON InsSbqaDet."Ins_Id" = InsIhqaDet."Ins_Id"
+WHERE
+     $X{ IN ,Ins_Year,list}
+     and $X{ IN ,Ins_Month,list}
+     and $X{ IN ,Ins_Week,list}
+     and $X{ IN ,Ins_Printer,list}
+GROUP BY
+     InsGeneralDet.Ins_Year,
+     InsGeneralDet.Ins_Month,
+     InsGeneralDet.Ins_Week,
+     InsGeneralDet.Ins_Customer,
+     InsGeneralDet.Ins_Printer
+ORDER BY
+     InsGeneralDet.Ins_Week;]]>
+	</queryString>
+	<field name="InsEcaDet_Eca_PassPt" class="java.lang.Double"/>
+	<field name="InsEcaDet_Eca_FailPt" class="java.lang.Double"/>
+	<field name="InsEcaDet_Eca_DefPt" class="java.lang.Double"/>
+	<field name="InsSbqaDet_Sbqa_PassPt" class="java.lang.Double"/>
+	<field name="InsSbqaDet_Sbqa_FailPt" class="java.lang.Double"/>
+	<field name="InsSbqaDet_Sbqa_DefPt" class="java.lang.Double"/>
+	<field name="InsIhqaDet_IHQA_PassPt" class="java.lang.Double"/>
+	<field name="InsIhqaDet_IHQA_FailPt" class="java.lang.Double"/>
+	<field name="InsIhqaDet_IHQA_DefPt" class="java.lang.Double"/>
+	<field name="InsGeneralDet_Ins_GpQTY" class="java.lang.Integer"/>
+	<field name="InsGeneralDet_Ins_Year" class="java.lang.String"/>
+	<field name="InsGeneralDet_Ins_Month" class="java.lang.String"/>
+	<field name="InsGeneralDet_Ins_Week" class="java.lang.String"/>
+	<field name="InsGeneralDet_Ins_Printer" class="java.lang.String"/>
+	<field name="InsGeneralDet_Ins_Customer" class="java.lang.String"/>
+	<variable name="InsEcaDet_Eca_PassPt_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{InsEcaDet_Eca_PassPt}]]></variableExpression>
+	</variable>
+	<variable name="InsGeneralDet_Ins_GpQTY_SUM" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$F{InsGeneralDet_Ins_GpQTY}]]></variableExpression>
+	</variable>
+	<variable name="InsEcaDet_Eca_FailPt_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{InsEcaDet_Eca_FailPt}]]></variableExpression>
+	</variable>
+	<variable name="InsEcaDet_Eca_DefPt_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{InsEcaDet_Eca_DefPt}]]></variableExpression>
+	</variable>
+	<variable name="InsSbqaDet_Sbqa_PassPt_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{InsSbqaDet_Sbqa_PassPt}]]></variableExpression>
+	</variable>
+	<variable name="InsSbqaDet_Sbqa_FailPt_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{InsSbqaDet_Sbqa_FailPt}]]></variableExpression>
+	</variable>
+	<variable name="InsSbqaDet_Sbqa_DefPt_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{InsSbqaDet_Sbqa_DefPt}]]></variableExpression>
+	</variable>
+	<variable name="InsIhqaDet_IHQA_PassPt_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{InsIhqaDet_IHQA_PassPt}]]></variableExpression>
+	</variable>
+	<variable name="InsIhqaDet_IHQA_FailPt_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{InsIhqaDet_IHQA_FailPt}]]></variableExpression>
+	</variable>
+	<variable name="InsIhqaDet_IHQA_DefPt_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{InsIhqaDet_IHQA_DefPt}]]></variableExpression>
+	</variable>
+	<group name="InsGeneralDet_Ins_Year">
+		<groupExpression><![CDATA[$F{InsGeneralDet_Ins_Year}]]></groupExpression>
+	</group>
+	<group name="InsGeneralDet_Ins_Month">
+		<groupExpression><![CDATA[$F{InsGeneralDet_Ins_Month}]]></groupExpression>
+	</group>
+	<group name="InsGeneralDet_Ins_Week">
+		<groupExpression><![CDATA[$F{InsGeneralDet_Ins_Week}]]></groupExpression>
+	</group>
+	<group name="InsGeneralDet_Ins_Printer">
+		<groupExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="55" splitType="Stretch">
+			<staticText>
+				<reportElement x="375" y="0" width="427" height="30" uuid="f278d809-7db6-4ec1-9612-073fa67ab1f7"/>
+				<textElement textAlignment="Right">
+					<font fontName="Trebuchet MS" size="24"/>
+				</textElement>
+				<text><![CDATA[ALL QA AUDIT PERFORMANCE REPORT]]></text>
+			</staticText>
+			<image>
+				<reportElement x="1" y="0" width="131" height="30" uuid="3c27900c-2004-4e29-945c-9be80bda3adc"/>
+				<imageExpression><![CDATA["E:\\Embellishment Performance Monitor\\src\\Reports\\MAS.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="3" splitType="Stretch">
+			<line>
+				<reportElement x="1" y="0" width="801" height="1" forecolor="#990099" uuid="7dd80d22-d685-4282-8070-86b0d0251137"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="279" y="0" width="57" height="30" backcolor="#CCFFCC" uuid="fa660da5-556b-405f-9015-0d20a0979ec2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ECA PASS(%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="1" width="37" height="30" uuid="2a1e9565-953d-4e18-be19-6fd0f8853255"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[WEEK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="156" y="1" width="78" height="30" uuid="fa6c82c5-3713-4570-ab47-a7b6a11c892e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRINTER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="0" width="38" height="30" uuid="59eda522-8877-4291-b764-77b4e7e6aa86"/>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MONTH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="104" y="0" width="52" height="30" uuid="e2d2dc79-ee63-4711-973e-0ccefbe2e4ef"/>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CUSTOMER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="37" height="30" uuid="d581c2f7-b6f0-4de6-ba09-b1f5ed394446"/>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[YEAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="335" y="0" width="60" height="30" backcolor="#FF0000" uuid="f6387a14-7362-446b-b185-9ac38d96b4e1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ECA FAIL(%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="394" y="0" width="58" height="30" backcolor="#FFFFCC" uuid="b6891d91-1e20-4053-a511-0527c21dda8a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ECA DEF(%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="451" y="0" width="62" height="30" backcolor="#CCFFCC" uuid="49142e6f-2ef8-44a8-be3a-352693bdf866"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUB-QA PASS(%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="512" y="0" width="60" height="30" backcolor="#FF0000" uuid="8e36c547-cbf1-48c2-982d-24a3d8e1d0c9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUB-QA FAIL(%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="571" y="0" width="59" height="30" backcolor="#FFFFCC" uuid="d3cb8286-ccc1-4c1d-9f26-a0d4813bb167"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUB-QA DEF(%)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="30" width="801" height="1" forecolor="#990099" uuid="2a991765-1639-4a4b-8a37-04a6b3801a93"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="630" y="0" width="53" height="30" backcolor="#CCFFCC" uuid="930b8d6b-241c-4dde-b4d8-92b098a4f9b0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IH-QA PASS(%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="682" y="0" width="53" height="30" backcolor="#FF0000" uuid="6b986098-7bca-4def-9308-812fd3cd203f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IH-QA  FAIL(%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="735" y="0" width="67" height="30" backcolor="#FFFFCC" uuid="bbfd3b6a-decb-4920-9dce-fc6d38308fba"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IH-QA DEF(%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="234" y="0" width="45" height="30" uuid="c83adeff-2969-45ee-ab72-b93e2eaf1dc8"/>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TTL AOD QTY]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="332" splitType="Stretch">
+			<textField>
+				<reportElement x="1" y="0" width="30" height="20" uuid="45fb8e55-1bc4-4235-b158-2a1523179cad"/>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Year}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="29" y="0" width="38" height="20" uuid="9f400d19-9274-4218-a939-a867330ca3ef"/>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Month}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="66" y="0" width="37" height="20" uuid="d6d4f15c-1fca-4b33-9b03-25602663a308"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Week}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="104" y="0" width="52" height="20" uuid="bb2c7e43-b172-4f97-8f5f-743351555a95"/>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Customer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="156" y="0" width="78" height="20" uuid="fa34a17e-318e-4986-bee9-1ef8b3633c1b"/>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto" pattern="#,##0.00%">
+				<reportElement mode="Opaque" x="279" y="0" width="56" height="20" backcolor="#CCFFCC" uuid="b8a350d9-681c-4a0e-be14-a814470ced3b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Double( $F{InsEcaDet_Eca_PassPt}.doubleValue())/100]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto" pattern="#,##0.00%">
+				<reportElement mode="Opaque" x="334" y="0" width="61" height="20" backcolor="#FF0000" uuid="135e03a9-5a82-491d-8d89-f009950aa4ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Double( $F{InsEcaDet_Eca_FailPt}.doubleValue())/100]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto" pattern="#,##0.00%">
+				<reportElement mode="Opaque" x="394" y="0" width="58" height="20" backcolor="#FFFFCC" uuid="8f6db659-1d23-4798-9581-89094bdecd1d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Double( $F{InsEcaDet_Eca_DefPt}.doubleValue())/100]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto" pattern="#,##0.00%">
+				<reportElement mode="Opaque" x="452" y="0" width="61" height="20" backcolor="#CCFFCC" uuid="dc9d6e36-be3b-4fd6-80ad-2a64638a03d8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Double( $F{InsSbqaDet_Sbqa_PassPt}.doubleValue())/100]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto" pattern="#,##0.00%">
+				<reportElement mode="Opaque" x="512" y="0" width="60" height="20" backcolor="#FF0000" uuid="a69c8636-70e2-4abf-abfc-dbbbb20d3b63"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Double( $F{InsSbqaDet_Sbqa_FailPt}.doubleValue())/100]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto" pattern="#,##0.00%">
+				<reportElement mode="Opaque" x="571" y="0" width="59" height="20" backcolor="#FFFFCC" uuid="8426a579-d2f7-4cb2-b9f7-72399a4ecfaa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Double( $F{InsSbqaDet_Sbqa_DefPt}.doubleValue())/100]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto" pattern="#,##0.00%">
+				<reportElement mode="Opaque" x="629" y="0" width="54" height="20" backcolor="#CCFFCC" uuid="0a7b098a-e715-40c4-914c-d91f09732d4f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Double( $F{InsIhqaDet_IHQA_PassPt}.doubleValue())/100]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto" pattern="#,##0.00%">
+				<reportElement mode="Opaque" x="682" y="0" width="53" height="20" backcolor="#FF0000" uuid="6077be42-464f-4194-a837-fb4b90df9ad4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Double( $F{InsIhqaDet_IHQA_FailPt}.doubleValue())/100]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto" pattern="#,##0.00%">
+				<reportElement mode="Opaque" x="735" y="0" width="67" height="20" backcolor="#FFFFCC" uuid="3de89c3f-6933-469a-ba66-64a491d735ce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Double( $F{InsIhqaDet_IHQA_DefPt}.doubleValue())/100]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="234" y="0" width="45" height="20" uuid="d612bde0-8425-41cc-8c63-5964b9a5210b"/>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_GpQTY}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="1" y="20" width="801" height="1" forecolor="#990099" uuid="fb1648e3-24ac-4b35-851c-734f97118a18"/>
+			</line>
+			<bar3DChart>
+				<chart>
+					<reportElement x="132" y="119" width="536" height="213" uuid="ce57cd8f-b770-4882-951d-8f1120ef8bc3"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["ECA PASS(%)"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{InsEcaDet_Eca_PassPt}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["ECA FAIL(%)"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{InsEcaDet_Eca_FailPt}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["ECA DEFECT(%)"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{InsEcaDet_Eca_DefPt}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["SUB QA PASS(%)"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{InsSbqaDet_Sbqa_PassPt}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["SUB QA FAIL(%)"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{InsSbqaDet_Sbqa_FailPt}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["SUB QA DEFECT(%)"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{InsSbqaDet_Sbqa_DefPt}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["IN-HOUSE QA PASS(%)"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{InsIhqaDet_IHQA_PassPt}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["IN-HOUSE QA FAIL(%)"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{InsIhqaDet_IHQA_FailPt}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["IN-HOUSE QA DEFECT(%)"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{InsIhqaDet_IHQA_DefPt}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</bar3DChart>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="22" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="702" y="0" width="100" height="20" uuid="b43d47b8-f324-4bb6-b3e1-562ffe136717"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="0" y="0" width="100" height="20" uuid="c02aef53-7e4e-49e7-b227-e40a7b9bbcaf"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="20" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b8dfb300-06cb-4fe5-9ddd-bcc272c20b30">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="list" class="java.util.List">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     avg(InsEcaDet."Eca_PassPt") AS InsEcaDet_Eca_PassPt,
+     avg(InsEcaDet."Eca_FailPt") AS InsEcaDet_Eca_FailPt,
+     avg(InsEcaDet."Eca_DefPt") AS InsEcaDet_Eca_DefPt,
+     InsGeneralDet."Ins_Year" AS InsGeneralDet_Ins_Year,
+     InsGeneralDet."Ins_Month" AS InsGeneralDet_Ins_Month,
+     InsGeneralDet."Ins_Week" AS InsGeneralDet_Ins_Week,
+     InsGeneralDet."Ins_Customer" AS InsGeneralDet_Ins_Customer,
+     InsGeneralDet."Ins_Printer" AS InsGeneralDet_Ins_Printer
+FROM
+     "dbo"."InsGeneralDet" InsGeneralDet INNER JOIN "dbo"."InsEcaDet" InsEcaDet ON InsGeneralDet."Ins_Id" = InsEcaDet."Ins_Id"
+WHERE
+     $X{IN,Ins_Year,list} and $X{IN,Ins_Month,list} and $X{IN,Ins_Week,list} and $X{IN,Ins_Printer,list}
+GROUP BY
+     InsGeneralDet.Ins_Year,
+     InsGeneralDet.Ins_Month,
+     InsGeneralDet.Ins_Week,
+     InsGeneralDet.Ins_Customer,
+     InsGeneralDet.Ins_Printer
+ORDER BY
+InsGeneralDet.Ins_Week;]]>
+	</queryString>
+	<field name="InsEcaDet_Eca_PassPt" class="java.lang.Double"/>
+	<field name="InsEcaDet_Eca_FailPt" class="java.lang.Double"/>
+	<field name="InsEcaDet_Eca_DefPt" class="java.lang.Double"/>
+	<field name="InsGeneralDet_Ins_Year" class="java.lang.String"/>
+	<field name="InsGeneralDet_Ins_Month" class="java.lang.String"/>
+	<field name="InsGeneralDet_Ins_Week" class="java.lang.String"/>
+	<field name="InsGeneralDet_Ins_Customer" class="java.lang.String"/>
+	<field name="InsGeneralDet_Ins_Printer" class="java.lang.String"/>
+	<variable name="InsEcaDet_Eca_PassPt_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{InsEcaDet_Eca_PassPt}]]></variableExpression>
+	</variable>
+	<variable name="InsEcaDet_Eca_FailPt_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{InsEcaDet_Eca_FailPt}]]></variableExpression>
+	</variable>
+	<variable name="InsEcaDet_Eca_DefPt_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{InsEcaDet_Eca_DefPt}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="51" splitType="Stretch">
+			<staticText>
+				<reportElement x="128" y="1" width="427" height="30" uuid="8fe14caa-6657-4651-bb87-f157692aa7ec"/>
+				<textElement textAlignment="Right">
+					<font fontName="Trebuchet MS" size="24"/>
+				</textElement>
+				<text><![CDATA[ECA PERFORMANCE REPORT]]></text>
+			</staticText>
+			<image>
+				<reportElement x="2" y="2" width="138" height="30" uuid="c84afd7f-fd2d-46a2-bb2b-2efc33046711"/>
+				<imageExpression><![CDATA["E:\\Embellishment Performance Monitor\\src\\Reports\\MAS Logo.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="7" splitType="Stretch">
+			<line>
+				<reportElement x="-1" y="6" width="556" height="1" forecolor="#FF0000" uuid="929fc309-4b1b-470c-b06f-6167034a6cc4"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<elementGroup>
+				<staticText>
+					<reportElement x="0" y="0" width="38" height="20" uuid="154f4ae3-b5a0-457a-ac13-f3b604ef053b"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[YEAR]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="38" y="0" width="59" height="20" uuid="522499ef-1bb0-4742-965c-0c5dcca7853e"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[MONTH]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="473" y="0" width="82" height="20" backcolor="#FFFF33" uuid="30002ed4-5aaf-4653-a86f-3bb8f8764201"/>
+					<textElement textAlignment="Right">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[DEFECT(%)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="213" y="0" width="120" height="20" uuid="600d181a-f677-4022-95e7-f571f4a56e34"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[PRINTER]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="409" y="0" width="64" height="20" backcolor="#FF0000" uuid="a91425e1-2799-4e30-8a55-ccdcfb4767b9"/>
+					<textElement textAlignment="Right">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[FAIL(%)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="97" y="0" width="54" height="20" uuid="46b7ddcc-6ed5-4a0e-b9ed-9e16c52e39e4"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[WEEK NO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="333" y="0" width="76" height="20" backcolor="#99FF99" uuid="3498fe43-6388-4953-84af-7c0ed84dfbd7"/>
+					<textElement textAlignment="Right">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[PASS(%)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="151" y="0" width="62" height="20" uuid="e6873323-76d0-48bc-a9e3-6f5930376bd1"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[CUSTOMER]]></text>
+				</staticText>
+			</elementGroup>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="279" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="1" width="556" height="1" forecolor="#FF0000" uuid="a0cca70d-a23e-4236-8e82-2a7478cc5d17"/>
+			</line>
+			<elementGroup/>
+			<elementGroup>
+				<textField>
+					<reportElement x="97" y="6" width="54" height="20" uuid="0ea8eb80-e8e7-4997-9326-717db5fcc6da"/>
+					<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Week}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="151" y="6" width="62" height="20" uuid="13b332e7-e1de-4b25-a550-c32537698289"/>
+					<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Customer}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Auto" pattern="#,##0.00%">
+					<reportElement mode="Opaque" x="333" y="6" width="76" height="20" backcolor="#99FF99" uuid="67cdd730-c834-407c-bb8d-cf63e7792bd2"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[new Double( $F{InsEcaDet_Eca_PassPt}.doubleValue())/100]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Auto" pattern="#,##0.00%">
+					<reportElement mode="Opaque" x="409" y="6" width="64" height="20" backcolor="#FF0000" uuid="c072204a-16ad-48dc-ac54-1c01632a64e4"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[new Double( $F{InsEcaDet_Eca_FailPt}.doubleValue()) / 100]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="213" y="6" width="120" height="20" uuid="7c688d0d-bfdc-4706-a672-5963172568d1"/>
+					<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="6" width="38" height="20" uuid="b351fbb2-ad55-405f-a76e-39ecd8aa63fc"/>
+					<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Year}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Auto" pattern="#,##0.00%">
+					<reportElement mode="Opaque" x="472" y="6" width="83" height="20" backcolor="#FFFF66" uuid="3447db2b-3b3e-41ea-b2ed-268efb16a37e"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[new Double( $F{InsEcaDet_Eca_DefPt}.doubleValue()) / 100]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="38" y="6" width="59" height="20" uuid="23543ce4-e9cc-42f1-99b1-549740993471"/>
+					<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Month}]]></textFieldExpression>
+				</textField>
+			</elementGroup>
+			<line>
+				<reportElement x="2" y="26" width="556" height="1" forecolor="#FF0000" uuid="763a0642-060d-4272-aa1a-d50f4624ed5a"/>
+			</line>
+			<bar3DChart>
+				<chart>
+					<reportElement x="97" y="79" width="342" height="200" uuid="d6aeb1d1-2b96-4f85-97e8-d8611702995a"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["ECA PASS(%)"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{InsEcaDet_Eca_PassPt}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["ECA FAIL(%)"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{InsEcaDet_Eca_FailPt}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["ECA DEFECT(%)"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{InsEcaDet_Eca_DefPt}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</bar3DChart>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="25" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="2" y="4" width="100" height="20" uuid="d126c882-5db2-487c-ba55-908d12d92d35"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="456" y="4" width="100" height="20" uuid="50462b7a-a020-4e89-b001-71c1da3c7fa8"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="22" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,2039 @@
+
+
+*********************************************
+McAfee System Core Installer
+Copyright (C) 1995-2018 McAfee, LLC. All Rights Reserved.
+All Rights Reserved Version SYSCORE.18.6.0.219
+*********************************************
+Tue Feb 05 08:58:21 2019
+
+
+[08:58:21:905] - C:\Users\Dell\AppData\Local\Temp\McInstallTemp\SelfProtect\Win64\VSCore\mfehidin.exe -u -g {308C1AD7-765B-4A17-B25B-D415F07357F3} -mfetrust_killbit -etl C:\ProgramData\McAfee\MCLOGS\mfehidin001.etl -l C:\ProgramData\McAfee\MCLOGS\mfehidin001.log
+[08:58:21:905] - OS is 10000
+[08:58:21:905] - SystemArchitecture is x64
+[08:58:21:905] - ETL TRACING ON
+[08:58:21:905] - App-V Client doesn't seem to have been installed. RegKeyOpenRead Software\Microsoft\AppV\Client\Virtualization failed 0
+[08:58:22:174] - CreateAccessHandle AAC succeeded
+[08:58:22:441] - *** ETL TRACING INFO
+[08:58:22:441] - Loaded 63 channels...
+[08:58:22:441] - Requested logging on 63 channels...
+[08:58:22:441] - Enabled logging on 63 channels...
+[08:58:22:441] - INFO END ***
+[08:58:22:441] - parseGUIDsXML: C:\Users\Dell\AppData\Local\Temp\McInstallTemp\SelfProtect\Win64\VSCore\guids.xml - {308C1AD7-765B-4A17-B25B-D415F07357F3} 
+[08:58:23:436] - ValidateDocument: Found <ManifestMap>/<CoreInstall> element
+[08:58:23:436] - ValidateDocument: Found <Signature> element
+[08:58:23:436] - SHA256 for document is 024d4f999cb67bbfc2df12a001fc840e6297c6114935afc2ccb77514fe938945
+[08:58:23:436] - parseSignature: 
+[08:58:23:436] - parseSignedInfo: 
+[08:58:23:436] - parseReference: 
+[08:58:23:436] - parseDigestValue: 
+[08:58:23:436] - parseDigestValue: exit=0
+[08:58:23:436] - parseReference: exit=1
+[08:58:23:436] - parseSignedInfo: exit=1
+[08:58:23:436] - parseSignatureValue: 
+[08:58:23:436] - CheckDataSignature: The certificate is valid
+[08:58:23:436] - parseSignatureValue: exit=1
+[08:58:23:436] - parseSignature: exit=1
+[08:58:23:436] - ValidateDocument: return=1
+[08:58:23:436] - parseGUIDsXML: {308C1AD7-765B-4A17-B25B-D415F07357F3} found in guids.xml.
+[08:58:23:436] - parseGUIDsXML: GUID = {308C1AD7-765B-4A17-B25B-D415F07357F3} ref = WSS Version = 18.6.0.199.4 Priv=7 Name=guids
+[08:58:23:436] - getPersistedTelemetryInt: Read value [TelemetryInstallCount.18.6.0.199.4] [1]
+[08:58:23:436] - getPersistedTelemetryInt: Read value [TelemetryInstallCount.18.6.0.199.4] [1]
+[08:58:23:452] - setPersistedTelemetryInt: Persisted value [TelemetryInstallCount.18.6.0.199.4] [2]
+[08:58:23:452] - getPersistedTelemetryInt: Read value [TelemetryInstallCount.all] [1]
+[08:58:23:452] - setPersistedTelemetryInt: Persisted value [TelemetryInstallCount.all] [2]
+[08:58:23:452] - Using install ref WSS
+[08:58:23:452] - AuthorizeUninstall: {308C1AD7-765B-4A17-B25B-D415F07357F3}
+[08:58:23:452] - PointProductConfig:  is consistent.
+[08:58:23:452] - PointProductConfig:
+[08:58:23:452] - PointProductConfig:XML WSS.xml, version = 18.6.0.199.4 shared by following 1 point product(s).
+[08:58:23:452] - PointProductConfig:Point Product GUID={308C1AD7-765B-4A17-B25B-D415F07357F3}
+[08:58:23:494] - VSCore version is [18.6.0.199.4], per manifest [WSS.xml]
+[08:58:23:496] - INFO: {308C1AD7-765B-4A17-B25B-D415F07357F3} is the last product using WSS.xml. So, will proceed through un-installation...
+[08:58:23:496] - IsServiceExist: Service enterceptAgent does not appear to be installed
+[08:58:23:618] - 
+[08:58:23:618] - ValidateDocument: Found <ManifestMap>/<CoreInstall> element
+[08:58:23:618] - ValidateDocument: Found <Signature> element
+[08:58:23:618] - SHA256 for document is 369e9d628f175ea0f62149b5ab3cb2815da3410f169b20e10a47152d0a601d58
+[08:58:23:618] - parseSignature: 
+[08:58:23:618] - parseSignedInfo: 
+[08:58:23:618] - parseReference: 
+[08:58:23:618] - parseDigestValue: 
+[08:58:23:618] - parseDigestValue: exit=0
+[08:58:23:618] - parseReference: exit=1
+[08:58:23:618] - parseSignedInfo: exit=1
+[08:58:23:618] - parseSignatureValue: 
+[08:58:23:618] - CheckDataSignature: The certificate is valid
+[08:58:23:618] - parseSignatureValue: exit=1
+[08:58:23:618] - parseSignature: exit=1
+[08:58:23:618] - ValidateDocument: return=1
+[08:58:23:618] - 
+[08:58:23:618] - PreProcessDocument:
+[08:58:23:634] - INFO! No <Include> elements were found.
+[08:58:23:634] - PreProcessDocument: return=1
+[08:58:23:634] - 
+[08:58:23:634] - createFeatureList:
+[08:58:23:634] - mms is a required feature. Adding to features on the cmd line
+[08:58:23:634] - aac is a required feature. Adding to features on the cmd line
+[08:58:23:634] - firecore is a required feature. Adding to features on the cmd line
+[08:58:23:634] - DiskFilter is a required feature. Adding to features on the cmd line
+[08:58:23:634] - APDriver is a required feature. Adding to features on the cmd line
+[08:58:23:634] - firecore is a required feature. Adding to features on the cmd line
+[08:58:23:634] - ndisdriver is a required feature. Adding to features on the cmd line
+[08:58:23:634] - ELAM is a required feature. Adding to features on the cmd line
+[08:58:23:634] - firecore is a required feature. Adding to features on the cmd line
+[08:58:23:634] - createFeatureList: Features to be installed = mms aac firecore DiskFilter APDriver firecore ndisdriver ELAM firecore
+[08:58:23:634] - createFeatureList: return=1
+[08:58:23:634] - 
+[08:58:23:634] - IsServiceExist: Service mfemms appears to be installed.
+[08:58:23:634] - IsFeatureEnabled: (mms)
+[08:58:23:634] - mms is enabled
+[08:58:23:634] - 
+[08:58:23:634] - StartStopMFeServices: stopping
+[08:58:23:634] - StartStopAllMMSServices: start=false
+[08:58:23:634] - StopMMSService: mfefire, disable=1
+[08:58:23:649] - GetMMSServiceState: Service mfefire has state SERVICE_RUNNING
+[08:58:23:649] - The service is running
+[08:58:23:649] - 0 services found that depend on mfefire
+[08:58:23:649] - StopMMSService: found 0 dependent services:
+[08:58:23:649] - FindServiceProcessId mfefire (MMS) 
+[08:58:23:649] - Service mfefire process ID is 5648
+[08:58:23:649] - PID 5648 is for C:\Program Files\Common Files\McAfee\SystemCore\mfefire.exe
+[08:58:23:649] - Wait for MMS Service mfefire to report STOPPED
+[08:58:23:649] - MMS Service mfefire: [08:58:23:649] - SERVICE_STOP_PENDING
+[08:58:24:661] - MMS Service mfefire: [08:58:24:661] - SERVICE_STOPPED
+[08:58:24:661] - StopMMSService: exit=1
+[08:58:24:661] - StartStopAllMMSServices: Skipping mfevtp (we will deal with it later)
+[08:58:24:661] - StartStopAllMMSServices: exit=1
+[08:58:24:661] - StartStopMfeServices: Found <CoreInstall> element
+[08:58:24:661] - parseCoreInstall: action = pa_stopservices
+[08:58:24:661] - parseFeature: action = pa_stopservices
+[08:58:24:661] - parseFeature: Feature=mms
+[08:58:24:661] - parseFeature: Feature mms enabled
+[08:58:24:661] - parseService: action = pa_stopservices
+[08:58:24:661] - ServiceName is mfemms
+[08:58:24:661] - Searching for Macros in $COREPATH.
+[08:58:24:661] - MACRO found: COREPATH
+[08:58:24:661] - Expanded COREPATH to: C:\Program Files\Common Files\McAfee\SystemCore\
+[08:58:24:661] - parseService: exit=1
+[08:58:24:661] - parseService: action = pa_stopservices
+[08:58:24:661] - Skipping service with winver attr 5200-6199 on OS 10000
+[08:58:24:661] - parseService: action = pa_stopservices
+[08:58:24:661] - Skipping service with winver attr 5100-5199 on OS 10000
+[08:58:24:661] - parseFeature: exit=1
+[08:58:24:661] - parseFeature: action = pa_stopservices
+[08:58:24:661] - parseFeature: Feature=aac
+[08:58:24:661] - parseFeature: Feature aac enabled
+[08:58:24:661] - parseFeature: exit=1
+[08:58:24:661] - parseFeature: action = pa_stopservices
+[08:58:24:661] - parseFeature: Feature=firecore
+[08:58:24:661] - parseFeature: Feature firecore enabled
+[08:58:24:661] - parseFeature: exit=1
+[08:58:24:661] - parseFeature: action = pa_stopservices
+[08:58:24:661] - parseFeature: Feature=DiskFilter
+[08:58:24:661] - parseFeature: Feature DiskFilter enabled
+[08:58:24:661] - parseFeature: exit=1
+[08:58:24:661] - parseFeature: action = pa_stopservices
+[08:58:24:661] - parseFeature: Feature=APDriver
+[08:58:24:661] - parseFeature: Feature APDriver enabled
+[08:58:24:661] - parseFeature: exit=1
+[08:58:24:661] - parseFeature: action = pa_stopservices
+[08:58:24:661] - parseFeature: Feature=firecore
+[08:58:24:661] - parseFeature: Feature firecore enabled
+[08:58:24:661] - parseService: action = pa_stopservices
+[08:58:24:661] - ServiceName is mfefire
+[08:58:24:661] - parseServiceFailureRestart:
+[08:58:24:661] - Searching for Macros in $COREPATH.
+[08:58:24:661] - MACRO found: COREPATH
+[08:58:24:661] - Expanded COREPATH to: C:\Program Files\Common Files\McAfee\SystemCore\
+[08:58:24:661] - GetServiceReferenceCount: service mfefire has 1 references
+[08:58:24:661] - Unlock Service DACL mfefire
+[08:58:24:690] - Lock Service DACL mfefire
+[08:58:24:693] - GetServiceReferenceCount: service mfefire has 1 references
+[08:58:24:693] - StopService mfefire (disable=1)
+[08:58:24:700] - MfeEnumDependentServices:
+[08:58:24:703] - MfeEnumDependentServices: Found 0 dependent services on mfefire
+[08:58:24:703] - mfefire service reports STOPPED
+[08:58:24:703] - StopService: Lock the service back down
+[08:58:24:703] - StopService: (mfefire) exit=1
+[08:58:24:718] - parseService: exit=1
+[08:58:24:718] - parseMMSService: action = pa_stopservices
+[08:58:24:718] - parseMMSService: service=mfefire
+[08:58:24:718] - GetMMSServiceReferenceCount: service mfefire has a 1 references
+[08:58:24:718] - MMSServiceExists: mfefire
+[08:58:24:718] - MMSServiceExists: mfefire was found
+[08:58:24:718] - StopMMSService: mfefire, disable=1
+[08:58:24:718] - GetMMSServiceState: Service mfefire has state SERVICE_STOPPED
+[08:58:24:718] - The service is already stopped
+[08:58:24:718] - StopMMSService: exit=1
+[08:58:24:718] - parseMMSService: exit=1
+[08:58:24:718] - parseFeature: exit=1
+[08:58:24:718] - parseFeature: action = pa_stopservices
+[08:58:24:718] - parseFeature: Feature=ndisdriver
+[08:58:24:718] - parseFeature: Feature ndisdriver enabled
+[08:58:24:718] - parseFeature: exit=1
+[08:58:24:718] - parseFeature: action = pa_stopservices
+[08:58:24:718] - parseFeature: Feature=ELAM
+[08:58:24:718] - parseFeature: Feature ELAM enabled
+[08:58:24:718] - parseFeature: exit=1
+[08:58:24:718] - parseFeature: action = pa_stopservices
+[08:58:24:718] - parseFeature: Feature=firecore
+[08:58:24:718] - parseFeature: Feature firecore enabled
+[08:58:24:718] - parseFeature: exit=1
+[08:58:24:718] - parseCoreInstall: return=1
+[08:58:24:718] - StartStopMFeServices: return=1
+[08:58:24:718] - 
+[08:58:24:718] - ***ParseXMLFile()***: action = pa_removeaac
+[08:58:24:718] - ParseXMLFile: Found <CoreInstall> element
+[08:58:24:718] - parseCoreInstall: action = pa_removeaac
+[08:58:24:718] - parseGeneral: action = pa_removeaac
+[08:58:24:718] - parseGeneral: Syscore GUID {1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65}
+[08:58:24:718] - parseGeneral: Point Product GUID {308C1AD7-765B-4A17-B25B-D415F07357F3}
+[08:58:24:718] - SetSystemCoreDest McAfee\SystemCore (x86 0)
+[08:58:24:718] - SetSystemCoreDest path already C:\Program Files\Common Files\McAfee\SystemCore\
+[08:58:24:718] - parseGeneral: parsed <CorePath>. retval=1
+[08:58:24:718] - SetSystemCoreDest McAfee\SystemCore (x86 1)
+[08:58:24:718] - SetSystemCoreDest path already C:\Program Files (x86)\Common Files\McAfee\SystemCore\
+[08:58:24:718] - parseGeneral: parsed <CorePath_X86>. retval=1
+[08:58:24:718] - parseGeneral: exit=1
+[08:58:24:718] - parseFeature: action = pa_removeaac
+[08:58:24:718] - parseFeature: Feature=mms
+[08:58:24:718] - parseFeature: Feature mms enabled
+[08:58:24:718] - parseFeature: looking for PointProductList element
+[08:58:24:718] - parsePointProductList: action = pa_removeaac
+[08:58:24:718] - Searching for Macros in $MANIFESTID.
+[08:58:24:718] - MACRO found: MANIFESTID
+[08:58:24:718] - Expanded MANIFESTID to: {1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65}
+[08:58:24:718] - Expanded guid={1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65}
+[08:58:24:718] - ProductGuid=1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65
+[08:58:24:718] - Searching for Macros in 2AA87236-7E59-449B-BDE1-D2A6045ED15B.
+[08:58:24:718] - Expanded guid=2AA87236-7E59-449B-BDE1-D2A6045ED15B
+[08:58:24:718] - PolicyGuid=2AA87236-7E59-449B-BDE1-D2A6045ED15B
+[08:58:24:718] - Searching for Macros in $VSCOREVERSION.
+[08:58:24:718] - MACRO found: VSCOREVERSION
+[08:58:24:718] - Expanded VSCOREVERSION to: 18.6.0.199.4
+[08:58:24:786] - Searching AAC for a PolicyGuid that matches the PolicyGuid of this feature
+[08:58:24:786] - Found matching PolicyGuid
+[08:58:24:786] - XML Policy Version = 18.6.0.199.4; AAC Policy Version = 18.6.0.199.4
+[08:58:24:786] - [hidinstall] SourceFileIsNewer: Testing if Source File Version is newer than Destination (useLinkTime=0)
+[08:58:24:786] - [hidinstall] SourceFileIsNewer: (sourceFileVersion=18.6.0.199.4.)
+[08:58:24:786] - [hidinstall] SourceFileIsNewer: (destFileVersion=18.6.0.199.4.)
+[08:58:24:786] - [hidinstall] SourceFileIsNewer: Return (replace=0)
+[08:58:24:786] - DeleteFileReference AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_2AA87236-7E59-449B-BDE1-D2A6045ED15B WSS_MMS
+[08:58:24:786] - GetDriverDest mfehidk.sys
+[08:58:24:786] - Reference InstallReference.WSS_MMS
+[08:58:24:786] - GetFileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_2AA87236-7E59-449B-BDE1-D2A6045ED15B
+[08:58:24:786] - FileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_2AA87236-7E59-449B-BDE1-D2A6045ED15B=0
+[08:58:24:786] - GetFileReferenceCount: AACPOLICY__1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65__2AA87236-7E59-449B-BDE1-D2A6045ED15B
+[08:58:24:786] - FileReferenceCount: AACPOLICY__1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65__2AA87236-7E59-449B-BDE1-D2A6045ED15B=0
+[08:58:24:786] - GetFileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_2AA87236-7E59-449B-BDE1-D2A6045ED15B
+[08:58:24:786] - FileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_2AA87236-7E59-449B-BDE1-D2A6045ED15B=0
+[08:58:24:786] - Deleting Feature Policy from AAC...
+[08:58:24:786] - parsePointProductList: return=1
+[08:58:24:786] - parseFeature: looking for ProtectedLaunch element
+[08:58:24:786] - Searching for Macros in $VSCOREVERSION.
+[08:58:24:786] - MACRO found: VSCOREVERSION
+[08:58:24:786] - Expanded VSCOREVERSION to: 18.6.0.199.4
+[08:58:24:786] - XML Policy Version = 18.6.0.199.4; Existing policy Version = 18.6.0.199.4
+[08:58:24:786] - [hidinstall] SourceFileIsNewer: Testing if Source File Version is newer than Destination (useLinkTime=0)
+[08:58:24:786] - [hidinstall] SourceFileIsNewer: (sourceFileVersion=18.6.0.199.4.)
+[08:58:24:786] - [hidinstall] SourceFileIsNewer: (destFileVersion=18.6.0.199.4.)
+[08:58:24:786] - [hidinstall] SourceFileIsNewer: Return (replace=0)
+[08:58:24:786] - parseIoctlFilter: retval 1
+[08:58:24:786] - parseIoctlFilter: retval 1
+[08:58:24:786] - parseIoctlFilter: retval 1
+[08:58:24:786] - parseProtectedLaunch: exit=1
+[08:58:24:786] - parseFeature: exit=1
+[08:58:24:786] - parseFeature: action = pa_removeaac
+[08:58:24:786] - parseFeature: Feature=aac
+[08:58:24:786] - parseFeature: Feature aac enabled
+[08:58:24:786] - parseFeature: looking for PointProductList element
+[08:58:24:786] - parsePointProductList: action = pa_removeaac
+[08:58:24:786] - Searching for Macros in $MANIFESTID.
+[08:58:24:786] - MACRO found: MANIFESTID
+[08:58:24:786] - Expanded MANIFESTID to: {1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65}
+[08:58:24:786] - Expanded guid={1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65}
+[08:58:24:786] - ProductGuid=1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65
+[08:58:24:786] - Searching for Macros in 65CF3D67-B283-4477-83C6-181CEFAC7443.
+[08:58:24:786] - Expanded guid=65CF3D67-B283-4477-83C6-181CEFAC7443
+[08:58:24:786] - PolicyGuid=65CF3D67-B283-4477-83C6-181CEFAC7443
+[08:58:24:786] - Searching for Macros in $VSCOREVERSION.
+[08:58:24:786] - MACRO found: VSCOREVERSION
+[08:58:24:786] - Expanded VSCOREVERSION to: 18.6.0.199.4
+[08:58:24:824] - Searching AAC for a PolicyGuid that matches the PolicyGuid of this feature
+[08:58:24:824] - Found matching PolicyGuid
+[08:58:24:824] - XML Policy Version = 18.6.0.199.4; AAC Policy Version = 18.6.0.199.4
+[08:58:24:824] - [hidinstall] SourceFileIsNewer: Testing if Source File Version is newer than Destination (useLinkTime=0)
+[08:58:24:824] - [hidinstall] SourceFileIsNewer: (sourceFileVersion=18.6.0.199.4.)
+[08:58:24:824] - [hidinstall] SourceFileIsNewer: (destFileVersion=18.6.0.199.4.)
+[08:58:24:824] - [hidinstall] SourceFileIsNewer: Return (replace=0)
+[08:58:24:824] - DeleteFileReference AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_65CF3D67-B283-4477-83C6-181CEFAC7443 WSS_AAC
+[08:58:24:824] - GetDriverDest mfehidk.sys
+[08:58:24:825] - Reference InstallReference.WSS_AAC
+[08:58:24:826] - GetFileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_65CF3D67-B283-4477-83C6-181CEFAC7443
+[08:58:24:826] - FileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_65CF3D67-B283-4477-83C6-181CEFAC7443=0
+[08:58:24:826] - GetFileReferenceCount: AACPOLICY__1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65__65CF3D67-B283-4477-83C6-181CEFAC7443
+[08:58:24:827] - FileReferenceCount: AACPOLICY__1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65__65CF3D67-B283-4477-83C6-181CEFAC7443=0
+[08:58:24:827] - GetFileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_65CF3D67-B283-4477-83C6-181CEFAC7443
+[08:58:24:827] - FileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_65CF3D67-B283-4477-83C6-181CEFAC7443=0
+[08:58:24:827] - Deleting Feature Policy from AAC...
+[08:58:24:828] - parsePointProductList: return=1
+[08:58:24:828] - parseFeature: looking for ProtectedLaunch element
+[08:58:24:828] - parseFeature: no ProtectedLaunch element
+[08:58:24:828] - parseFeature: exit=1
+[08:58:24:828] - parseFeature: action = pa_removeaac
+[08:58:24:828] - parseFeature: Feature=firecore
+[08:58:24:828] - parseFeature: Feature firecore enabled
+[08:58:24:828] - parseFeature: looking for PointProductList element
+[08:58:24:828] - parseFeature: no PointProductList element
+[08:58:24:828] - parseFeature: looking for ProtectedLaunch element
+[08:58:24:828] - parseFeature: no ProtectedLaunch element
+[08:58:24:828] - parseFeature: exit=1
+[08:58:24:828] - parseFeature: action = pa_removeaac
+[08:58:24:828] - parseFeature: Feature=DiskFilter
+[08:58:24:828] - parseFeature: Feature DiskFilter enabled
+[08:58:24:828] - parseFeature: looking for PointProductList element
+[08:58:24:828] - parseFeature: no PointProductList element
+[08:58:24:828] - parseFeature: looking for ProtectedLaunch element
+[08:58:24:828] - parseFeature: no ProtectedLaunch element
+[08:58:24:828] - parseFeature: exit=1
+[08:58:24:828] - parseFeature: action = pa_removeaac
+[08:58:24:828] - parseFeature: Feature=APDriver
+[08:58:24:828] - parseFeature: Feature APDriver enabled
+[08:58:24:828] - parseFeature: looking for PointProductList element
+[08:58:24:828] - parseFeature: no PointProductList element
+[08:58:24:828] - parseFeature: looking for ProtectedLaunch element
+[08:58:24:828] - parseFeature: no ProtectedLaunch element
+[08:58:24:828] - parseFeature: exit=1
+[08:58:24:829] - parseFeature: action = pa_removeaac
+[08:58:24:829] - parseFeature: Feature=firecore
+[08:58:24:829] - parseFeature: Feature firecore enabled
+[08:58:24:829] - parseFeature: looking for PointProductList element
+[08:58:24:829] - parsePointProductList: action = pa_removeaac
+[08:58:24:829] - Searching for Macros in $MANIFESTID.
+[08:58:24:829] - MACRO found: MANIFESTID
+[08:58:24:829] - Expanded MANIFESTID to: {1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65}
+[08:58:24:829] - Expanded guid={1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65}
+[08:58:24:829] - ProductGuid=1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65
+[08:58:24:829] - Searching for Macros in 615BE029-30AB-468E-9872-255537380B1D.
+[08:58:24:829] - Expanded guid=615BE029-30AB-468E-9872-255537380B1D
+[08:58:24:829] - PolicyGuid=615BE029-30AB-468E-9872-255537380B1D
+[08:58:24:829] - Searching for Macros in $VSCOREVERSION.
+[08:58:24:829] - MACRO found: VSCOREVERSION
+[08:58:24:829] - Expanded VSCOREVERSION to: 18.6.0.199.4
+[08:58:24:856] - Searching AAC for a PolicyGuid that matches the PolicyGuid of this feature
+[08:58:24:857] - Found matching PolicyGuid
+[08:58:24:857] - XML Policy Version = 18.6.0.199.4; AAC Policy Version = 18.6.0.199.4
+[08:58:24:857] - [hidinstall] SourceFileIsNewer: Testing if Source File Version is newer than Destination (useLinkTime=0)
+[08:58:24:857] - [hidinstall] SourceFileIsNewer: (sourceFileVersion=18.6.0.199.4.)
+[08:58:24:857] - [hidinstall] SourceFileIsNewer: (destFileVersion=18.6.0.199.4.)
+[08:58:24:857] - [hidinstall] SourceFileIsNewer: Return (replace=0)
+[08:58:24:857] - DeleteFileReference AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_615BE029-30AB-468E-9872-255537380B1D WSS_FIRECORE
+[08:58:24:857] - GetDriverDest mfehidk.sys
+[08:58:24:857] - Reference InstallReference.WSS_FIRECORE
+[08:58:24:858] - GetFileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_615BE029-30AB-468E-9872-255537380B1D
+[08:58:24:858] - FileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_615BE029-30AB-468E-9872-255537380B1D=0
+[08:58:24:858] - GetFileReferenceCount: AACPOLICY__1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65__615BE029-30AB-468E-9872-255537380B1D
+[08:58:24:858] - FileReferenceCount: AACPOLICY__1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65__615BE029-30AB-468E-9872-255537380B1D=0
+[08:58:24:858] - GetFileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_615BE029-30AB-468E-9872-255537380B1D
+[08:58:24:858] - FileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_615BE029-30AB-468E-9872-255537380B1D=0
+[08:58:24:858] - Deleting Feature Policy from AAC...
+[08:58:24:860] - parsePointProductList: return=1
+[08:58:24:860] - parseFeature: looking for ProtectedLaunch element
+[08:58:24:860] - parseFeature: no ProtectedLaunch element
+[08:58:24:860] - parseFeature: exit=1
+[08:58:24:860] - parseFeature: action = pa_removeaac
+[08:58:24:860] - parseFeature: Feature=ndisdriver
+[08:58:24:860] - parseFeature: Feature ndisdriver enabled
+[08:58:24:860] - parseFeature: looking for PointProductList element
+[08:58:24:860] - parsePointProductList: action = pa_removeaac
+[08:58:24:860] - Searching for Macros in $MANIFESTID.
+[08:58:24:860] - MACRO found: MANIFESTID
+[08:58:24:860] - Expanded MANIFESTID to: {1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65}
+[08:58:24:860] - Expanded guid={1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65}
+[08:58:24:860] - ProductGuid=1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65
+[08:58:24:860] - Searching for Macros in 0B210939-B7B2-4A89-A95E-1E4628B60802.
+[08:58:24:860] - Expanded guid=0B210939-B7B2-4A89-A95E-1E4628B60802
+[08:58:24:860] - PolicyGuid=0B210939-B7B2-4A89-A95E-1E4628B60802
+[08:58:24:860] - Searching for Macros in $VSCOREVERSION.
+[08:58:24:860] - MACRO found: VSCOREVERSION
+[08:58:24:860] - Expanded VSCOREVERSION to: 18.6.0.199.4
+[08:58:24:879] - Searching AAC for a PolicyGuid that matches the PolicyGuid of this feature
+[08:58:24:879] - Found matching PolicyGuid
+[08:58:24:879] - XML Policy Version = 18.6.0.199.4; AAC Policy Version = 18.6.0.199.4
+[08:58:24:879] - [hidinstall] SourceFileIsNewer: Testing if Source File Version is newer than Destination (useLinkTime=0)
+[08:58:24:879] - [hidinstall] SourceFileIsNewer: (sourceFileVersion=18.6.0.199.4.)
+[08:58:24:879] - [hidinstall] SourceFileIsNewer: (destFileVersion=18.6.0.199.4.)
+[08:58:24:879] - [hidinstall] SourceFileIsNewer: Return (replace=0)
+[08:58:24:879] - DeleteFileReference AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_0B210939-B7B2-4A89-A95E-1E4628B60802 WSS_NDISDRIVER
+[08:58:24:879] - GetDriverDest mfehidk.sys
+[08:58:24:879] - Reference InstallReference.WSS_NDISDRIVER
+[08:58:24:879] - GetFileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_0B210939-B7B2-4A89-A95E-1E4628B60802
+[08:58:24:879] - FileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_0B210939-B7B2-4A89-A95E-1E4628B60802=0
+[08:58:24:879] - GetFileReferenceCount: AACPOLICY__1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65__0B210939-B7B2-4A89-A95E-1E4628B60802
+[08:58:24:879] - FileReferenceCount: AACPOLICY__1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65__0B210939-B7B2-4A89-A95E-1E4628B60802=0
+[08:58:24:879] - GetFileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_0B210939-B7B2-4A89-A95E-1E4628B60802
+[08:58:24:879] - FileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_0B210939-B7B2-4A89-A95E-1E4628B60802=0
+[08:58:24:879] - Deleting Feature Policy from AAC...
+[08:58:24:879] - parsePointProductList: return=1
+[08:58:24:879] - parseFeature: looking for ProtectedLaunch element
+[08:58:24:879] - parseFeature: no ProtectedLaunch element
+[08:58:24:879] - parseFeature: exit=1
+[08:58:24:879] - parseFeature: action = pa_removeaac
+[08:58:24:879] - parseFeature: Feature=ELAM
+[08:58:24:879] - parseFeature: Feature ELAM enabled
+[08:58:24:879] - parseFeature: looking for PointProductList element
+[08:58:24:879] - parsePointProductList: action = pa_removeaac
+[08:58:24:879] - Searching for Macros in $MANIFESTID.
+[08:58:24:879] - MACRO found: MANIFESTID
+[08:58:24:879] - Expanded MANIFESTID to: {1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65}
+[08:58:24:879] - Expanded guid={1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65}
+[08:58:24:879] - ProductGuid=1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65
+[08:58:24:879] - Searching for Macros in C6A18CBE-A632-4C75-AB1F-7E6ECF3E610F.
+[08:58:24:879] - Expanded guid=C6A18CBE-A632-4C75-AB1F-7E6ECF3E610F
+[08:58:24:879] - PolicyGuid=C6A18CBE-A632-4C75-AB1F-7E6ECF3E610F
+[08:58:24:879] - Searching for Macros in $VSCOREVERSION.
+[08:58:24:879] - MACRO found: VSCOREVERSION
+[08:58:24:879] - Expanded VSCOREVERSION to: 18.6.0.199.4
+[08:58:24:908] - Searching AAC for a PolicyGuid that matches the PolicyGuid of this feature
+[08:58:24:909] - Found matching PolicyGuid
+[08:58:24:909] - XML Policy Version = 18.6.0.199.4; AAC Policy Version = 18.6.0.199.4
+[08:58:24:909] - [hidinstall] SourceFileIsNewer: Testing if Source File Version is newer than Destination (useLinkTime=0)
+[08:58:24:909] - [hidinstall] SourceFileIsNewer: (sourceFileVersion=18.6.0.199.4.)
+[08:58:24:909] - [hidinstall] SourceFileIsNewer: (destFileVersion=18.6.0.199.4.)
+[08:58:24:909] - [hidinstall] SourceFileIsNewer: Return (replace=0)
+[08:58:24:909] - DeleteFileReference AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_C6A18CBE-A632-4C75-AB1F-7E6ECF3E610F WSS_ELAM
+[08:58:24:909] - GetDriverDest mfehidk.sys
+[08:58:24:909] - Reference InstallReference.WSS_ELAM
+[08:58:24:909] - GetFileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_C6A18CBE-A632-4C75-AB1F-7E6ECF3E610F
+[08:58:24:909] - FileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_C6A18CBE-A632-4C75-AB1F-7E6ECF3E610F=0
+[08:58:24:909] - GetFileReferenceCount: AACPOLICY__1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65__C6A18CBE-A632-4C75-AB1F-7E6ECF3E610F
+[08:58:24:909] - FileReferenceCount: AACPOLICY__1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65__C6A18CBE-A632-4C75-AB1F-7E6ECF3E610F=0
+[08:58:24:909] - GetFileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_C6A18CBE-A632-4C75-AB1F-7E6ECF3E610F
+[08:58:24:909] - FileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_C6A18CBE-A632-4C75-AB1F-7E6ECF3E610F=0
+[08:58:24:909] - Deleting Feature Policy from AAC...
+[08:58:24:909] - parsePointProductList: return=1
+[08:58:24:909] - parseFeature: looking for ProtectedLaunch element
+[08:58:24:909] - parseFeature: no ProtectedLaunch element
+[08:58:24:909] - parseFeature: exit=1
+[08:58:24:909] - parseFeature: action = pa_removeaac
+[08:58:24:909] - parseFeature: Feature=firecore
+[08:58:24:909] - parseFeature: Feature firecore enabled
+[08:58:24:909] - parseFeature: looking for PointProductList element
+[08:58:24:909] - parsePointProductList: action = pa_removeaac
+[08:58:24:909] - Searching for Macros in $MANIFESTID.
+[08:58:24:909] - MACRO found: MANIFESTID
+[08:58:24:909] - Expanded MANIFESTID to: {1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65}
+[08:58:24:909] - Expanded guid={1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65}
+[08:58:24:909] - ProductGuid=1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65
+[08:58:24:909] - Searching for Macros in C5D10DAA-D978-4B8D-B5C5-D036B726B8ED.
+[08:58:24:909] - Expanded guid=C5D10DAA-D978-4B8D-B5C5-D036B726B8ED
+[08:58:24:909] - PolicyGuid=C5D10DAA-D978-4B8D-B5C5-D036B726B8ED
+[08:58:24:909] - Searching for Macros in $VSCOREVERSION.
+[08:58:24:909] - MACRO found: VSCOREVERSION
+[08:58:24:909] - Expanded VSCOREVERSION to: 18.6.0.199.4
+[08:58:24:936] - Searching AAC for a PolicyGuid that matches the PolicyGuid of this feature
+[08:58:24:936] - Found matching PolicyGuid
+[08:58:24:936] - XML Policy Version = 18.6.0.199.4; AAC Policy Version = 18.6.0.199.4
+[08:58:24:936] - [hidinstall] SourceFileIsNewer: Testing if Source File Version is newer than Destination (useLinkTime=0)
+[08:58:24:936] - [hidinstall] SourceFileIsNewer: (sourceFileVersion=18.6.0.199.4.)
+[08:58:24:937] - [hidinstall] SourceFileIsNewer: (destFileVersion=18.6.0.199.4.)
+[08:58:24:937] - [hidinstall] SourceFileIsNewer: Return (replace=0)
+[08:58:24:937] - DeleteFileReference AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_C5D10DAA-D978-4B8D-B5C5-D036B726B8ED WSS_FIRECORE
+[08:58:24:937] - GetDriverDest mfehidk.sys
+[08:58:24:937] - Reference InstallReference.WSS_FIRECORE
+[08:58:24:937] - GetFileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_C5D10DAA-D978-4B8D-B5C5-D036B726B8ED
+[08:58:24:937] - FileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_C5D10DAA-D978-4B8D-B5C5-D036B726B8ED=0
+[08:58:24:938] - GetFileReferenceCount: AACPOLICY__1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65__C5D10DAA-D978-4B8D-B5C5-D036B726B8ED
+[08:58:24:938] - FileReferenceCount: AACPOLICY__1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65__C5D10DAA-D978-4B8D-B5C5-D036B726B8ED=0
+[08:58:24:938] - GetFileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_C5D10DAA-D978-4B8D-B5C5-D036B726B8ED
+[08:58:24:938] - FileReferenceCount: AACPOLICY_1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65_C5D10DAA-D978-4B8D-B5C5-D036B726B8ED=0
+[08:58:24:938] - Deleting Feature Policy from AAC...
+[08:58:24:939] - parsePointProductList: return=1
+[08:58:24:939] - parseFeature: looking for ProtectedLaunch element
+[08:58:24:939] - parseFeature: no ProtectedLaunch element
+[08:58:24:939] - parseFeature: exit=1
+[08:58:24:939] - parseCoreInstall: return=1
+[08:58:24:939] - ParseXMLFile: return=1
+[08:58:24:939] - 
+[08:58:24:939] - IsDeletingAac:
+[08:58:24:956] - IsFeatureEnabled: (AAC)
+[08:58:24:956] - AAC is enabled
+[08:58:24:956] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeaaca.dll=1
+[08:58:24:956] - IsFileReferencePresent: file C:\Program Files\Common Files\McAfee\SystemCore\mfeaaca.dll has 1 references
+[08:58:24:956] - GetFeatureReferenceCount: AAC, {65CF3D67-B283-4477-83C6-181CEFAC7443}
+[08:58:24:956] - GetFeatureReferenceCount: AAC=1
+[08:58:24:956] - IsDeletingAac: AAC will be deleted
+[08:58:24:956] - DeleteAacPolicies:
+[08:58:24:996] - DeleteAacPolicies: All policies were deleted
+[08:58:24:996] - 
+[08:58:24:996] - ***ParseXMLFile()***: action = pa_uninstall
+[08:58:24:996] - ParseXMLFile: Found <CoreInstall> element
+[08:58:24:996] - parseCoreInstall: action = pa_uninstall
+[08:58:24:996] - parseGeneral: action = 
+[08:58:24:996] - SetSystemCoreDest McAfee\SystemCore (x86 0)
+[08:58:24:996] - SetSystemCoreDest path already C:\Program Files\Common Files\McAfee\SystemCore\
+[08:58:24:996] - parseGeneral: parsed <CorePath>. retval=1
+[08:58:24:996] - SetSystemCoreDest McAfee\SystemCore (x86 1)
+[08:58:24:996] - SetSystemCoreDest path already C:\Program Files (x86)\Common Files\McAfee\SystemCore\
+[08:58:24:996] - parseGeneral: parsed <CorePath_X86>. retval=1
+[08:58:24:996] - parseGeneral: exit=1
+[08:58:24:996] - parseFeature: action = pa_uninstall
+[08:58:24:996] - parseFeature: Feature=mms
+[08:58:24:996] - mms is only installed/uninstalled when pa_mms is passed. Skipping.
+[08:58:24:996] - parseFeature: exit=1
+[08:58:24:996] - parseFeature: action = pa_uninstall
+[08:58:24:996] - parseFeature: Feature=aac
+[08:58:24:996] - parseFeature: Feature aac enabled
+[08:58:24:997] - parseProcess: action = pa_uninstall
+[08:58:24:997] - parseProcess: Skipping because current action (0x2) not in 0x1
+[08:58:24:997] - parseProcess: exit=1
+[08:58:24:997] - parseProcess: action = pa_uninstall
+[08:58:24:997] - parseProcess: Skipping because current action (0x2) not in 0x1
+[08:58:24:997] - parseProcess: exit=1
+[08:58:24:997] - parseProcess: action = pa_uninstall
+[08:58:24:997] - parseProcess: Skipping because current action (0x2) not in 0x8
+[08:58:24:997] - parseProcess: exit=1
+[08:58:24:997] - parseProcess: action = pa_uninstall
+[08:58:24:997] - parseProcess: Skipping because current action (0x2) not in 0x8
+[08:58:24:997] - parseProcess: exit=1
+[08:58:24:997] - parseDriver: action = pa_uninstall
+[08:58:24:997] - parseDriver: Will merge boot start value 3
+[08:58:24:997] - GetDriverService mfeaack.sys
+[08:58:24:997] - GetDriverService mfeaack.sys
+[08:58:24:997] - GetDriverDest mfeaack.sys
+[08:58:24:997] - UninstallManualStartDriver mfeaack.sys WSS_AAC
+[08:58:24:997] - DeleteServiceReference mfeaack WSS_AAC
+[08:58:24:997] - GetDriverDest mfehidk.sys
+[08:58:24:997] - Reference InstallReference.WSS_AAC
+[08:58:24:997] - GetServiceReferenceCount: service mfeaack has 0 references
+[08:58:24:998] - MfeDeleteFile C:\Windows\system32\drivers\mfeaack.sys
+[08:58:24:998] - GetAccessAndDeleteFile: FileDelete(C:\Windows\system32\drivers\mfeaack.sys) returned 5
+[08:58:24:998] - MakeWritable: Unable to get attribs for file [C:\Windows\system32\drivers\mfeaack.sys.b128.deleteme] [2].
+[08:58:24:998] - GetAccessAndDeleteFile: FileDelete(C:\Windows\system32\drivers\mfeaack.sys.b128.deleteme) returned 2
+[08:58:24:998] - InstallDeleteFile: Delete of C:\Windows\system32\drivers\mfeaack.sys done using rename and deferred delete.
+[08:58:24:998] - AddRemoveMergedDwordValue. name=VTPOptions. value=0. add=false
+[08:58:24:998] - AddRemoveDriverStartValue. installRef=WSS_AAC, value=0. add=false
+[08:58:24:998] - AddRemoveDriverStartValue: Removing reference: Name=start.WSS_AAC, Value=0
+[08:58:24:998] - INFO: service deleteFlag is set
+[08:58:24:998] - AddRemoveStartValue: exit=1
+[08:58:24:998] - Disabling mfeaack.sys for Safeboot:Network
+[08:58:24:998] - DeleteFileReference SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfeaack.sys WSS_AAC
+[08:58:24:998] - GetDriverDest mfehidk.sys
+[08:58:24:998] - Reference InstallReference.WSS_AAC
+[08:58:24:998] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfeaack.sys
+[08:58:24:998] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfeaack.sys=0
+[08:58:24:998] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfeaack.sys
+[08:58:24:998] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfeaack.sys=0
+[08:58:24:998] - parseDriver: Adding or Removing BootLoadContent flag
+[08:58:24:998] - AddRemoveMergedDwordValue. name=BootLoadContent. value=3. add=false
+[08:58:24:998] - parseDriver: Adding or Removing ContentVersion
+[08:58:24:998] - AddRemoveMergedDwordValue. name=ContentVersion. value=2. add=false
+[08:58:24:998] - parseDriver: exit=1
+[08:58:24:998] - parseDriver: action = pa_uninstall
+[08:58:24:998] - parseDriver: Will merge boot start value 3
+[08:58:24:998] - GetDriverService mfeplk.sys
+[08:58:24:998] - GetDriverService mfeplk.sys
+[08:58:24:998] - GetDriverDest mfeplk.sys
+[08:58:24:998] - UninstallManualStartDriver mfeplk.sys WSS_AAC
+[08:58:24:998] - DeleteServiceReference mfeplk WSS_AAC
+[08:58:24:998] - GetDriverDest mfehidk.sys
+[08:58:24:998] - Reference InstallReference.WSS_AAC
+[08:58:24:998] - GetServiceReferenceCount: service mfeplk has 0 references
+[08:58:24:998] - MfeDeleteFile C:\Windows\system32\drivers\mfeplk.sys
+[08:58:24:998] - GetAccessAndDeleteFile: FileDelete(C:\Windows\system32\drivers\mfeplk.sys) returned 5
+[08:58:24:998] - MakeWritable: Unable to get attribs for file [C:\Windows\system32\drivers\mfeplk.sys.b128.deleteme] [2].
+[08:58:24:998] - GetAccessAndDeleteFile: FileDelete(C:\Windows\system32\drivers\mfeplk.sys.b128.deleteme) returned 2
+[08:58:24:998] - InstallDeleteFile: Delete of C:\Windows\system32\drivers\mfeplk.sys done using rename and deferred delete.
+[08:58:24:998] - AddRemoveMergedDwordValue. name=VTPOptions. value=0. add=false
+[08:58:24:998] - AddRemoveDriverStartValue. installRef=WSS_AAC, value=0. add=false
+[08:58:24:998] - AddRemoveDriverStartValue: Removing reference: Name=start.WSS_AAC, Value=0
+[08:58:24:998] - INFO: service deleteFlag is set
+[08:58:24:998] - AddRemoveStartValue: exit=1
+[08:58:24:998] - Disabling mfeplk.sys for Safeboot:Network
+[08:58:24:998] - DeleteFileReference SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfeplk.sys WSS_AAC
+[08:58:24:998] - GetDriverDest mfehidk.sys
+[08:58:24:998] - Reference InstallReference.WSS_AAC
+[08:58:24:998] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfeplk.sys
+[08:58:24:998] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfeplk.sys=0
+[08:58:24:998] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfeplk.sys
+[08:58:24:998] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfeplk.sys=0
+[08:58:24:998] - parseDriver: Adding or Removing BootLoadContent flag
+[08:58:24:998] - AddRemoveMergedDwordValue. name=BootLoadContent. value=3. add=false
+[08:58:24:998] - parseDriver: Adding or Removing ContentVersion
+[08:58:24:998] - AddRemoveMergedDwordValue. name=ContentVersion. value=2. add=false
+[08:58:24:998] - parseDriver: exit=1
+[08:58:24:998] - parseDriver: action = pa_uninstall
+[08:58:24:998] - parseDriver: Will merge boot start value 2
+[08:58:24:998] - GetDriverService mfeavfk.sys
+[08:58:24:998] - GetDriverService mfeavfk.sys
+[08:58:24:998] - GetDriverDest mfeavfk.sys
+[08:58:24:998] - UninstallManualStartDriver mfeavfk.sys WSS_AAC
+[08:58:24:998] - DeleteServiceReference mfeavfk WSS_AAC
+[08:58:24:998] - GetDriverDest mfehidk.sys
+[08:58:24:998] - Reference InstallReference.WSS_AAC
+[08:58:24:998] - GetServiceReferenceCount: service mfeavfk has 1 references
+[08:58:24:998] - AddRemoveMergedDwordValue. name=VTPOptions. value=0. add=false
+[08:58:24:998] - AddRemoveDriverStartValue. installRef=WSS_AAC, value=0. add=false
+[08:58:24:998] - AddRemoveDriverStartValue: Removing reference: Name=start.WSS_AAC, Value=0
+[08:58:24:998] - AddRemoveStartValue: exit=1
+[08:58:24:998] - Disabling mfeavfk.sys for Safeboot:Network
+[08:58:24:998] - DeleteFileReference SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfeavfk.sys WSS_AAC
+[08:58:24:998] - GetDriverDest mfehidk.sys
+[08:58:24:998] - Reference InstallReference.WSS_AAC
+[08:58:24:998] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfeavfk.sys
+[08:58:24:998] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfeavfk.sys=0
+[08:58:24:998] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfeavfk.sys
+[08:58:24:998] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfeavfk.sys=0
+[08:58:24:998] - parseDriver: Adding or Removing BootLoadContent flag
+[08:58:24:998] - AddRemoveMergedDwordValue. name=BootLoadContent. value=2. add=false
+[08:58:24:998] - parseDriver: Adding or Removing ContentVersion
+[08:58:24:998] - AddRemoveMergedDwordValue. name=ContentVersion. value=2. add=false
+[08:58:24:998] - parseDriver: exit=1
+[08:58:24:998] - parseCore: action = pa_uninstall
+[08:58:24:998] - ParseFileName: action = pa_uninstall
+[08:58:24:998] - ParseFileName: filename=mfehida.dll
+[08:58:24:998] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:24:998] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll=3
+[08:58:24:998] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll WSS_AAC
+[08:58:24:998] - GetDriverDest mfehidk.sys
+[08:58:24:998] - Reference InstallReference.WSS_AAC
+[08:58:24:998] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:24:998] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll=2
+[08:58:24:998] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:24:998] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll=2
+[08:58:24:998] - ParseFileName: exit=1
+[08:58:24:998] - ParseFileName: action = pa_uninstall
+[08:58:24:998] - ParseFileName: filename=mfevtpa.dll
+[08:58:24:998] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll
+[08:58:24:998] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll=2
+[08:58:24:998] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll WSS_AAC
+[08:58:24:998] - GetDriverDest mfehidk.sys
+[08:58:24:998] - Reference InstallReference.WSS_AAC
+[08:58:24:998] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll
+[08:58:24:998] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll=1
+[08:58:24:998] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll
+[08:58:24:998] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll=1
+[08:58:24:998] - ParseFileName: exit=1
+[08:58:24:998] - ParseFileName: action = pa_uninstall
+[08:58:24:998] - ParseFileName: filename=mfeavfa.dll
+[08:58:24:998] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeavfa.dll
+[08:58:24:998] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeavfa.dll=2
+[08:58:24:998] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfeavfa.dll WSS_AAC
+[08:58:24:998] - GetDriverDest mfehidk.sys
+[08:58:24:998] - Reference InstallReference.WSS_AAC
+[08:58:24:998] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeavfa.dll
+[08:58:24:998] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeavfa.dll=1
+[08:58:24:998] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeavfa.dll
+[08:58:24:998] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeavfa.dll=1
+[08:58:24:998] - ParseFileName: exit=1
+[08:58:24:998] - ParseFileName: action = pa_uninstall
+[08:58:24:998] - ParseFileName: filename=vtpinfo.exe
+[08:58:24:998] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\vtpinfo.exe
+[08:58:24:998] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\vtpinfo.exe=2
+[08:58:24:998] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\vtpinfo.exe WSS_AAC
+[08:58:24:998] - GetDriverDest mfehidk.sys
+[08:58:24:998] - Reference InstallReference.WSS_AAC
+[08:58:24:998] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\vtpinfo.exe
+[08:58:24:998] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\vtpinfo.exe=1
+[08:58:24:998] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\vtpinfo.exe
+[08:58:24:998] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\vtpinfo.exe=1
+[08:58:25:014] - ParseFileName: exit=1
+[08:58:25:014] - ParseFileName: action = pa_uninstall
+[08:58:25:014] - ParseFileName: filename=cacheinfo.exe
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\cacheinfo.exe
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\cacheinfo.exe=2
+[08:58:25:014] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\cacheinfo.exe WSS_AAC
+[08:58:25:014] - GetDriverDest mfehidk.sys
+[08:58:25:014] - Reference InstallReference.WSS_AAC
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\cacheinfo.exe
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\cacheinfo.exe=1
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\cacheinfo.exe
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\cacheinfo.exe=1
+[08:58:25:014] - ParseFileName: exit=1
+[08:58:25:014] - ParseFileName: action = pa_uninstall
+[08:58:25:014] - ParseFileName: filename=mfeaaca.dll
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeaaca.dll
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeaaca.dll=1
+[08:58:25:014] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfeaaca.dll WSS_AAC
+[08:58:25:014] - GetDriverDest mfehidk.sys
+[08:58:25:014] - Reference InstallReference.WSS_AAC
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeaaca.dll
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeaaca.dll=0
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeaaca.dll
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeaaca.dll=0
+[08:58:25:014] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\mfeaaca.dll
+[08:58:25:014] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfeaaca.dll
+[08:58:25:014] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfeaaca.dll) returned 5
+[08:58:25:014] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\mfeaaca.dll.5c88.deleteme] [2].
+[08:58:25:014] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfeaaca.dll.5c88.deleteme) returned 2
+[08:58:25:014] - InstallDeleteFile: Delete of C:\Program Files\Common Files\McAfee\SystemCore\mfeaaca.dll done using rename and deferred delete.
+[08:58:25:014] - ParseFileName: exit=1
+[08:58:25:014] - ParseFileName: action = pa_uninstall
+[08:58:25:014] - ParseFileName: filename=aacinfo.exe
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\aacinfo.exe
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\aacinfo.exe=1
+[08:58:25:014] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\aacinfo.exe WSS_AAC
+[08:58:25:014] - GetDriverDest mfehidk.sys
+[08:58:25:014] - Reference InstallReference.WSS_AAC
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\aacinfo.exe
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\aacinfo.exe=0
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\aacinfo.exe
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\aacinfo.exe=0
+[08:58:25:014] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\aacinfo.exe
+[08:58:25:014] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\aacinfo.exe
+[08:58:25:014] - ParseFileName: exit=1
+[08:58:25:014] - ParseFileName: action = pa_uninstall
+[08:58:25:014] - ParseFileName: filename=mfepla.dll
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfepla.dll
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfepla.dll=1
+[08:58:25:014] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfepla.dll WSS_AAC
+[08:58:25:014] - GetDriverDest mfehidk.sys
+[08:58:25:014] - Reference InstallReference.WSS_AAC
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfepla.dll
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfepla.dll=0
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfepla.dll
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfepla.dll=0
+[08:58:25:014] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\mfepla.dll
+[08:58:25:014] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfepla.dll
+[08:58:25:014] - ParseFileName: exit=1
+[08:58:25:014] - ParseFileName: action = pa_uninstall
+[08:58:25:014] - ParseFileName: filename=mfecana.dll
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfecana.dll
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfecana.dll=1
+[08:58:25:014] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfecana.dll WSS_AAC
+[08:58:25:014] - GetDriverDest mfehidk.sys
+[08:58:25:014] - Reference InstallReference.WSS_AAC
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfecana.dll
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfecana.dll=0
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfecana.dll
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfecana.dll=0
+[08:58:25:014] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\mfecana.dll
+[08:58:25:014] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfecana.dll
+[08:58:25:014] - ParseFileName: exit=1
+[08:58:25:014] - ParseFileName: action = pa_uninstall
+[08:58:25:014] - ParseFileName: filename=mfecanary.exe
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfecanary.exe
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfecanary.exe=1
+[08:58:25:014] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfecanary.exe WSS_AAC
+[08:58:25:014] - GetDriverDest mfehidk.sys
+[08:58:25:014] - Reference InstallReference.WSS_AAC
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfecanary.exe
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfecanary.exe=0
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfecanary.exe
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfecanary.exe=0
+[08:58:25:014] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\mfecanary.exe
+[08:58:25:014] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfecanary.exe
+[08:58:25:014] - ParseFileName: exit=1
+[08:58:25:014] - ParseFileName: action = pa_uninstall
+[08:58:25:014] - ParseFileName: filename=mfeapfa.dll
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeapfa.dll
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeapfa.dll=1
+[08:58:25:014] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfeapfa.dll WSS_AAC
+[08:58:25:014] - GetDriverDest mfehidk.sys
+[08:58:25:014] - Reference InstallReference.WSS_AAC
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeapfa.dll
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeapfa.dll=0
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeapfa.dll
+[08:58:25:014] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeapfa.dll=0
+[08:58:25:014] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\mfeapfa.dll
+[08:58:25:014] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfeapfa.dll
+[08:58:25:014] - ParseFileName: exit=1
+[08:58:25:014] - parseDirectory: action = pa_uninstall
+[08:58:25:014] - Searching for Macros in $COREPATH_X86.
+[08:58:25:014] - MACRO found: COREPATH_X86
+[08:58:25:014] - Expanded COREPATH_X86 to: C:\Program Files (x86)\Common Files\McAfee\SystemCore\
+[08:58:25:014] - ParseFileName: action = pa_uninstall
+[08:58:25:014] - Searching for Macros in $SOURCEPATH_X86.
+[08:58:25:014] - MACRO found: SOURCEPATH_X86
+[08:58:25:014] - Expanded SOURCEPATH_X86 to: ..\x86
+[08:58:25:014] - ParseFileName: filename=..\x86\mfeaaca.dll
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeaaca.dll
+[08:58:25:014] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeaaca.dll=1
+[08:58:25:014] - DeleteFileReference C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeaaca.dll WSS_AAC
+[08:58:25:014] - GetDriverDest mfehidk.sys
+[08:58:25:014] - Reference InstallReference.WSS_AAC
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeaaca.dll
+[08:58:25:014] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeaaca.dll=0
+[08:58:25:014] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeaaca.dll
+[08:58:25:014] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeaaca.dll=0
+[08:58:25:029] - Deleting file C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeaaca.dll
+[08:58:25:029] - MfeDeleteFile C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeaaca.dll
+[08:58:25:029] - ParseFileName: exit=1
+[08:58:25:029] - ParseFileName: action = pa_uninstall
+[08:58:25:029] - Searching for Macros in $SOURCEPATH_X86.
+[08:58:25:029] - MACRO found: SOURCEPATH_X86
+[08:58:25:029] - Expanded SOURCEPATH_X86 to: ..\x86
+[08:58:25:029] - ParseFileName: filename=..\x86\mfeavfa.dll
+[08:58:25:029] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeavfa.dll
+[08:58:25:029] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeavfa.dll=2
+[08:58:25:029] - DeleteFileReference C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeavfa.dll WSS_AAC
+[08:58:25:029] - GetDriverDest mfehidk.sys
+[08:58:25:029] - Reference InstallReference.WSS_AAC
+[08:58:25:029] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeavfa.dll
+[08:58:25:029] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeavfa.dll=1
+[08:58:25:029] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeavfa.dll
+[08:58:25:029] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeavfa.dll=1
+[08:58:25:029] - ParseFileName: exit=1
+[08:58:25:029] - ParseFileName: action = pa_uninstall
+[08:58:25:029] - Searching for Macros in $SOURCEPATH_X86.
+[08:58:25:029] - MACRO found: SOURCEPATH_X86
+[08:58:25:029] - Expanded SOURCEPATH_X86 to: ..\x86
+[08:58:25:029] - ParseFileName: filename=..\x86\mfehida.dll
+[08:58:25:029] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:25:029] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfehida.dll=2
+[08:58:25:029] - DeleteFileReference C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfehida.dll WSS_AAC
+[08:58:25:029] - GetDriverDest mfehidk.sys
+[08:58:25:029] - Reference InstallReference.WSS_AAC
+[08:58:25:029] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:25:029] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfehida.dll=1
+[08:58:25:029] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:25:029] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfehida.dll=1
+[08:58:25:029] - ParseFileName: exit=1
+[08:58:25:029] - ParseFileName: action = pa_uninstall
+[08:58:25:029] - Searching for Macros in $SOURCEPATH_X86.
+[08:58:25:029] - MACRO found: SOURCEPATH_X86
+[08:58:25:029] - Expanded SOURCEPATH_X86 to: ..\x86
+[08:58:25:029] - ParseFileName: filename=..\x86\mfevtpa.dll
+[08:58:25:029] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfevtpa.dll
+[08:58:25:029] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfevtpa.dll=2
+[08:58:25:029] - DeleteFileReference C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfevtpa.dll WSS_AAC
+[08:58:25:029] - GetDriverDest mfehidk.sys
+[08:58:25:029] - Reference InstallReference.WSS_AAC
+[08:58:25:029] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfevtpa.dll
+[08:58:25:029] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfevtpa.dll=1
+[08:58:25:029] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfevtpa.dll
+[08:58:25:029] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfevtpa.dll=1
+[08:58:25:029] - ParseFileName: exit=1
+[08:58:25:029] - ParseFileName: action = pa_uninstall
+[08:58:25:029] - Searching for Macros in $SOURCEPATH_X86.
+[08:58:25:029] - MACRO found: SOURCEPATH_X86
+[08:58:25:029] - Expanded SOURCEPATH_X86 to: ..\x86
+[08:58:25:029] - ParseFileName: filename=..\x86\mfecana.dll
+[08:58:25:029] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecana.dll
+[08:58:25:029] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecana.dll=1
+[08:58:25:029] - DeleteFileReference C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecana.dll WSS_AAC
+[08:58:25:029] - GetDriverDest mfehidk.sys
+[08:58:25:029] - Reference InstallReference.WSS_AAC
+[08:58:25:029] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecana.dll
+[08:58:25:029] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecana.dll=0
+[08:58:25:029] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecana.dll
+[08:58:25:029] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecana.dll=0
+[08:58:25:029] - Deleting file C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecana.dll
+[08:58:25:029] - MfeDeleteFile C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecana.dll
+[08:58:25:029] - ParseFileName: exit=1
+[08:58:25:029] - ParseFileName: action = pa_uninstall
+[08:58:25:029] - Searching for Macros in $SOURCEPATH_X86.
+[08:58:25:029] - MACRO found: SOURCEPATH_X86
+[08:58:25:029] - Expanded SOURCEPATH_X86 to: ..\x86
+[08:58:25:029] - ParseFileName: filename=..\x86\mfecanary.exe
+[08:58:25:029] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecanary.exe
+[08:58:25:029] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecanary.exe=1
+[08:58:25:029] - DeleteFileReference C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecanary.exe WSS_AAC
+[08:58:25:029] - GetDriverDest mfehidk.sys
+[08:58:25:035] - Reference InstallReference.WSS_AAC
+[08:58:25:035] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecanary.exe
+[08:58:25:035] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecanary.exe=0
+[08:58:25:035] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecanary.exe
+[08:58:25:035] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecanary.exe=0
+[08:58:25:035] - Deleting file C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecanary.exe
+[08:58:25:035] - MfeDeleteFile C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfecanary.exe
+[08:58:25:037] - ParseFileName: exit=1
+[08:58:25:037] - ParseFileName: action = pa_uninstall
+[08:58:25:037] - Searching for Macros in $SOURCEPATH_X86.
+[08:58:25:037] - MACRO found: SOURCEPATH_X86
+[08:58:25:037] - Expanded SOURCEPATH_X86 to: ..\x86
+[08:58:25:037] - ParseFileName: filename=..\x86\mfeapfa.dll
+[08:58:25:037] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeapfa.dll
+[08:58:25:037] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeapfa.dll=1
+[08:58:25:037] - DeleteFileReference C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeapfa.dll WSS_AAC
+[08:58:25:037] - GetDriverDest mfehidk.sys
+[08:58:25:037] - Reference InstallReference.WSS_AAC
+[08:58:25:038] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeapfa.dll
+[08:58:25:038] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeapfa.dll=0
+[08:58:25:038] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeapfa.dll
+[08:58:25:038] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeapfa.dll=0
+[08:58:25:038] - Deleting file C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeapfa.dll
+[08:58:25:038] - MfeDeleteFile C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeapfa.dll
+[08:58:25:040] - ParseFileName: exit=1
+[08:58:25:040] - DeleteFileReference C:\Program Files (x86)\Common Files\McAfee\SystemCore\ WSS_AAC
+[08:58:25:040] - GetDriverDest mfehidk.sys
+[08:58:25:040] - Reference InstallReference.WSS_AAC
+[08:58:25:040] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\
+[08:58:25:040] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\=2
+[08:58:25:040] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\
+[08:58:25:040] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\=2
+[08:58:25:040] - parseDirectory: exit=1
+[08:58:25:041] - parseCore: exit=1
+[08:58:25:041] - parseRegistry: action = pa_uninstall
+[08:58:25:041] - parseRegistry: Registry rootkeypath=
+[08:58:25:041] - Registry key path set to software\mcafee\SystemCore\Canary
+[08:58:25:041] - parseRegistry: exit=1
+[08:58:25:041] - AddRemoveFeatureRef: add=0, installRef=WSS_AAC, GUID={65CF3D67-B283-4477-83C6-181CEFAC7443}
+[08:58:25:041] - parseFeature: exit=1
+[08:58:25:041] - parseFeature: action = pa_uninstall
+[08:58:25:041] - parseFeature: Feature=firecore
+[08:58:25:041] - parseFeature: Feature firecore enabled
+[08:58:25:041] - parseDriver: action = pa_uninstall
+[08:58:25:041] - GetDriverService mfenlfk.sys
+[08:58:25:041] - UninstallCustomDriver mfenlfk.sys
+[08:58:25:041] - GetDriverService mfenlfk.sys
+[08:58:25:041] - UninstallCustomDriver: using inf at C:\Users\Dell\AppData\Local\Temp\McInstallTemp\SelfProtect\Win64\VSCore\mfenlfk.inf
+[08:58:25:041] - Opening inf file C:\Users\Dell\AppData\Local\Temp\McInstallTemp\SelfProtect\Win64\VSCore\mfenlfk.inf
+[08:58:25:041] - Manufacturer is MCAFEE
+[08:58:25:041] - DDInstallSection is Install
+[08:58:25:041] - PnP ID is mfe_ndisfilt
+[08:58:25:041] - Uninstalling network component
+[08:58:25:041] - DeleteServiceReference mfenlfk WSS_FIRECORE
+[08:58:25:041] - GetDriverDest mfehidk.sys
+[08:58:25:041] - ServiceReferenceSub: failed to open mfenlfk! 2
+[08:58:25:041] - GetServiceReferenceCountSub: unable to open mfenlfk service key
+[08:58:25:041] - GetServiceReferenceCount: service mfenlfk has 0 references
+[08:58:25:178] - Creating AAC policy to allow NDIS Uninstall
+[08:58:25:609] - Looking for net component mfe_ndisfilt
+[08:58:25:625] - Failed to find component, hr=1
+[08:58:25:625] - Removing AAC policy to allow NDIS Install/Uninstall
+[08:58:25:641] - Uninstalling the oemxxx.inf file...
+[08:58:25:641] - Deleteing oemxxx.inf corresponding to C:\Users\Dell\AppData\Local\Temp\McInstallTemp\SelfProtect\Win64\VSCore\mfenlfk.inf
+[08:58:25:641] - Opening inf file C:\Windows\inf\oem0.inf
+[08:58:25:641] - Manufacturer is Microsoft
+[08:58:25:641] - DDInstallSection is MPDW
+[08:58:25:641] - PnP ID is {084F01FA-E634-4D77-83EE-074817C03581}
+[08:58:25:641] - INFO: INF file C:\Windows\inf\oem0.inf was not properly read
+[08:58:25:641] - Opening inf file C:\Windows\inf\oem1.inf
+[08:58:25:641] - Manufacturer is Microsoft
+[08:58:25:641] - DDInstallSection is MXDW
+[08:58:25:641] - PnP ID is {0F4130DD-19C7-7ab6-99A1-980F03B2EE4E}
+[08:58:25:641] - INFO: INF file C:\Windows\inf\oem1.inf was not properly read
+[08:58:25:641] - Opening inf file C:\Windows\inf\oem2.inf
+[08:58:25:641] - Manufacturer is QCABT
+[08:58:25:641] - DDInstallSection is QCABTUSB
+[08:58:25:641] - PnP ID is USB\VID_0CF3&PID_817A
+[08:58:25:641] - INFO: INF file C:\Windows\inf\oem2.inf was not properly read
+[08:58:25:641] - Opening inf file C:\Windows\inf\oem3.inf
+[08:58:25:641] - Manufacturer is Intel
+[08:58:25:641] - WARNING: Failed to get DDInstallSection from inf file, hr=e0000102
+[08:58:25:641] - INFO: INF file C:\Windows\inf\oem3.inf was not properly read
+[08:58:25:641] - Opening inf file C:\Windows\inf\oem4.inf
+[08:58:25:656] - Manufacturer is DeviceList
+[08:58:25:656] - DDInstallSection is RSUER.UVSTOR
+[08:58:25:656] - PnP ID is USB\VID_0BDA&PID_0139
+[08:58:25:656] - INFO: INF file C:\Windows\inf\oem4.inf was not properly read
+[08:58:25:656] - Opening inf file C:\Windows\inf\oem5.inf
+[08:58:25:656] - Manufacturer is IntelGfx
+[08:58:25:656] - WARNING: Failed to get DDInstallSection from inf file, hr=e0000102
+[08:58:25:656] - INFO: INF file C:\Windows\inf\oem5.inf was not properly read
+[08:58:25:656] - Opening inf file C:\Windows\inf\oem6.inf
+[08:58:25:656] - Manufacturer is Intel
+[08:58:25:656] - WARNING: Failed to get DDInstallSection from inf file, hr=e0000102
+[08:58:25:656] - INFO: INF file C:\Windows\inf\oem6.inf was not properly read
+[08:58:25:656] - Opening inf file C:\Windows\inf\oem7.inf
+[08:58:25:656] - Manufacturer is IntelAudio
+[08:58:25:656] - DDInstallSection is INTAUD_WEX
+[08:58:25:656] - PnP ID is {4d36e96c-e325-11ce-bfc1-08002be10318}\*IntAudWaveEx
+[08:58:25:656] - INFO: INF file C:\Windows\inf\oem7.inf was not properly read
+[08:58:25:656] - Opening inf file C:\Windows\inf\oem8.inf
+[08:58:25:656] - Manufacturer is Standard
+[08:58:25:656] - DDInstallSection is IWDBus_Device
+[08:58:25:656] - PnP ID is root\iwdbus
+[08:58:25:656] - INFO: INF file C:\Windows\inf\oem8.inf was not properly read
+[08:58:25:656] - Reading reg val HKLM\System\CurrentControlSet\Control\Network\FilterClasses
+[08:58:25:656] - Deleting filter class mfe_firewall
+[08:58:25:656] - Looking for filter mfe_firewall
+[08:58:25:656] - Filter mfe_firewall is not present in the list
+[08:58:25:656] - Filter has already been deleted!?
+[08:58:25:656] - CNdisInstaller::Uninstall() hr=1
+[08:58:25:656] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfenlfk.inf WSS_FIRECORE
+[08:58:25:656] - GetDriverDest mfehidk.sys
+[08:58:25:656] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfenlfk.inf
+[08:58:25:656] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfenlfk.inf=0
+[08:58:25:656] - Unlock Service DACL mfenlfk
+[08:58:25:656] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfenlfk.inf
+[08:58:25:656] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\mfenlfk.inf] [2].
+[08:58:25:656] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfenlfk.inf) returned 2
+[08:58:25:656] - UninstallCustomDriver successful
+[08:58:25:656] - parseDriver: exit=1
+[08:58:25:656] - AddRemoveFeatureRef: add=0, installRef=WSS_FIRECORE, GUID={615BE029-30AB-468E-9872-255537380B1D}
+[08:58:25:656] - parseFeature: exit=1
+[08:58:25:656] - parseFeature: action = pa_uninstall
+[08:58:25:656] - parseFeature: Feature=DiskFilter
+[08:58:25:656] - parseFeature: Feature DiskFilter enabled
+[08:58:25:656] - parseDriver: action = pa_uninstall
+[08:58:25:656] - parseDriver: Skipping driver with winver attr 5100-5999 on OS 10000
+[08:58:25:656] - parseDriver: action = pa_uninstall
+[08:58:25:656] - GetDriverService mfedisk.sys
+[08:58:25:656] - InstallCustomDiskDriver mfedisk.sys action 2
+[08:58:25:656] - GetDriverService mfedisk.sys
+[08:58:25:656] - Lock Service DACL mfedisk
+[08:58:25:656] - WARNING: Could not open BehaviorBlocking key
+[08:58:25:688] - InstallCustomDiskDriver: using inf at C:\Users\Dell\AppData\Local\Temp\McInstallTemp\SelfProtect\Win64\VSCore\mfedisk.inf
+[08:58:25:688] - DeleteServiceReference mfedisk WSS_DISKFILTER
+[08:58:25:688] - GetDriverDest mfehidk.sys
+[08:58:25:688] - ServiceReferenceSub: failed to open mfedisk! 2
+[08:58:25:688] - GetServiceReferenceCountSub: unable to open mfedisk service key
+[08:58:25:688] - GetServiceReferenceCount: service mfedisk has 0 references
+[08:58:25:688] - Calling DISKFltUninstall()
+[08:58:25:688] - CDiskFltInstaller: brace for impact,flushing the reg hive...
+[08:58:25:822] - CDiskFltInstaller: Reg flush done!
+[08:58:25:822] - Disk Filter Install from Inf Success
+[08:58:25:822] - GetDriverDest mfedisk.sys
+[08:58:25:822] - MfeDeleteFile C:\Windows\system32\drivers\mfedisk.sys
+[08:58:25:822] - MakeWritable: Unable to get attribs for file [C:\Windows\system32\drivers\mfedisk.sys] [2].
+[08:58:25:822] - GetAccessAndDeleteFile: FileDelete(C:\Windows\system32\drivers\mfedisk.sys) returned 2
+[08:58:25:822] - WARNING: Could not open BehaviorBlocking key
+[08:58:25:822] - Lock Service DACL mfedisk
+[08:58:25:822] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfedisk.inf WSS_DISKFILTER
+[08:58:25:822] - GetDriverDest mfehidk.sys
+[08:58:25:822] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfedisk.inf
+[08:58:25:838] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfedisk.inf=0
+[08:58:25:838] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfedisk.inf
+[08:58:25:838] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\mfedisk.inf] [2].
+[08:58:25:838] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfedisk.inf) returned 2
+[08:58:25:838] - InstallCustomDiskDriver: successful
+[08:58:25:838] - parseDriver: exit=1
+[08:58:25:838] - AddRemoveFeatureRef: add=0, installRef=WSS_DISKFILTER, GUID={C5D10DAA-D978-4B8D-B5C5-D036B726B8AD}
+[08:58:25:838] - parseFeature: exit=1
+[08:58:25:838] - parseFeature: action = pa_uninstall
+[08:58:25:838] - parseFeature: Feature=APDriver
+[08:58:25:838] - parseFeature: Feature APDriver enabled
+[08:58:25:838] - parseDriver: action = pa_uninstall
+[08:58:25:838] - GetDriverService mfeapfk.sys
+[08:58:25:838] - GetDriverService mfeapfk.sys
+[08:58:25:838] - GetDriverDest mfeapfk.sys
+[08:58:25:838] - UninstallManualStartDriver mfeapfk.sys WSS_APDRIVER
+[08:58:25:838] - DeleteServiceReference mfeapfk WSS_APDRIVER
+[08:58:25:838] - GetDriverDest mfehidk.sys
+[08:58:25:838] - ServiceReferenceSub: failed to open mfeapfk! 2
+[08:58:25:838] - UninstallManualStartDriver: AddRemoveDriverOption failed
+[08:58:25:838] - ERROR: RemoveDriverStartValue: Failed to open driver service key
+[08:58:25:838] - UninstallManualStartDriver: RemoveDriverStartValue failed
+[08:58:25:838] - ERROR: parseDriver: failed
+[08:58:25:838] - parseDriver: exit=0
+[08:58:25:838] - AddRemoveFeatureRef: add=0, installRef=WSS_APDRIVER, GUID={B7515DAA-79BF-4F3E-AF16-7D79F5242583}
+[08:58:25:838] - parseFeature: exit=1
+[08:58:25:838] - parseFeature: action = pa_uninstall
+[08:58:25:838] - parseFeature: Feature=firecore
+[08:58:25:838] - parseFeature: Feature firecore enabled
+[08:58:25:838] - parseDriver: action = pa_uninstall
+[08:58:25:838] - parseDriver: Will merge boot start value 1
+[08:58:25:838] - GetDriverService mfefirek.sys
+[08:58:25:838] - GetDriverService mfefirek.sys
+[08:58:25:838] - GetDriverDest mfefirek.sys
+[08:58:25:838] - UninstallManualStartDriver mfefirek.sys WSS_FIRECORE
+[08:58:25:838] - DeleteServiceReference mfefirek WSS_FIRECORE
+[08:58:25:838] - GetDriverDest mfehidk.sys
+[08:58:25:838] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:838] - GetServiceReferenceCount: service mfefirek has 0 references
+[08:58:25:838] - MfeDeleteFile C:\Windows\system32\drivers\mfefirek.sys
+[08:58:25:838] - AddRemoveMergedDwordValue. name=VTPOptions. value=0. add=false
+[08:58:25:838] - AddRemoveDriverStartValue. installRef=WSS_FIRECORE, value=0. add=false
+[08:58:25:838] - AddRemoveDriverStartValue: Removing reference: Name=start.WSS_FIRECORE, Value=0
+[08:58:25:838] - INFO: service deleteFlag is set
+[08:58:25:838] - AddRemoveStartValue: exit=1
+[08:58:25:838] - Disabling mfefirek.sys for Safeboot:Network
+[08:58:25:838] - DeleteFileReference SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfefirek.sys WSS_FIRECORE
+[08:58:25:838] - GetDriverDest mfehidk.sys
+[08:58:25:838] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:838] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfefirek.sys
+[08:58:25:838] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfefirek.sys=0
+[08:58:25:838] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfefirek.sys
+[08:58:25:838] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfefirek.sys=0
+[08:58:25:838] - parseDriver: Adding or Removing BootLoadContent flag
+[08:58:25:838] - AddRemoveMergedDwordValue. name=BootLoadContent. value=1. add=false
+[08:58:25:838] - parseDriver: Adding or Removing ContentVersion
+[08:58:25:838] - AddRemoveMergedDwordValue. name=ContentVersion. value=2. add=false
+[08:58:25:838] - parseDriver: exit=1
+[08:58:25:838] - parseDriver: action = pa_uninstall
+[08:58:25:838] - parseDriver: Will merge boot start value 2
+[08:58:25:838] - GetDriverService mfeavfk.sys
+[08:58:25:838] - GetDriverService mfeavfk.sys
+[08:58:25:838] - GetDriverDest mfeavfk.sys
+[08:58:25:838] - UninstallManualStartDriver mfeavfk.sys WSS_FIRECORE
+[08:58:25:838] - DeleteServiceReference mfeavfk WSS_FIRECORE
+[08:58:25:838] - GetDriverDest mfehidk.sys
+[08:58:25:838] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:838] - GetServiceReferenceCount: service mfeavfk has 0 references
+[08:58:25:838] - MfeDeleteFile C:\Windows\system32\drivers\mfeavfk.sys
+[08:58:25:838] - GetAccessAndDeleteFile: FileDelete(C:\Windows\system32\drivers\mfeavfk.sys) returned 5
+[08:58:25:838] - MakeWritable: Unable to get attribs for file [C:\Windows\system32\drivers\mfeavfk.sys.6346.deleteme] [2].
+[08:58:25:838] - GetAccessAndDeleteFile: FileDelete(C:\Windows\system32\drivers\mfeavfk.sys.6346.deleteme) returned 2
+[08:58:25:856] - InstallDeleteFile: Delete of C:\Windows\system32\drivers\mfeavfk.sys done using rename and deferred delete.
+[08:58:25:857] - AddRemoveMergedDwordValue. name=VTPOptions. value=0. add=false
+[08:58:25:858] - AddRemoveDriverStartValue. installRef=WSS_FIRECORE, value=0. add=false
+[08:58:25:858] - AddRemoveDriverStartValue: Removing reference: Name=start.WSS_FIRECORE, Value=0
+[08:58:25:858] - INFO: service deleteFlag is set
+[08:58:25:858] - AddRemoveStartValue: exit=1
+[08:58:25:858] - parseDriver: Adding or Removing BootLoadContent flag
+[08:58:25:858] - AddRemoveMergedDwordValue. name=BootLoadContent. value=2. add=false
+[08:58:25:858] - parseDriver: Adding or Removing ContentVersion
+[08:58:25:858] - AddRemoveMergedDwordValue. name=ContentVersion. value=2. add=false
+[08:58:25:858] - parseDriver: exit=1
+[08:58:25:858] - parseDriver: action = pa_uninstall
+[08:58:25:859] - GetDriverService mfendisk.sys
+[08:58:25:859] - UninstallCustomDriver mfendisk.sys
+[08:58:25:859] - GetDriverService mfendisk.sys
+[08:58:25:859] - UninstallCustomDriver: using inf at C:\Program Files\Common Files\McAfee\SystemCore\mfendisk.inf
+[08:58:25:859] - Opening inf file C:\Program Files\Common Files\McAfee\SystemCore\mfendisk.inf
+[08:58:25:860] - ERROR: Failed to open inf file, err = 2
+[08:58:25:860] - INFO: INF file C:\Program Files\Common Files\McAfee\SystemCore\mfendisk.inf was not properly read
+[08:58:25:860] - Opening inf file C:\Program Files\Common Files\McAfee\SystemCore\mfendisk.inf
+[08:58:25:861] - ERROR: Failed to open inf file, err = 2
+[08:58:25:861] - CNdisInstaller not performing 2, failed to open inf file -2147024894!
+[08:58:25:861] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfendisk.inf WSS_FIRECORE
+[08:58:25:861] - GetDriverDest mfehidk.sys
+[08:58:25:861] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfendisk.inf
+[08:58:25:861] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfendisk.inf=0
+[08:58:25:861] - Unlock Service DACL mfendisk
+[08:58:25:862] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfendisk.inf
+[08:58:25:862] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\mfendisk.inf] [2].
+[08:58:25:862] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfendisk.inf) returned 2
+[08:58:25:863] - UninstallCustomDriver failed
+[08:58:25:863] - ERROR: parseDriver: failed
+[08:58:25:863] - parseDriver: exit=0
+[08:58:25:863] - parseCore: action = pa_uninstall
+[08:58:25:863] - ParseFileName: action = pa_uninstall
+[08:58:25:863] - ParseFileName: filename=mfehida.dll
+[08:58:25:863] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:25:863] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll=2
+[08:58:25:863] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll WSS_FIRECORE
+[08:58:25:863] - GetDriverDest mfehidk.sys
+[08:58:25:863] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:864] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:25:864] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll=1
+[08:58:25:864] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:25:864] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll=1
+[08:58:25:864] - ParseFileName: exit=1
+[08:58:25:864] - ParseFileName: action = pa_uninstall
+[08:58:25:864] - ParseFileName: filename=mfevtpa.dll
+[08:58:25:864] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll
+[08:58:25:864] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll=1
+[08:58:25:864] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll WSS_FIRECORE
+[08:58:25:864] - GetDriverDest mfehidk.sys
+[08:58:25:864] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:864] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll
+[08:58:25:865] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll=0
+[08:58:25:865] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll
+[08:58:25:865] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll=0
+[08:58:25:865] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll
+[08:58:25:865] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll
+[08:58:25:866] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll) returned 5
+[08:58:25:867] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll.0b51.deleteme] [2].
+[08:58:25:867] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll.0b51.deleteme) returned 2
+[08:58:25:869] - InstallDeleteFile: Delete of C:\Program Files\Common Files\McAfee\SystemCore\mfevtpa.dll done using rename and deferred delete.
+[08:58:25:870] - ParseFileName: exit=1
+[08:58:25:870] - ParseFileName: action = pa_uninstall
+[08:58:25:870] - ParseFileName: filename=vtpinfo.exe
+[08:58:25:870] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\vtpinfo.exe
+[08:58:25:870] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\vtpinfo.exe=1
+[08:58:25:870] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\vtpinfo.exe WSS_FIRECORE
+[08:58:25:870] - GetDriverDest mfehidk.sys
+[08:58:25:870] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:870] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\vtpinfo.exe
+[08:58:25:871] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\vtpinfo.exe=0
+[08:58:25:871] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\vtpinfo.exe
+[08:58:25:871] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\vtpinfo.exe=0
+[08:58:25:871] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\vtpinfo.exe
+[08:58:25:871] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\vtpinfo.exe
+[08:58:25:873] - ParseFileName: exit=1
+[08:58:25:873] - ParseFileName: action = pa_uninstall
+[08:58:25:873] - ParseFileName: filename=cacheinfo.exe
+[08:58:25:873] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\cacheinfo.exe
+[08:58:25:873] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\cacheinfo.exe=1
+[08:58:25:873] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\cacheinfo.exe WSS_FIRECORE
+[08:58:25:873] - GetDriverDest mfehidk.sys
+[08:58:25:873] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:874] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\cacheinfo.exe
+[08:58:25:874] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\cacheinfo.exe=0
+[08:58:25:874] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\cacheinfo.exe
+[08:58:25:874] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\cacheinfo.exe=0
+[08:58:25:874] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\cacheinfo.exe
+[08:58:25:874] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\cacheinfo.exe
+[08:58:25:876] - ParseFileName: exit=1
+[08:58:25:876] - ParseFileName: action = pa_uninstall
+[08:58:25:876] - ParseFileName: filename=mfefwctl.dll
+[08:58:25:876] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfefwctl.dll
+[08:58:25:877] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfefwctl.dll=1
+[08:58:25:877] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfefwctl.dll WSS_FIRECORE
+[08:58:25:877] - GetDriverDest mfehidk.sys
+[08:58:25:877] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:877] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfefwctl.dll
+[08:58:25:877] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfefwctl.dll=0
+[08:58:25:877] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfefwctl.dll
+[08:58:25:877] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfefwctl.dll=0
+[08:58:25:878] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\mfefwctl.dll
+[08:58:25:878] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfefwctl.dll
+[08:58:25:879] - ParseFileName: exit=1
+[08:58:25:879] - ParseFileName: action = pa_uninstall
+[08:58:25:879] - ParseFileName: filename=fwinfo.exe
+[08:58:25:879] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\fwinfo.exe
+[08:58:25:880] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\fwinfo.exe=1
+[08:58:25:880] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\fwinfo.exe WSS_FIRECORE
+[08:58:25:880] - GetDriverDest mfehidk.sys
+[08:58:25:880] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:880] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\fwinfo.exe
+[08:58:25:880] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\fwinfo.exe=0
+[08:58:25:881] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\fwinfo.exe
+[08:58:25:881] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\fwinfo.exe=0
+[08:58:25:881] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\fwinfo.exe
+[08:58:25:881] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\fwinfo.exe
+[08:58:25:883] - ParseFileName: exit=1
+[08:58:25:883] - parseDirectory: action = pa_uninstall
+[08:58:25:883] - Searching for Macros in $COREPATH_X86.
+[08:58:25:883] - MACRO found: COREPATH_X86
+[08:58:25:883] - Expanded COREPATH_X86 to: C:\Program Files (x86)\Common Files\McAfee\SystemCore\
+[08:58:25:883] - ParseFileName: action = pa_uninstall
+[08:58:25:883] - Searching for Macros in $SOURCEPATH_X86.
+[08:58:25:883] - MACRO found: SOURCEPATH_X86
+[08:58:25:883] - Expanded SOURCEPATH_X86 to: ..\x86
+[08:58:25:883] - ParseFileName: filename=..\x86\mfefwctl.dll
+[08:58:25:884] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfefwctl.dll
+[08:58:25:884] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfefwctl.dll=1
+[08:58:25:884] - DeleteFileReference C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfefwctl.dll WSS_FIRECORE
+[08:58:25:884] - GetDriverDest mfehidk.sys
+[08:58:25:884] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:884] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfefwctl.dll
+[08:58:25:884] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfefwctl.dll=0
+[08:58:25:885] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfefwctl.dll
+[08:58:25:885] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfefwctl.dll=0
+[08:58:25:885] - Deleting file C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfefwctl.dll
+[08:58:25:885] - MfeDeleteFile C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfefwctl.dll
+[08:58:25:887] - ParseFileName: exit=1
+[08:58:25:887] - DeleteFileReference C:\Program Files (x86)\Common Files\McAfee\SystemCore\ WSS_FIRECORE
+[08:58:25:887] - GetDriverDest mfehidk.sys
+[08:58:25:887] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:887] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\
+[08:58:25:888] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\=1
+[08:58:25:888] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\
+[08:58:25:888] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\=1
+[08:58:25:888] - parseDirectory: exit=1
+[08:58:25:888] - ParseFileName: action = pa_uninstall
+[08:58:25:888] - ParseFileName: filename=mfeavfa.dll
+[08:58:25:888] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeavfa.dll
+[08:58:25:888] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeavfa.dll=1
+[08:58:25:888] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfeavfa.dll WSS_FIRECORE
+[08:58:25:888] - GetDriverDest mfehidk.sys
+[08:58:25:888] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:888] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeavfa.dll
+[08:58:25:889] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeavfa.dll=0
+[08:58:25:889] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeavfa.dll
+[08:58:25:889] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeavfa.dll=0
+[08:58:25:889] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\mfeavfa.dll
+[08:58:25:889] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfeavfa.dll
+[08:58:25:891] - ParseFileName: exit=1
+[08:58:25:891] - ParseFileName: action = pa_uninstall
+[08:58:25:891] - ParseFileName: filename=mfehida.dll
+[08:58:25:891] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:25:891] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll=1
+[08:58:25:891] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll WSS_FIRECORE
+[08:58:25:891] - GetDriverDest mfehidk.sys
+[08:58:25:891] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:891] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:25:891] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll=1
+[08:58:25:891] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:25:891] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll=1
+[08:58:25:891] - ParseFileName: exit=1
+[08:58:25:891] - parseDirectory: action = pa_uninstall
+[08:58:25:891] - Searching for Macros in $COREPATH_X86.
+[08:58:25:891] - MACRO found: COREPATH_X86
+[08:58:25:891] - Expanded COREPATH_X86 to: C:\Program Files (x86)\Common Files\McAfee\SystemCore\
+[08:58:25:891] - ParseFileName: action = pa_uninstall
+[08:58:25:891] - Searching for Macros in $SOURCEPATH_X86.
+[08:58:25:891] - MACRO found: SOURCEPATH_X86
+[08:58:25:891] - Expanded SOURCEPATH_X86 to: ..\x86
+[08:58:25:891] - ParseFileName: filename=..\x86\mfeavfa.dll
+[08:58:25:891] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeavfa.dll
+[08:58:25:891] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeavfa.dll=1
+[08:58:25:891] - DeleteFileReference C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeavfa.dll WSS_FIRECORE
+[08:58:25:891] - GetDriverDest mfehidk.sys
+[08:58:25:891] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:891] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeavfa.dll
+[08:58:25:891] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeavfa.dll=0
+[08:58:25:891] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeavfa.dll
+[08:58:25:891] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeavfa.dll=0
+[08:58:25:891] - Deleting file C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeavfa.dll
+[08:58:25:891] - MfeDeleteFile C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfeavfa.dll
+[08:58:25:891] - ParseFileName: exit=1
+[08:58:25:891] - ParseFileName: action = pa_uninstall
+[08:58:25:891] - Searching for Macros in $SOURCEPATH_X86.
+[08:58:25:891] - MACRO found: SOURCEPATH_X86
+[08:58:25:891] - Expanded SOURCEPATH_X86 to: ..\x86
+[08:58:25:891] - ParseFileName: filename=..\x86\mfehida.dll
+[08:58:25:891] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:25:891] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfehida.dll=1
+[08:58:25:891] - DeleteFileReference C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfehida.dll WSS_FIRECORE
+[08:58:25:891] - GetDriverDest mfehidk.sys
+[08:58:25:891] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:891] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:25:891] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfehida.dll=0
+[08:58:25:891] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:25:891] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfehida.dll=0
+[08:58:25:891] - Deleting file C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:25:891] - MfeDeleteFile C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:25:891] - ParseFileName: exit=1
+[08:58:25:891] - ParseFileName: action = pa_uninstall
+[08:58:25:891] - Searching for Macros in $SOURCEPATH_X86.
+[08:58:25:891] - MACRO found: SOURCEPATH_X86
+[08:58:25:891] - Expanded SOURCEPATH_X86 to: ..\x86
+[08:58:25:891] - ParseFileName: filename=..\x86\mfevtpa.dll
+[08:58:25:891] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfevtpa.dll
+[08:58:25:891] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfevtpa.dll=1
+[08:58:25:891] - DeleteFileReference C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfevtpa.dll WSS_FIRECORE
+[08:58:25:891] - GetDriverDest mfehidk.sys
+[08:58:25:891] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:891] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfevtpa.dll
+[08:58:25:891] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfevtpa.dll=0
+[08:58:25:891] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfevtpa.dll
+[08:58:25:891] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfevtpa.dll=0
+[08:58:25:891] - Deleting file C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfevtpa.dll
+[08:58:25:891] - MfeDeleteFile C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfevtpa.dll
+[08:58:25:891] - ParseFileName: exit=1
+[08:58:25:891] - DeleteFileReference C:\Program Files (x86)\Common Files\McAfee\SystemCore\ WSS_FIRECORE
+[08:58:25:891] - GetDriverDest mfehidk.sys
+[08:58:25:891] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:891] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\
+[08:58:25:891] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\=1
+[08:58:25:891] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\
+[08:58:25:891] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\=1
+[08:58:25:891] - parseDirectory: exit=1
+[08:58:25:891] - parseCore: exit=1
+[08:58:25:891] - parseService: action = pa_uninstall
+[08:58:25:891] - ServiceName is mfefire
+[08:58:25:891] - parseServiceFailureRestart:
+[08:58:25:891] - parseServiceFailureRestart: <ResetPeriod> = 5184000
+[08:58:25:891] - parseServiceFailureRestart: <RestartCount> = 2
+[08:58:25:891] - parseServiceFailureRestart: <RestartDelay> = 60
+[08:58:25:891] - parseServiceFailureRestart: exit=1
+[08:58:25:891] - Searching for Macros in $COREPATH.
+[08:58:25:891] - MACRO found: COREPATH
+[08:58:25:891] - Expanded COREPATH to: C:\Program Files\Common Files\McAfee\SystemCore\
+[08:58:25:891] - parseProtectedService: action = pa_uninstall
+[08:58:25:891] - parseProtectedService: Service is [mfefire]
+[08:58:25:891] - parseProtectedService: Node is null. Skipping: action = pa_uninstall
+[08:58:25:891] - DeleteServiceReference mfefire WSS_FIRECORE
+[08:58:25:891] - GetDriverDest mfehidk.sys
+[08:58:25:891] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:891] - GetServiceReferenceCount: service mfefire has 0 references
+[08:58:25:891] - StopService mfefire (disable=0)
+[08:58:25:891] - MfeEnumDependentServices:
+[08:58:25:906] - MfeEnumDependentServices: Found 0 dependent services on mfefire
+[08:58:25:906] - mfefire service reports STOPPED
+[08:58:25:906] - StopService: Lock the service back down
+[08:58:25:922] - StopService: (mfefire) exit=1
+[08:58:25:922] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfefire.exe
+[08:58:25:922] - Disabling mfefire for Safeboot:Network
+[08:58:25:922] - DeleteFileReference SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfefire WSS_FIRECORE
+[08:58:25:922] - GetDriverDest mfehidk.sys
+[08:58:25:922] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:922] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfefire
+[08:58:25:922] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfefire=0
+[08:58:25:922] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfefire
+[08:58:25:922] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfefire=0
+[08:58:25:922] - parseService: exit=1
+[08:58:25:922] - parseMMSService: action = pa_uninstall
+[08:58:25:922] - parseMMSService: service=mfefire
+[08:58:25:922] - Searching for Macros in $COREPATH.
+[08:58:25:922] - MACRO found: COREPATH
+[08:58:25:922] - Expanded COREPATH to: C:\Program Files\Common Files\McAfee\SystemCore\
+[08:58:25:922] - DeleteMMServiceReference mfemms\services\mfefire WSS_FIRECORE
+[08:58:25:922] - GetDriverDest mfehidk.sys
+[08:58:25:922] - Reference InstallReference.WSS_FIRECORE
+[08:58:25:922] - GetMMSServiceReferenceCount: service mfefire has a 0 references
+[08:58:25:922] - GetServiceReferenceCount: service mfefire has 0 references
+[08:58:25:922] - StopMMSService: mfefire, disable=1
+[08:58:25:922] - GetMMSServiceState: Service mfefire has state SERVICE_STOPPED
+[08:58:25:922] - The service is already stopped
+[08:58:25:922] - StopMMSService: exit=1
+[08:58:25:922] - DeleteMMSService: mfefire
+[08:58:25:922] - DeleteMMSService: return=1
+[08:58:25:922] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfefire.exe -mms
+[08:58:25:922] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\mfefire.exe -mms] [2].
+[08:58:25:922] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfefire.exe -mms) returned 2
+[08:58:25:922] - parseMMSService: exit=1
+[08:58:25:922] - AddRemoveFeatureRef: add=0, installRef=WSS_FIRECORE, GUID={615BE029-30AB-468E-9872-255537380B1D}
+[08:58:25:922] - parseFeature: exit=1
+[08:58:25:922] - parseFeature: action = pa_uninstall
+[08:58:25:922] - parseFeature: Feature=ndisdriver
+[08:58:25:922] - parseFeature: Feature ndisdriver enabled
+[08:58:25:922] - parseDriver: action = pa_uninstall
+[08:58:25:922] - parseDriver: Skipping driver with winver attr 6000-6000 on OS 10000
+[08:58:25:922] - AddRemoveFeatureRef: add=0, installRef=WSS_NDISDRIVER, GUID={0B210939-B7B2-4A89-A95E-1E4628B60802}
+[08:58:25:922] - parseFeature: exit=1
+[08:58:25:922] - parseFeature: action = pa_uninstall
+[08:58:25:922] - parseFeature: Feature=ELAM
+[08:58:25:922] - parseFeature: Feature ELAM enabled
+[08:58:25:922] - parseDriver: action = pa_uninstall
+[08:58:25:922] - GetDriverService mfeelamk.sys
+[08:58:25:922] - DeleteFileReference C:\Windows\ELAMBKUP\mfeelamk.sys WSS_ELAM
+[08:58:25:922] - GetDriverDest mfehidk.sys
+[08:58:25:922] - Reference InstallReference.WSS_ELAM
+[08:58:25:922] - GetFileReferenceCount: C:\Windows\ELAMBKUP\mfeelamk.sys
+[08:58:25:922] - FileReferenceCount: C:\Windows\ELAMBKUP\mfeelamk.sys=0
+[08:58:25:922] - GetFileReferenceCount: C:\Windows\ELAMBKUP\mfeelamk.sys
+[08:58:25:922] - FileReferenceCount: C:\Windows\ELAMBKUP\mfeelamk.sys=0
+[08:58:25:922] - MfeDeleteFile C:\Windows\ELAMBKUP\mfeelamk.sys
+[08:58:25:922] - Will delete HKLM\ELAM\McAfee[08:58:25:922] - GetSystemDest config\ELAM
+[08:58:26:017] - Failed to delete HKLM\ELAM\McAfee[08:58:26:221] - GetDriverService mfeelamk.sys
+[08:58:26:221] - GetDriverDest mfeelamk.sys
+[08:58:26:221] - UninstallManualStartDriver mfeelamk.sys WSS_ELAM
+[08:58:26:221] - DeleteServiceReference mfeelamk WSS_ELAM
+[08:58:26:221] - GetDriverDest mfehidk.sys
+[08:58:26:221] - Reference InstallReference.WSS_ELAM
+[08:58:26:222] - GetServiceReferenceCount: service mfeelamk has 0 references
+[08:58:26:222] - MfeDeleteFile C:\Windows\system32\drivers\mfeelamk.sys
+[08:58:26:223] - AddRemoveMergedDwordValue. name=VTPOptions. value=0. add=false
+[08:58:26:223] - AddRemoveDriverStartValue. installRef=WSS_ELAM, value=0. add=false
+[08:58:26:223] - AddRemoveDriverStartValue: Removing reference: Name=start.WSS_ELAM, Value=0
+[08:58:26:223] - INFO: service deleteFlag is set
+[08:58:26:223] - AddRemoveStartValue: exit=1
+[08:58:26:223] - parseDriver: Adding or Removing ContentVersion
+[08:58:26:223] - AddRemoveMergedDwordValue. name=ContentVersion. value=2. add=false
+[08:58:26:223] - parseDriver: exit=1
+[08:58:26:223] - parseCore: action = pa_uninstall
+[08:58:26:223] - ParseFileName: action = pa_uninstall
+[08:58:26:223] - ParseFileName: filename=mfehida.dll
+[08:58:26:223] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:26:223] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll=1
+[08:58:26:223] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll WSS_ELAM
+[08:58:26:223] - GetDriverDest mfehidk.sys
+[08:58:26:223] - Reference InstallReference.WSS_ELAM
+[08:58:26:223] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:26:223] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll=0
+[08:58:26:223] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:26:223] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll=0
+[08:58:26:223] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:26:223] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll
+[08:58:26:223] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll) returned 5
+[08:58:26:223] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll.d932.deleteme] [2].
+[08:58:26:223] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll.d932.deleteme) returned 2
+[08:58:26:239] - InstallDeleteFile: Delete of C:\Program Files\Common Files\McAfee\SystemCore\mfehida.dll done using rename and deferred delete.
+[08:58:26:242] - ParseFileName: exit=1
+[08:58:26:242] - ParseFileName: action = pa_uninstall
+[08:58:26:242] - ParseFileName: filename=mfeelama.dll
+[08:58:26:242] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeelama.dll
+[08:58:26:243] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeelama.dll=1
+[08:58:26:243] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfeelama.dll WSS_ELAM
+[08:58:26:243] - GetDriverDest mfehidk.sys
+[08:58:26:244] - Reference InstallReference.WSS_ELAM
+[08:58:26:244] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeelama.dll
+[08:58:26:245] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeelama.dll=0
+[08:58:26:245] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeelama.dll
+[08:58:26:246] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfeelama.dll=0
+[08:58:26:246] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\mfeelama.dll
+[08:58:26:246] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfeelama.dll
+[08:58:26:248] - ParseFileName: exit=1
+[08:58:26:248] - parseCore: exit=1
+[08:58:26:248] - AddRemoveFeatureRef: add=0, installRef=WSS_ELAM, GUID={C6A18CBE-A632-4C75-AB1F-7E6ECF3E610F}
+[08:58:26:249] - parseFeature: exit=1
+[08:58:26:249] - parseFeature: action = pa_uninstall
+[08:58:26:249] - parseFeature: Feature=firecore
+[08:58:26:249] - parseFeature: Feature firecore enabled
+[08:58:26:249] - parseDriver: action = pa_uninstall
+[08:58:26:249] - GetDriverService cfwids.sys
+[08:58:26:249] - GetDriverService cfwids.sys
+[08:58:26:249] - GetDriverDest cfwids.sys
+[08:58:26:249] - UninstallManualStartDriver cfwids.sys WSS_FIRECORE
+[08:58:26:249] - DeleteServiceReference cfwids WSS_FIRECORE
+[08:58:26:249] - GetDriverDest mfehidk.sys
+[08:58:26:249] - Reference InstallReference.WSS_FIRECORE
+[08:58:26:250] - GetServiceReferenceCount: service cfwids has 0 references
+[08:58:26:250] - MfeDeleteFile C:\Windows\system32\drivers\cfwids.sys
+[08:58:26:253] - AddRemoveMergedDwordValue. name=VTPOptions. value=0. add=false
+[08:58:26:253] - AddRemoveDriverStartValue. installRef=WSS_FIRECORE, value=0. add=false
+[08:58:26:253] - AddRemoveDriverStartValue: Removing reference: Name=start.WSS_FIRECORE, Value=0
+[08:58:26:253] - INFO: service deleteFlag is set
+[08:58:26:253] - AddRemoveStartValue: exit=1
+[08:58:26:254] - parseDriver: Adding or Removing ContentVersion
+[08:58:26:254] - AddRemoveMergedDwordValue. name=ContentVersion. value=2. add=false
+[08:58:26:254] - parseDriver: exit=1
+[08:58:26:254] - AddRemoveFeatureRef: add=0, installRef=WSS_FIRECORE, GUID={615BE029-30AB-468E-9872-255537380B1D}
+[08:58:26:254] - parseFeature: exit=1
+[08:58:26:254] - UninstallBase: installRef=WSS, mfemms=1
+[08:58:26:254] - Disabling mfehidk.sys for Safeboot:Network
+[08:58:26:254] - DeleteFileReference SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfehidk.sys WSS
+[08:58:26:254] - GetDriverDest mfehidk.sys
+[08:58:26:255] - FeatureList=mms aac firecore DiskFilter APDriver firecore ndisdriver ELAM firecore
+[08:58:26:255] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfehidk.sys INSTALLREFERENCE.WSS_MMS
+[08:58:26:255] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfehidk.sys INSTALLREFERENCE.WSS_AAC
+[08:58:26:255] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfehidk.sys INSTALLREFERENCE.WSS_FIRECORE
+[08:58:26:255] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfehidk.sys INSTALLREFERENCE.WSS_DISKFILTER
+[08:58:26:255] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfehidk.sys INSTALLREFERENCE.WSS_APDRIVER
+[08:58:26:255] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfehidk.sys INSTALLREFERENCE.WSS_FIRECORE
+[08:58:26:255] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfehidk.sys INSTALLREFERENCE.WSS_NDISDRIVER
+[08:58:26:255] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfehidk.sys INSTALLREFERENCE.WSS_ELAM
+[08:58:26:256] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfehidk.sys INSTALLREFERENCE.WSS_FIRECORE
+[08:58:26:256] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfehidk.sys
+[08:58:26:256] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfehidk.sys=0
+[08:58:26:256] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfehidk.sys
+[08:58:26:256] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfehidk.sys=0
+[08:58:26:256] - UninstallMfevtps: installRef=WSS, mfemms=1
+[08:58:26:256] - mfevtps.exe will be installed in the existing path: C:\Windows\system32\mfevtps.exe
+[08:58:26:257] - DeleteMMServiceReference mfemms\services\mfevtp WSS
+[08:58:26:257] - GetDriverDest mfehidk.sys
+[08:58:26:257] - Reference INSTALLREFERENCE.WSS_MMS
+[08:58:26:257] - Reference INSTALLREFERENCE.WSS_AAC
+[08:58:26:257] - Reference INSTALLREFERENCE.WSS_FIRECORE
+[08:58:26:257] - Reference INSTALLREFERENCE.WSS_DISKFILTER
+[08:58:26:257] - Reference INSTALLREFERENCE.WSS_APDRIVER
+[08:58:26:257] - Reference INSTALLREFERENCE.WSS_FIRECORE
+[08:58:26:257] - Reference INSTALLREFERENCE.WSS_NDISDRIVER
+[08:58:26:257] - Reference INSTALLREFERENCE.WSS_ELAM
+[08:58:26:257] - Reference INSTALLREFERENCE.WSS_FIRECORE
+[08:58:26:257] - DeleteServiceReference mfevtp WSS
+[08:58:26:257] - GetDriverDest mfehidk.sys
+[08:58:26:257] - Reference INSTALLREFERENCE.WSS_MMS
+[08:58:26:258] - Reference INSTALLREFERENCE.WSS_AAC
+[08:58:26:258] - Reference INSTALLREFERENCE.WSS_FIRECORE
+[08:58:26:258] - Reference INSTALLREFERENCE.WSS_DISKFILTER
+[08:58:26:258] - Reference INSTALLREFERENCE.WSS_APDRIVER
+[08:58:26:258] - Reference INSTALLREFERENCE.WSS_FIRECORE
+[08:58:26:258] - Reference INSTALLREFERENCE.WSS_NDISDRIVER
+[08:58:26:258] - Reference INSTALLREFERENCE.WSS_ELAM
+[08:58:26:258] - Reference INSTALLREFERENCE.WSS_FIRECORE
+[08:58:26:258] - GetMMSServiceReferenceCount: service mfevtp has a 0 references
+[08:58:26:258] - DeleteWinProxyServiceReference mfevtp 
+[08:58:26:258] - GetDriverDest mfehidk.sys
+[08:58:26:258] - Reference WinProxyInstallReference.VSCORE15.2
+[08:58:26:258] - StopMMSService: mfevtp, disable=0
+[08:58:26:258] - GetMMSServiceState: Service mfevtp has state SERVICE_RUNNING
+[08:58:26:258] - The service is running
+[08:58:26:258] - 0 services found that depend on mfevtp
+[08:58:26:258] - StopMMSService: found 0 dependent services:
+[08:58:26:258] - FindServiceProcessId mfevtp (MMS) 
+[08:58:26:258] - Service mfevtp process ID is 7236
+[08:58:26:258] - PID 7236 is for C:\Windows\System32\mfevtps.exe
+[08:58:26:258] - Wait for MMS Service mfevtp to report STOPPED
+[08:58:26:258] - MMS Service mfevtp: [08:58:26:258] - SERVICE_STOP_PENDING
+[08:58:27:267] - MMS Service mfevtp: [08:58:27:267] - SERVICE_STOPPED
+[08:58:27:267] - StopMMSService: exit=1
+[08:58:27:268] - StopService mfevtp (disable=0)
+[08:58:27:273] - MfeEnumDependentServices:
+[08:58:27:275] - MfeEnumDependentServices: mfefire depends on mfevtp
+[08:58:27:275] - MfeEnumDependentServices: Found 1 dependent services on mfevtp
+[08:58:27:275] - StopService: Calling StopService on dependent service mfefire
+[08:58:27:291] - StopService mfefire (disable=0)
+[08:58:27:291] - MfeEnumDependentServices:
+[08:58:27:306] - MfeEnumDependentServices: Found 0 dependent services on mfefire
+[08:58:27:306] - mfefire service reports STOPPED
+[08:58:27:306] - StopService: Lock the service back down
+[08:58:27:306] - StopService: (mfefire) exit=1
+[08:58:27:306] - mfevtp service reports RUNNING
+[08:58:27:306] - StopService: SERVICE_CONTROL_STOP issued to mfevtp service.
+[08:58:27:322] - Querying status of service mfevtp...
+[08:58:27:322] - mfevtp service reports STOPPED
+[08:58:27:322] - StopService: Lock the service back down
+[08:58:27:322] - StopService: (mfevtp) exit=1
+[08:58:27:322] - DeleteMMSService: mfevtp
+[08:58:27:322] - DeleteMMSService: return=1
+[08:58:27:322] - GetServiceReferenceCount: service mfevtp has 0 references
+[08:58:27:322] - MfeDeleteFile C:\Windows\system32\mfevtps.exe
+[08:58:27:322] - GetAccessAndDeleteFile: FileDelete(C:\Windows\system32\mfevtps.exe) returned 5
+[08:58:27:322] - MakeWritable: Unable to get attribs for file [C:\Windows\system32\mfevtps.exe.085f.deleteme] [2].
+[08:58:27:322] - GetAccessAndDeleteFile: FileDelete(C:\Windows\system32\mfevtps.exe.085f.deleteme) returned 2
+[08:58:27:322] - InstallDeleteFile: Delete of C:\Windows\system32\mfevtps.exe done using rename and deferred delete.
+[08:58:27:322] - UninstallMfevtps: return=1
+[08:58:27:322] - GetDriverService mfehidk.sys
+[08:58:27:322] - GetDriverDest mfehidk.sys
+[08:58:27:322] - AddRemoveMergedDwordValue. name=SupportedFeatures. value=3. add=false
+[08:58:27:322] - Adding reference to valuename: SUPPORTEDFEATURES.WSS_MMS
+[08:58:27:322] - Adding reference to valuename: SUPPORTEDFEATURES.WSS_AAC
+[08:58:27:322] - Adding reference to valuename: SUPPORTEDFEATURES.WSS_FIRECORE
+[08:58:27:322] - Adding reference to valuename: SUPPORTEDFEATURES.WSS_DISKFILTER
+[08:58:27:322] - Adding reference to valuename: SUPPORTEDFEATURES.WSS_APDRIVER
+[08:58:27:322] - Adding reference to valuename: SUPPORTEDFEATURES.WSS_FIRECORE
+[08:58:27:322] - Adding reference to valuename: SUPPORTEDFEATURES.WSS_NDISDRIVER
+[08:58:27:322] - Adding reference to valuename: SUPPORTEDFEATURES.WSS_ELAM
+[08:58:27:322] - Adding reference to valuename: SUPPORTEDFEATURES.WSS_FIRECORE
+[08:58:27:322] - AddRemoveMergedDwordValue. name=ContentVersion. value=2. add=false
+[08:58:27:322] - Adding reference to valuename: CONTENTVERSION.WSS_MMS
+[08:58:27:322] - Adding reference to valuename: CONTENTVERSION.WSS_AAC
+[08:58:27:322] - Adding reference to valuename: CONTENTVERSION.WSS_FIRECORE
+[08:58:27:322] - Adding reference to valuename: CONTENTVERSION.WSS_DISKFILTER
+[08:58:27:322] - Adding reference to valuename: CONTENTVERSION.WSS_APDRIVER
+[08:58:27:322] - Adding reference to valuename: CONTENTVERSION.WSS_FIRECORE
+[08:58:27:322] - Adding reference to valuename: CONTENTVERSION.WSS_NDISDRIVER
+[08:58:27:322] - Adding reference to valuename: CONTENTVERSION.WSS_ELAM
+[08:58:27:322] - Adding reference to valuename: CONTENTVERSION.WSS_FIRECORE
+[08:58:27:322] - AddRemoveMergedDwordValue. name=DeprecatedFlags. value=0. add=false
+[08:58:27:322] - Adding reference to valuename: DEPRECATEDFLAGS.WSS_MMS
+[08:58:27:322] - Adding reference to valuename: DEPRECATEDFLAGS.WSS_AAC
+[08:58:27:322] - Adding reference to valuename: DEPRECATEDFLAGS.WSS_FIRECORE
+[08:58:27:322] - Adding reference to valuename: DEPRECATEDFLAGS.WSS_DISKFILTER
+[08:58:27:322] - Adding reference to valuename: DEPRECATEDFLAGS.WSS_APDRIVER
+[08:58:27:322] - Adding reference to valuename: DEPRECATEDFLAGS.WSS_FIRECORE
+[08:58:27:322] - Adding reference to valuename: DEPRECATEDFLAGS.WSS_NDISDRIVER
+[08:58:27:322] - Adding reference to valuename: DEPRECATEDFLAGS.WSS_ELAM
+[08:58:27:322] - Adding reference to valuename: DEPRECATEDFLAGS.WSS_FIRECORE
+[08:58:27:322] - DeleteServiceReference mfehidk WSS
+[08:58:27:322] - GetDriverDest mfehidk.sys
+[08:58:27:322] - Reference INSTALLREFERENCE.WSS_MMS
+[08:58:27:322] - Reference INSTALLREFERENCE.WSS_AAC
+[08:58:27:322] - Reference INSTALLREFERENCE.WSS_FIRECORE
+[08:58:27:322] - Reference INSTALLREFERENCE.WSS_DISKFILTER
+[08:58:27:322] - Reference INSTALLREFERENCE.WSS_APDRIVER
+[08:58:27:322] - Reference INSTALLREFERENCE.WSS_FIRECORE
+[08:58:27:322] - Reference INSTALLREFERENCE.WSS_NDISDRIVER
+[08:58:27:322] - Reference INSTALLREFERENCE.WSS_ELAM
+[08:58:27:322] - Reference INSTALLREFERENCE.WSS_FIRECORE
+[08:58:27:322] - GetServiceReferenceCount: service mfehidk has 0 references
+[08:58:27:322] - MfeDeleteFile C:\Windows\system32\drivers\mfehidk.sys
+[08:58:27:322] - GetAccessAndDeleteFile: FileDelete(C:\Windows\system32\drivers\mfehidk.sys) returned 5
+[08:58:27:322] - MakeWritable: Unable to get attribs for file [C:\Windows\system32\drivers\mfehidk.sys.085f.deleteme] [2].
+[08:58:27:322] - GetAccessAndDeleteFile: FileDelete(C:\Windows\system32\drivers\mfehidk.sys.085f.deleteme) returned 2
+[08:58:27:337] - InstallDeleteFile: Delete of C:\Windows\system32\drivers\mfehidk.sys done using rename and deferred delete.
+[08:58:27:337] - DeleteFileReference SYSTEM\CurrentControlSet\Services\EventLog\System\mfehidk WSS
+[08:58:27:337] - GetDriverDest mfehidk.sys
+[08:58:27:337] - FeatureList=mms aac firecore DiskFilter APDriver firecore ndisdriver ELAM firecore
+[08:58:27:337] - Reference SYSTEM_CurrentControlSet_Services_EventLog_System_mfehidk INSTALLREFERENCE.WSS_MMS
+[08:58:27:337] - Reference SYSTEM_CurrentControlSet_Services_EventLog_System_mfehidk INSTALLREFERENCE.WSS_AAC
+[08:58:27:337] - Reference SYSTEM_CurrentControlSet_Services_EventLog_System_mfehidk INSTALLREFERENCE.WSS_FIRECORE
+[08:58:27:337] - Reference SYSTEM_CurrentControlSet_Services_EventLog_System_mfehidk INSTALLREFERENCE.WSS_DISKFILTER
+[08:58:27:337] - Reference SYSTEM_CurrentControlSet_Services_EventLog_System_mfehidk INSTALLREFERENCE.WSS_APDRIVER
+[08:58:27:337] - Reference SYSTEM_CurrentControlSet_Services_EventLog_System_mfehidk INSTALLREFERENCE.WSS_FIRECORE
+[08:58:27:337] - Reference SYSTEM_CurrentControlSet_Services_EventLog_System_mfehidk INSTALLREFERENCE.WSS_NDISDRIVER
+[08:58:27:337] - Reference SYSTEM_CurrentControlSet_Services_EventLog_System_mfehidk INSTALLREFERENCE.WSS_ELAM
+[08:58:27:337] - Reference SYSTEM_CurrentControlSet_Services_EventLog_System_mfehidk INSTALLREFERENCE.WSS_FIRECORE
+[08:58:27:337] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Services\EventLog\System\mfehidk
+[08:58:27:337] - FileReferenceCount: SYSTEM\CurrentControlSet\Services\EventLog\System\mfehidk=0
+[08:58:27:337] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Services\EventLog\System\mfehidk
+[08:58:27:337] - FileReferenceCount: SYSTEM\CurrentControlSet\Services\EventLog\System\mfehidk=0
+[08:58:27:337] - RemoveServiceEventSource - removing event source for mfehidk
+[08:58:27:337] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfehidk_messages.dll WSS
+[08:58:27:337] - GetDriverDest mfehidk.sys
+[08:58:27:337] - FeatureList=mms aac firecore DiskFilter APDriver firecore ndisdriver ELAM firecore
+[08:58:27:337] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_mfehidk_messages.dll INSTALLREFERENCE.WSS_MMS
+[08:58:27:337] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_mfehidk_messages.dll INSTALLREFERENCE.WSS_AAC
+[08:58:27:337] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_mfehidk_messages.dll INSTALLREFERENCE.WSS_FIRECORE
+[08:58:27:337] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_mfehidk_messages.dll INSTALLREFERENCE.WSS_DISKFILTER
+[08:58:27:337] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_mfehidk_messages.dll INSTALLREFERENCE.WSS_APDRIVER
+[08:58:27:337] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_mfehidk_messages.dll INSTALLREFERENCE.WSS_FIRECORE
+[08:58:27:337] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_mfehidk_messages.dll INSTALLREFERENCE.WSS_NDISDRIVER
+[08:58:27:337] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_mfehidk_messages.dll INSTALLREFERENCE.WSS_ELAM
+[08:58:27:337] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_mfehidk_messages.dll INSTALLREFERENCE.WSS_FIRECORE
+[08:58:27:337] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehidk_messages.dll
+[08:58:27:337] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehidk_messages.dll=0
+[08:58:27:337] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehidk_messages.dll
+[08:58:27:337] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfehidk_messages.dll=0
+[08:58:27:337] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfehidk_messages.dll
+[08:58:27:337] - GetDriverService mfewfpk.sys
+[08:58:27:337] - GetDriverDest mfewfpk.sys
+[08:58:27:337] - DeleteServiceReference mfewfpk WSS
+[08:58:27:337] - GetDriverDest mfehidk.sys
+[08:58:27:337] - Reference INSTALLREFERENCE.WSS_MMS
+[08:58:27:337] - Reference INSTALLREFERENCE.WSS_AAC
+[08:58:27:337] - Reference INSTALLREFERENCE.WSS_FIRECORE
+[08:58:27:337] - Reference INSTALLREFERENCE.WSS_DISKFILTER
+[08:58:27:337] - Reference INSTALLREFERENCE.WSS_APDRIVER
+[08:58:27:337] - Reference INSTALLREFERENCE.WSS_FIRECORE
+[08:58:27:337] - Reference INSTALLREFERENCE.WSS_NDISDRIVER
+[08:58:27:337] - Reference INSTALLREFERENCE.WSS_ELAM
+[08:58:27:337] - Reference INSTALLREFERENCE.WSS_FIRECORE
+[08:58:27:337] - GetServiceReferenceCount: service mfemms has 1 references
+[08:58:27:337] - IsServiceReferencePresent: service mfemms has 1 references
+[08:58:27:337] - GetServiceReferenceCount: service mfevtp has 0 references
+[08:58:27:337] - GetServiceReferenceCount: service mfewfpk has 0 references
+[08:58:27:337] - MfeDeleteFile C:\Windows\system32\drivers\mfewfpk.sys
+[08:58:27:337] - GetAccessAndDeleteFile: FileDelete(C:\Windows\system32\drivers\mfewfpk.sys) returned 5
+[08:58:27:337] - MakeWritable: Unable to get attribs for file [C:\Windows\system32\drivers\mfewfpk.sys.b604.deleteme] [2].
+[08:58:27:337] - GetAccessAndDeleteFile: FileDelete(C:\Windows\system32\drivers\mfewfpk.sys.b604.deleteme) returned 2
+[08:58:27:337] - InstallDeleteFile: Delete of C:\Windows\system32\drivers\mfewfpk.sys done using rename and deferred delete.
+[08:58:53:228] - GetDriverService mfetdi2k.sys
+[08:58:53:229] - GetDriverDest mfetdi2k.sys
+[08:58:53:229] - UnInstallBase: Checking to see if TDI driver is installed with reference:WSS 
+[08:58:53:229] - DeleteServiceReference mfetdi2k WSS
+[08:58:53:229] - GetDriverDest mfehidk.sys
+[08:58:53:229] - ServiceReferenceSub: failed to open mfetdi2k! 2
+[08:58:53:229] - GetServiceReferenceCountSub: unable to open mfetdi2k service key
+[08:58:53:229] - GetServiceReferenceCount: service mfetdi2k has 0 references
+[08:58:53:229] - MfeDeleteFile C:\Windows\system32\drivers\mfetdi2k.sys
+[08:58:53:230] - MakeWritable: Unable to get attribs for file [C:\Windows\system32\drivers\mfetdi2k.sys] [2].
+[08:58:53:231] - GetAccessAndDeleteFile: FileDelete(C:\Windows\system32\drivers\mfetdi2k.sys) returned 2
+[08:58:53:231] - GetDriverService mfewfpk.sys
+[08:58:53:231] - GetDriverDest mfewfpk.sys
+[08:58:53:232] - GetServiceReferenceCount: service mfewfpk has 0 references
+[08:58:53:232] - GetDriverService mfetdi2k.sys
+[08:58:53:232] - GetServiceReferenceCountSub: unable to open mfetdi2k service key
+[08:58:53:232] - GetServiceReferenceCount: service mfetdi2k has 0 references
+[08:58:53:232] - GetServiceReferenceCountSub: unable to open mfetdi2k service key
+[08:58:53:232] - GetServiceReferenceCount: service mfetdi2k has 0 references
+[08:58:53:232] - GetDriverService mfetdik.sys
+[08:58:53:232] - GetServiceReferenceCountSub: unable to open mfetdik service key
+[08:58:53:232] - GetServiceReferenceCount: service mfetdik has 0 references
+[08:58:53:232] - Disabling mfevtp for Safeboot:Minimum
+[08:58:53:232] - DeleteFileReference SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal_mfevtp WSS
+[08:58:53:232] - GetDriverDest mfehidk.sys
+[08:58:53:233] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal_mfevtp
+[08:58:53:233] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal_mfevtp=0
+[08:58:53:233] - Disabling mfevtp for Safeboot:Network
+[08:58:53:233] - DeleteFileReference SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfevtp WSS
+[08:58:53:233] - GetDriverDest mfehidk.sys
+[08:58:53:234] - FeatureList=mms aac firecore DiskFilter APDriver firecore ndisdriver ELAM firecore
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfevtp INSTALLREFERENCE.WSS_MMS
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfevtp INSTALLREFERENCE.WSS_AAC
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfevtp INSTALLREFERENCE.WSS_FIRECORE
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfevtp INSTALLREFERENCE.WSS_DISKFILTER
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfevtp INSTALLREFERENCE.WSS_APDRIVER
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfevtp INSTALLREFERENCE.WSS_FIRECORE
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfevtp INSTALLREFERENCE.WSS_NDISDRIVER
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfevtp INSTALLREFERENCE.WSS_ELAM
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfevtp INSTALLREFERENCE.WSS_FIRECORE
+[08:58:53:234] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfevtp
+[08:58:53:234] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfevtp=0
+[08:58:53:234] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfevtp
+[08:58:53:234] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfevtp=0
+[08:58:53:234] - Disabling mfehidk.sys for Safeboot:Minimum
+[08:58:53:234] - DeleteFileReference SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal_mfehidk.sys WSS
+[08:58:53:234] - GetDriverDest mfehidk.sys
+[08:58:53:234] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal_mfehidk.sys
+[08:58:53:234] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal_mfehidk.sys=0
+[08:58:53:234] - Disabling mfehidk.sys for Safeboot:Network
+[08:58:53:234] - DeleteFileReference SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfehidk.sys WSS
+[08:58:53:234] - GetDriverDest mfehidk.sys
+[08:58:53:234] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfehidk.sys
+[08:58:53:234] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfehidk.sys=0
+[08:58:53:234] - Disabling mfetdi2k.sys for Safeboot:Minimum
+[08:58:53:234] - DeleteFileReference SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal_mfetdi2k.sys WSS
+[08:58:53:234] - GetDriverDest mfehidk.sys
+[08:58:53:234] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal_mfetdi2k.sys
+[08:58:53:234] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal_mfetdi2k.sys=0
+[08:58:53:234] - Disabling mfetdi2k.sys for Safeboot:Network
+[08:58:53:234] - DeleteFileReference SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfetdi2k.sys WSS
+[08:58:53:234] - GetDriverDest mfehidk.sys
+[08:58:53:234] - FeatureList=mms aac firecore DiskFilter APDriver firecore ndisdriver ELAM firecore
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfetdi2k.sys INSTALLREFERENCE.WSS_MMS
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfetdi2k.sys INSTALLREFERENCE.WSS_AAC
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfetdi2k.sys INSTALLREFERENCE.WSS_FIRECORE
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfetdi2k.sys INSTALLREFERENCE.WSS_DISKFILTER
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfetdi2k.sys INSTALLREFERENCE.WSS_APDRIVER
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfetdi2k.sys INSTALLREFERENCE.WSS_FIRECORE
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfetdi2k.sys INSTALLREFERENCE.WSS_NDISDRIVER
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfetdi2k.sys INSTALLREFERENCE.WSS_ELAM
+[08:58:53:234] - Reference SYSTEM_CurrentControlSet_Control_SafeBoot_Network_mfetdi2k.sys INSTALLREFERENCE.WSS_FIRECORE
+[08:58:53:234] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfetdi2k.sys
+[08:58:53:234] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfetdi2k.sys=0
+[08:58:53:234] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfetdi2k.sys
+[08:58:53:234] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfetdi2k.sys=0
+[08:58:53:234] - UninstallBase: exit=1
+[08:58:53:234] - parseGeneral: action = pa_uninstall
+[08:58:53:234] - AddRemoveProductID {308C1AD7-765B-4A17-B25B-D415F07357F3} (add 0)
+[08:58:53:234] - AddRemoveProductID {1DC8CCB1-83BC-49DC-8A79-2B365AEE1B65} (add 0)
+[08:58:53:234] - SetSystemCoreDest McAfee\SystemCore (x86 0)
+[08:58:53:234] - SetSystemCoreDest path already C:\Program Files\Common Files\McAfee\SystemCore\
+[08:58:53:234] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\ WSS
+[08:58:53:234] - GetDriverDest mfehidk.sys
+[08:58:53:234] - FeatureList=mms aac firecore DiskFilter APDriver firecore ndisdriver ELAM firecore
+[08:58:53:234] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_ INSTALLREFERENCE.WSS_MMS
+[08:58:53:234] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_ INSTALLREFERENCE.WSS_AAC
+[08:58:53:234] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_ INSTALLREFERENCE.WSS_FIRECORE
+[08:58:53:234] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_ INSTALLREFERENCE.WSS_DISKFILTER
+[08:58:53:234] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_ INSTALLREFERENCE.WSS_APDRIVER
+[08:58:53:234] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_ INSTALLREFERENCE.WSS_FIRECORE
+[08:58:53:234] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_ INSTALLREFERENCE.WSS_NDISDRIVER
+[08:58:53:234] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_ INSTALLREFERENCE.WSS_ELAM
+[08:58:53:249] - Reference C__Program_Files_Common_Files_McAfee_SystemCore_ INSTALLREFERENCE.WSS_FIRECORE
+[08:58:53:249] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\
+[08:58:53:249] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\=0
+[08:58:53:249] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\
+[08:58:53:249] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\=0
+[08:58:53:249] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfemms.exe) returned 5
+[08:58:53:249] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\mfemms.exe.fc6b.deleteme] [2].
+[08:58:53:249] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfemms.exe.fc6b.deleteme) returned 2
+[08:58:53:249] - InstallDeleteFile: Delete of C:\Program Files\Common Files\McAfee\SystemCore\mfemms.exe done using rename and deferred delete.
+[08:58:53:249] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfemmsa.dll) returned 5
+[08:58:53:249] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\mfemmsa.dll.fc6b.deleteme] [2].
+[08:58:53:249] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfemmsa.dll.fc6b.deleteme) returned 2
+[08:58:53:249] - InstallDeleteFile: Delete of C:\Program Files\Common Files\McAfee\SystemCore\mfemmsa.dll done using rename and deferred delete.
+[08:58:53:249] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfestwa.dll) returned 5
+[08:58:53:249] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\mfestwa.dll.fc6b.deleteme] [2].
+[08:58:53:249] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfestwa.dll.fc6b.deleteme) returned 2
+[08:58:53:265] - InstallDeleteFile: Delete of C:\Program Files\Common Files\McAfee\SystemCore\mfestwa.dll done using rename and deferred delete.
+[08:58:53:265] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\) returned 5
+[08:58:53:265] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\.5a27.deleteme] [2].
+[08:58:53:265] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\.5a27.deleteme) returned 2
+[08:58:53:265] - InstallDeleteFile: FileName failed 32
+[08:58:53:265] - InstallDeleteFile: Delete of C:\Program Files\Common Files\McAfee\SystemCore\ deferred until reboot.
+[08:58:53:265] - InstallDeleteFile: INFO: Unable to delete C:\Program Files\Common Files\McAfee\SystemCore\.
+[08:58:53:265] - parseGeneral: parsed <CorePath>. retval=1
+[08:58:53:265] - SetSystemCoreDest McAfee\SystemCore (x86 1)
+[08:58:53:265] - SetSystemCoreDest path already C:\Program Files (x86)\Common Files\McAfee\SystemCore\
+[08:58:53:265] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\ WSS
+[08:58:53:265] - GetDriverDest mfehidk.sys
+[08:58:53:265] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\
+[08:58:53:265] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\=0
+[08:58:53:265] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\) returned 5
+[08:58:53:265] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\.5a27.deleteme] [2].
+[08:58:53:265] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\.5a27.deleteme) returned 2
+[08:58:53:265] - InstallDeleteFile: FileName failed 32
+[08:58:53:281] - InstallDeleteFile: Delete of C:\Program Files\Common Files\McAfee\SystemCore\ deferred until reboot.
+[08:58:53:281] - InstallDeleteFile: INFO: Unable to delete C:\Program Files\Common Files\McAfee\SystemCore\.
+[08:58:53:281] - parseGeneral: parsed <CorePath_X86>. retval=1
+[08:58:53:281] - DeleteFileReference system_core_version WSS
+[08:58:53:281] - GetDriverDest mfehidk.sys
+[08:58:53:281] - FeatureList=mms aac firecore DiskFilter APDriver firecore ndisdriver ELAM firecore
+[08:58:53:281] - Reference system_core_version INSTALLREFERENCE.WSS_MMS
+[08:58:53:281] - Reference system_core_version INSTALLREFERENCE.WSS_AAC
+[08:58:53:281] - Reference system_core_version INSTALLREFERENCE.WSS_FIRECORE
+[08:58:53:281] - Reference system_core_version INSTALLREFERENCE.WSS_DISKFILTER
+[08:58:53:281] - Reference system_core_version INSTALLREFERENCE.WSS_APDRIVER
+[08:58:53:281] - Reference system_core_version INSTALLREFERENCE.WSS_FIRECORE
+[08:58:53:281] - Reference system_core_version INSTALLREFERENCE.WSS_NDISDRIVER
+[08:58:53:282] - Reference system_core_version INSTALLREFERENCE.WSS_ELAM
+[08:58:53:282] - Reference system_core_version INSTALLREFERENCE.WSS_FIRECORE
+[08:58:53:282] - GetFileReferenceCount: system_core_version
+[08:58:53:282] - FileReferenceCount: system_core_version=0
+[08:58:53:282] - GetFileReferenceCount: system_core_version
+[08:58:53:282] - FileReferenceCount: system_core_version=0
+[08:58:53:282] - RemoveVersionString: last reference - removing version string
+[08:58:53:282] - parseGeneral: exit=1
+[08:58:53:282] - parseCoreInstall: return=1
+[08:58:53:282] - ParseXMLFile: return=1
+[08:58:53:282] - 
+[08:58:53:282] - ParseMfemmsFeature: action = pa_uninstall pa_mms
+[08:58:53:282] - GetMmsFeatureElement:
+[08:58:53:282] - mms feature was found!
+[08:58:53:283] - GetMmsFeatureElement: HRESULT=0
+[08:58:53:283] - parseFeature: action = pa_uninstall pa_mms
+[08:58:53:283] - parseFeature: Feature=mms
+[08:58:53:283] - parseFeature: Feature mms enabled
+[08:58:53:283] - parseCore: action = pa_uninstall pa_mms
+[08:58:53:283] - ParseFileName: action = pa_uninstall pa_mms
+[08:58:53:283] - ParseFileName: filename=mfemmsa.dll
+[08:58:53:283] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfemmsa.dll
+[08:58:53:283] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfemmsa.dll=1
+[08:58:53:283] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfemmsa.dll WSS_MMS
+[08:58:53:283] - GetDriverDest mfehidk.sys
+[08:58:53:283] - Reference InstallReference.WSS_MMS
+[08:58:53:283] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfemmsa.dll
+[08:58:53:283] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfemmsa.dll=0
+[08:58:53:284] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfemmsa.dll
+[08:58:53:284] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfemmsa.dll=0
+[08:58:53:284] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\mfemmsa.dll
+[08:58:53:284] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfemmsa.dll
+[08:58:53:284] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\mfemmsa.dll] [2].
+[08:58:53:284] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfemmsa.dll) returned 2
+[08:58:53:285] - ParseFileName: exit=1
+[08:58:53:285] - ParseFileName: action = pa_uninstall pa_mms
+[08:58:53:285] - ParseFileName: filename=mfemms_messages.dll
+[08:58:53:285] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfemms_messages.dll
+[08:58:53:285] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfemms_messages.dll=1
+[08:58:53:285] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfemms_messages.dll WSS_MMS
+[08:58:53:285] - GetDriverDest mfehidk.sys
+[08:58:53:285] - Reference InstallReference.WSS_MMS
+[08:58:53:285] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfemms_messages.dll
+[08:58:53:286] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfemms_messages.dll=0
+[08:58:53:286] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfemms_messages.dll
+[08:58:53:286] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfemms_messages.dll=0
+[08:58:53:286] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\mfemms_messages.dll
+[08:58:53:286] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfemms_messages.dll
+[08:58:53:286] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\mfemms_messages.dll] [2].
+[08:58:53:286] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfemms_messages.dll) returned 2
+[08:58:53:287] - ParseFileName: exit=1
+[08:58:53:287] - ParseFileName: action = pa_uninstall pa_mms
+[08:58:53:287] - ParseFileName: filename=mfestwa.dll
+[08:58:53:287] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfestwa.dll
+[08:58:53:287] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfestwa.dll=1
+[08:58:53:287] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfestwa.dll WSS_MMS
+[08:58:53:287] - GetDriverDest mfehidk.sys
+[08:58:53:287] - Reference InstallReference.WSS_MMS
+[08:58:53:287] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfestwa.dll
+[08:58:53:287] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfestwa.dll=0
+[08:58:53:288] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfestwa.dll
+[08:58:53:288] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfestwa.dll=0
+[08:58:53:288] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\mfestwa.dll
+[08:58:53:288] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfestwa.dll
+[08:58:53:288] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\mfestwa.dll] [2].
+[08:58:53:288] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfestwa.dll) returned 2
+[08:58:53:289] - ParseFileName: exit=1
+[08:58:53:289] - ParseFileName: action = pa_uninstall pa_mms
+[08:58:53:289] - ParseFileName: filename=mmsinfo.exe
+[08:58:53:289] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mmsinfo.exe
+[08:58:53:289] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mmsinfo.exe=1
+[08:58:53:289] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mmsinfo.exe WSS_MMS
+[08:58:53:289] - GetDriverDest mfehidk.sys
+[08:58:53:289] - Reference InstallReference.WSS_MMS
+[08:58:53:289] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mmsinfo.exe
+[08:58:53:289] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mmsinfo.exe=0
+[08:58:53:289] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mmsinfo.exe
+[08:58:53:290] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mmsinfo.exe=0
+[08:58:53:290] - Deleting file C:\Program Files\Common Files\McAfee\SystemCore\mmsinfo.exe
+[08:58:53:290] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mmsinfo.exe
+[08:58:53:290] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\mmsinfo.exe] [2].
+[08:58:53:290] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mmsinfo.exe) returned 2
+[08:58:53:290] - ParseFileName: exit=1
+[08:58:53:290] - parseDirectory: action = pa_uninstall pa_mms
+[08:58:53:290] - Searching for Macros in $COREPATH_X86.
+[08:58:53:291] - MACRO found: COREPATH_X86
+[08:58:53:291] - Expanded COREPATH_X86 to: C:\Program Files (x86)\Common Files\McAfee\SystemCore\
+[08:58:53:291] - ParseFileName: action = pa_uninstall pa_mms
+[08:58:53:291] - Searching for Macros in $SOURCEPATH_X86.
+[08:58:53:291] - MACRO found: SOURCEPATH_X86
+[08:58:53:291] - Expanded SOURCEPATH_X86 to: ..\x86
+[08:58:53:291] - ParseFileName: filename=..\x86\mfemmsa.dll
+[08:58:53:291] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfemmsa.dll
+[08:58:53:291] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfemmsa.dll=1
+[08:58:53:291] - DeleteFileReference C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfemmsa.dll WSS_MMS
+[08:58:53:291] - GetDriverDest mfehidk.sys
+[08:58:53:291] - Reference InstallReference.WSS_MMS
+[08:58:53:291] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfemmsa.dll
+[08:58:53:291] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfemmsa.dll=0
+[08:58:53:292] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfemmsa.dll
+[08:58:53:292] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfemmsa.dll=0
+[08:58:53:292] - Deleting file C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfemmsa.dll
+[08:58:53:292] - MfeDeleteFile C:\Program Files (x86)\Common Files\McAfee\SystemCore\mfemmsa.dll
+[08:58:53:294] - ParseFileName: exit=1
+[08:58:53:294] - DeleteFileReference C:\Program Files (x86)\Common Files\McAfee\SystemCore\ WSS_MMS
+[08:58:53:294] - GetDriverDest mfehidk.sys
+[08:58:53:294] - Reference InstallReference.WSS_MMS
+[08:58:53:294] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\
+[08:58:53:294] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\=0
+[08:58:53:294] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\
+[08:58:53:294] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\=0
+[08:58:53:295] - GetAccessAndDeleteFile: FileDelete(C:\Program Files (x86)\Common Files\McAfee\SystemCore\) returned 5
+[08:58:53:296] - MakeWritable: Unable to get attribs for file [C:\Program Files (x86)\Common Files\McAfee\SystemCore\.e819.deleteme] [2].
+[08:58:53:296] - GetAccessAndDeleteFile: FileDelete(C:\Program Files (x86)\Common Files\McAfee\SystemCore\.e819.deleteme) returned 2
+[08:58:53:296] - InstallDeleteFile: FileName failed 32
+[08:58:53:297] - InstallDeleteFile: Delete of C:\Program Files (x86)\Common Files\McAfee\SystemCore\ deferred until reboot.
+[08:58:53:297] - InstallDeleteFile: INFO: Unable to delete C:\Program Files (x86)\Common Files\McAfee\SystemCore\.
+[08:58:53:297] - parseDirectory: exit=1
+[08:58:53:297] - parseCore: exit=1
+[08:58:53:297] - parseService: action = pa_uninstall pa_mms
+[08:58:53:297] - ServiceName is mfemms
+[08:58:53:297] - Searching for Macros in $COREPATH.
+[08:58:53:297] - MACRO found: COREPATH
+[08:58:53:297] - Expanded COREPATH to: C:\Program Files\Common Files\McAfee\SystemCore\
+[08:58:53:297] - parseProtectedService: action = pa_uninstall pa_mms
+[08:58:53:297] - parseProtectedService: Service is [mfemms]
+[08:58:53:298] - IsFeatureEnabled: (ELAM)
+[08:58:53:298] - ELAM is enabled
+[08:58:53:298] - DeleteFileReference mfemms_PPL WSS_MMS
+[08:58:53:298] - GetDriverDest mfehidk.sys
+[08:58:53:298] - Reference InstallReference.WSS_MMS
+[08:58:53:298] - GetFileReferenceCount: mfemms_PPL
+[08:58:53:298] - FileReferenceCount: mfemms_PPL=0
+[08:58:53:298] - GetFileReferenceCount: mfemms_PPL
+[08:58:53:298] - FileReferenceCount: mfemms_PPL=0
+[08:58:53:312] - ConfigurePPL: De-configured service [mfemms] as PPL
+[08:58:53:313] - DeleteServiceReference mfemms WSS_MMS
+[08:58:53:313] - GetDriverDest mfehidk.sys
+[08:58:53:313] - Reference InstallReference.WSS_MMS
+[08:58:53:313] - GetServiceReferenceCount: service mfemms has 0 references
+[08:58:53:313] - StopService mfemms (disable=0)
+[08:58:53:317] - MfeEnumDependentServices:
+[08:58:53:324] - MfeEnumDependentServices: mfevtp depends on mfemms
+[08:58:53:327] - MfeEnumDependentServices: Found 1 dependent services on mfemms
+[08:58:53:327] - StopService: Calling StopService on dependent service mfevtp
+[08:58:53:327] - StopService mfevtp (disable=0)
+[08:58:53:327] - MfeEnumDependentServices:
+[08:58:53:342] - MfeEnumDependentServices: mfefire depends on mfevtp
+[08:58:53:342] - MfeEnumDependentServices: Found 1 dependent services on mfevtp
+[08:58:53:342] - StopService: Calling StopService on dependent service mfefire
+[08:58:53:342] - StopService mfefire (disable=0)
+[08:58:53:342] - MfeEnumDependentServices:
+[08:58:53:358] - MfeEnumDependentServices: Found 0 dependent services on mfefire
+[08:58:53:358] - mfefire service reports STOPPED
+[08:58:53:358] - StopService: Lock the service back down
+[08:58:53:358] - StopService: (mfefire) exit=1
+[08:58:53:358] - mfevtp service reports STOPPED
+[08:58:53:358] - StopService: Lock the service back down
+[08:58:53:358] - StopService: (mfevtp) exit=1
+[08:58:53:358] - mfemms service reports RUNNING
+[08:58:53:358] - StopService: SERVICE_CONTROL_STOP issued to mfemms service.
+[08:58:53:358] - Querying status of service mfemms...
+[08:58:53:358] - waiting on mfemms service to report STOPPED (current state 3)
+[08:58:53:471] - mfemms service reports STOPPED
+[08:58:53:471] - StopService: Lock the service back down
+[08:58:53:472] - StopService: (mfemms) exit=1
+[08:58:53:472] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfemms.exe
+[08:58:53:472] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\mfemms.exe] [2].
+[08:58:53:472] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfemms.exe) returned 2
+[08:58:53:473] - Disabling mfemms for Safeboot:Network
+[08:58:53:473] - DeleteFileReference SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfemms WSS_MMS
+[08:58:53:473] - GetDriverDest mfehidk.sys
+[08:58:53:473] - Reference InstallReference.WSS_MMS
+[08:58:53:473] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfemms
+[08:58:53:473] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfemms=0
+[08:58:53:473] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfemms
+[08:58:53:473] - FileReferenceCount: SYSTEM\CurrentControlSet\Control\SafeBoot\Network_mfemms=0
+[08:58:53:474] - DeleteFileReference SYSTEM\CurrentControlSet\Services\EventLog\System\McAfee Service Controller WSS_MMS
+[08:58:53:474] - GetDriverDest mfehidk.sys
+[08:58:53:474] - Reference InstallReference.WSS_MMS
+[08:58:53:474] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Services\EventLog\System\McAfee Service Controller
+[08:58:53:474] - FileReferenceCount: SYSTEM\CurrentControlSet\Services\EventLog\System\McAfee Service Controller=0
+[08:58:53:474] - GetFileReferenceCount: SYSTEM\CurrentControlSet\Services\EventLog\System\McAfee Service Controller
+[08:58:53:474] - FileReferenceCount: SYSTEM\CurrentControlSet\Services\EventLog\System\McAfee Service Controller=0
+[08:58:53:474] - RemoveServiceEventSource - removing event source for McAfee Service Controller
+[08:58:53:474] - DeleteFileReference C:\Program Files\Common Files\McAfee\SystemCore\mfemms_messages.dll WSS_MMS
+[08:58:53:474] - GetDriverDest mfehidk.sys
+[08:58:53:475] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfemms_messages.dll
+[08:58:53:475] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\mfemms_messages.dll=0
+[08:58:53:475] - MfeDeleteFile C:\Program Files\Common Files\McAfee\SystemCore\mfemms_messages.dll
+[08:58:53:475] - MakeWritable: Unable to get attribs for file [C:\Program Files\Common Files\McAfee\SystemCore\mfemms_messages.dll] [2].
+[08:58:53:475] - GetAccessAndDeleteFile: FileDelete(C:\Program Files\Common Files\McAfee\SystemCore\mfemms_messages.dll) returned 2
+[08:58:53:476] - parseService: exit=1
+[08:58:53:476] - parseService: action = pa_uninstall pa_mms
+[08:58:53:476] - Skipping service with winver attr 5200-6199 on OS 10000
+[08:58:53:476] - parseService: action = pa_uninstall pa_mms
+[08:58:53:476] - Skipping service with winver attr 5100-5199 on OS 10000
+[08:58:53:476] - parseRegistry: action = pa_uninstall pa_mms
+[08:58:53:476] - parseRegistry: Registry rootkeypath=
+[08:58:53:476] - Registry key path set to software\mcafee\SystemCore
+[08:58:53:476] - parseRegistry: exit=1
+[08:58:53:476] - parseRegistry: action = pa_uninstall pa_mms
+[08:58:53:476] - parseRegistry: Registry rootkeypath=
+[08:58:53:476] - Registry key path set to system\CurrentControlSet\services\mfemms
+[08:58:53:477] - parseValue: action = pa_uninstall pa_mms
+[08:58:53:477] - <Value> key=system\CurrentControlSet\services\mfemms
+[08:58:53:477] - parseValue: <Value> name=ServiceDelayNormal
+[08:58:53:477] - parseValue: exit=1
+[08:58:53:477] - parseValue: action = pa_uninstall pa_mms
+[08:58:53:477] - <Value> key=system\CurrentControlSet\services\mfemms
+[08:58:53:477] - parseValue: <Value> name=ServiceDelayLate
+[08:58:53:477] - parseValue: exit=1
+[08:58:53:477] - parseRegistry: exit=1
+[08:58:53:477] - AddRemoveFeatureRef: add=0, installRef=WSS_MMS, GUID={2AA87236-7E59-449B-BDE1-D2A6045ED15B}
+[08:58:53:477] - parseFeature: exit=1
+[08:58:53:478] - ParseMfemmsFeature: return=1
+[08:58:53:478] - 
+[08:58:53:478] - UninstallSystemCoreReferences
+[08:58:53:478] - GetFileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\
+[08:58:53:478] - FileReferenceCount: C:\Program Files\Common Files\McAfee\SystemCore\=0
+[08:58:53:478] - GetFileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\
+[08:58:53:478] - FileReferenceCount: C:\Program Files (x86)\Common Files\McAfee\SystemCore\=0
+[08:58:53:478] - Deleting SystemCore folder
+[08:58:53:480] - UninstallSystemCoreReferences: return=1
+[08:58:53:480] - 
+[08:58:53:480] - StartStopMFeServices: starting
+[08:58:53:480] - SystemCore folder not found. Services will not be stop/started
+[08:58:53:480] - GetServiceReferenceCount: service mfehidk has 0 references
+[08:58:53:480] - StartHIP: policy disable 0 service stopped 0
+[08:58:53:480] - WARNING: Some operations were deferred until the next reboot.
+[08:58:53:480] - Total 2 Warning Value present 
+[08:58:53:480] - Code [0x60002020] : Some operations were deferred until the next reboot.
+ 
+[08:58:53:480] - Code [0x60002030] : Reboot is required for setting to take effect. 
+ 
+[08:58:53:480] - Exit code will be 1
+[08:58:53:480] - MFEHidinTelemetry::JSON: {"pver":1,"code":1,"desc":"VSCore Installer Result","type":"INSTALL","sev":"INFORMATIONAL","data" : {	"installResult": 1,	"isUninstall": true,	"pointProductId": 401,	"installationResult": 1,	"installAttempts": 2,	"installAttemptsAllVersions": 2,	"oldVersion": "18.6.0.199.4",	"newVersion": "18.6.0.199.4",	"osMajor": 0,	"osMinor": 0,	"osServicePack": 0,	"osBuildNumber": 9200,	"elapsedTime": 32031,	"timeSinceLastInstall": 16,	"errorCodes": [],	"warnCodes": [1610620960, 1610620976],	"infoCodes": []}}
+[08:58:53:563] - MFEHidinTelemetry::sendData: Telemetry NOT sent. Not yet supported.
+[08:58:53:563] - 
+
+=============================================
+[08:58:53:563] - 
+
+Telemetry data
+[08:58:53:563] - isUninstall:                 [1]
+[08:58:53:563] - pointProductId:              [401]
+[08:58:53:563] - installationResult:          [1]
+[08:58:53:563] - installAttempts:             [2]
+[08:58:53:563] - installAttemptsAllVersions:  [2]
+[08:58:53:563] - oldVersion:                  [18.6.0.199.4]
+[08:58:53:563] - newVersion:                  [18.6.0.199.4]
+[08:58:53:563] - platformWordSize:            [2]
+[08:58:53:563] - osMajor:                     [0]
+[08:58:53:563] - osMinor:                     [0]
+[08:58:53:563] - osServicePack:               [0]
+[08:58:53:563] - osBuildNumber:               [9200]
+[08:58:53:563] - elapsedTime (ms):            [32031]
+[08:58:53:563] - timeSinceLastInstall (s):    [16]
+[08:58:53:563] - =============================================
+
+[08:58:53:563] - Returning 1

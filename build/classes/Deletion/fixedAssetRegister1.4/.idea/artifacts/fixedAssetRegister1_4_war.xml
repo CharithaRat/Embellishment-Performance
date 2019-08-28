@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="fixedAssetRegister1.4:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="fixedAssetRegister.war">
+      <element id="artifact" artifact-name="fixedAssetRegister1.4:war exploded" />
+    </root>
+  </artifact>
+</component>

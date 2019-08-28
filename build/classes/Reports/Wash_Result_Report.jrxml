@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Wash_Result_Report" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b03faf0c-c7cc-4592-a5be-4b9fdc019cb2">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="list" class="java.util.List">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     InsGeneralDet."Ins_Year" AS InsGeneralDet_Ins_Year,
+     InsGeneralDet."Ins_Month" AS InsGeneralDet_Ins_Month,
+     InsGeneralDet."Ins_Week" AS InsGeneralDet_Ins_Week,
+     InsGeneralDet."Ins_Date" AS InsGeneralDet_Ins_Date,
+     InsGeneralDet."Ins_Printer" AS InsGeneralDet_Ins_Printer,
+     InsGeneralDet."Ins_Customer" AS InsGeneralDet_Ins_Customer,
+     InsWash."Wash_SbStatus" AS InsWash_Wash_SbStatus,
+     InsWash."Wash_Result" AS InsWash_Wash_Result,
+     InsWash."Wash_Comment" AS InsWash_Wash_Comment
+FROM
+     "dbo"."InsWash" InsWash INNER JOIN "dbo"."InsGeneralDet" InsGeneralDet ON InsWash."Ins_Id" = InsGeneralDet."Ins_Id"
+WHERE 
+     $X{ IN ,Ins_Date,list};]]>
+	</queryString>
+	<field name="InsGeneralDet_Ins_Year" class="java.lang.String"/>
+	<field name="InsGeneralDet_Ins_Month" class="java.lang.String"/>
+	<field name="InsGeneralDet_Ins_Week" class="java.lang.String"/>
+	<field name="InsGeneralDet_Ins_Date" class="java.lang.String"/>
+	<field name="InsGeneralDet_Ins_Printer" class="java.lang.String"/>
+	<field name="InsGeneralDet_Ins_Customer" class="java.lang.String"/>
+	<field name="InsWash_Wash_SbStatus" class="java.lang.String"/>
+	<field name="InsWash_Wash_Result" class="java.lang.String"/>
+	<field name="InsWash_Wash_Comment" class="java.lang.String"/>
+	<group name="InsGeneralDet_Ins_Year">
+		<groupExpression><![CDATA[$F{InsGeneralDet_Ins_Year}]]></groupExpression>
+	</group>
+	<group name="InsGeneralDet_Ins_Month">
+		<groupExpression><![CDATA[$F{InsGeneralDet_Ins_Month}]]></groupExpression>
+	</group>
+	<group name="InsGeneralDet_Ins_Week">
+		<groupExpression><![CDATA[$F{InsGeneralDet_Ins_Week}]]></groupExpression>
+	</group>
+	<group name="InsGeneralDet_Ins_Printer">
+		<groupExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="47" splitType="Stretch">
+			<staticText>
+				<reportElement x="391" y="0" width="411" height="43" uuid="fc2e1a64-a1f7-4b97-93b3-cb0ac9694d93"/>
+				<textElement textAlignment="Center">
+					<font fontName="Trebuchet MS" size="30" isBold="false"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[WASH TEST RESULTS REPORT]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="2" width="169" height="41" uuid="af75e8ad-e47b-4baa-968f-3abdb81c7058"/>
+				<imageExpression><![CDATA["E:\\Embellishment Performance Monitor\\src\\Reports\\MAS.jpg"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement mode="Opaque" x="0" y="45" width="802" height="2" forecolor="#CC33FF" uuid="abe0f56d-5f79-4aca-a53c-3a75f31dec1f"/>
+				<graphicElement>
+					<pen lineWidth="1.25"/>
+				</graphicElement>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="3" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="471" y="0" width="100" height="20" backcolor="#CCCCFF" uuid="7e3aee09-4b5c-4c7f-a810-e02757041acc"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[TEST RESULTS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="36" height="20" uuid="52e5b3ad-96f5-4a76-9d01-8a4823bf607f"/>
+				<text><![CDATA[YEAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="0" width="44" height="20" uuid="bc7ee1fd-5199-4845-8096-bb7c54d11a28"/>
+				<text><![CDATA[MONTH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="0" width="34" height="20" uuid="601314c9-f476-45f8-9e38-f672a0989aca"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[WEEK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="169" y="0" width="138" height="20" uuid="7894421e-3f32-4279-bc4c-3a87620cd508"/>
+				<text><![CDATA[PRINTER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="307" y="0" width="64" height="20" uuid="249464b7-47da-466c-927a-68dbd4dd2a7f"/>
+				<text><![CDATA[CUSTOMER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="371" y="0" width="100" height="20" backcolor="#CCFFCC" uuid="555dfd67-6043-409a-9944-19a9819fcfec"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[WASH SUBMISSION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="571" y="0" width="231" height="20" backcolor="#FFFFCC" uuid="50f8c0d0-df2b-48e0-9855-caf34cf1b52a"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[WASH COMMENTS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="115" y="0" width="54" height="20" backcolor="#FFCCCC" uuid="60664167-289a-4753-915e-eb18f2f273f9"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[DATE]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="802" height="2" forecolor="#FF00CC" uuid="0320b1ca-c9ab-41f9-8123-361bdd702061"/>
+				<graphicElement>
+					<pen lineStyle="Dashed" lineColor="#CC00FF"/>
+				</graphicElement>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="471" y="3" width="100" height="22" backcolor="#CCCCFF" uuid="b6a790d5-f944-4f26-8e9d-2e6d88dc9af6"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{InsWash_Wash_Result}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="307" y="0" width="64" height="22" uuid="0c88806b-dcfa-45dd-a62b-46d2d6d66e88"/>
+				<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Customer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="2" width="36" height="21" uuid="8de712ef-381d-446a-b17c-cc8e495bcef9"/>
+				<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Year}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="2" width="45" height="21" uuid="cfb2533f-f410-4386-8f23-8303b31bd951"/>
+				<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Month}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="81" y="1" width="34" height="22" uuid="e5c04059-f30d-430e-81fb-24dc982cf193"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Week}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="371" y="2" width="100" height="22" backcolor="#CCFFCC" uuid="47c6eeff-3e64-470e-b09c-69a04794626f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{InsWash_Wash_SbStatus}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="571" y="3" width="231" height="22" backcolor="#FFFFCC" uuid="bdc83ae9-581f-4e1d-823f-b60c502ab339"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{InsWash_Wash_Comment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="169" y="1" width="138" height="22" uuid="41f42941-c0df-4e9a-9ff8-340e4c967f46"/>
+				<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Printer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="115" y="0" width="54" height="23" backcolor="#FFCCCC" uuid="36302e96-1c85-4c80-b125-a47a43492914"/>
+				<textFieldExpression><![CDATA[$F{InsGeneralDet_Ins_Date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="702" y="3" width="100" height="20" uuid="c00e2f88-a0b9-4b6a-947c-f8b9473e165a"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="0" y="3" width="100" height="20" uuid="fe6b2d08-8d06-4529-868a-4ac1b370a246"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="29" splitType="Stretch"/>
+	</summary>
+</jasperReport>

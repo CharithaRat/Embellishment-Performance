@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Bondville_Performance" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3d93227a-c5dd-4ac1-98d8-f999c5e07072">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="61"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="list" class="java.util.List">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     Bondville_PeelbondTests."Year" AS Bondville_PeelbondTests_Year,
+     Bondville_PeelbondTests."Month" AS Bondville_PeelbondTests_Month,
+     Bondville_PeelbondTests."Style" AS Bondville_PeelbondTests_Style,
+     count(Bondville_PeelbondTests."Roll_No") AS Bondville_PeelbondTests_Roll_No,    
+     Bondville_PeelbondTests."Color" AS Bondville_PeelbondTests_Color,
+     Bondville_PeelbondTests."Status" AS Bondville_PeelbondTests_Status
+FROM
+     "dbo"."Bondville_PeelbondTests" Bondville_PeelbondTests
+WHERE
+     $X{ IN ,Year,list}
+     and $X{ IN ,Month,list}
+     and $X{ IN ,Style,list}
+     and $X{ IN ,Color,list}
+GROUP BY
+     Bondville_PeelbondTests.Year,
+     Bondville_PeelbondTests.Month,
+     Bondville_PeelbondTests.Style,
+     Bondville_PeelbondTests.Color,
+     Bondville_PeelbondTests.Status]]>
+	</queryString>
+	<field name="Bondville_PeelbondTests_Year" class="java.lang.String"/>
+	<field name="Bondville_PeelbondTests_Month" class="java.lang.String"/>
+	<field name="Bondville_PeelbondTests_Style" class="java.lang.String"/>
+	<field name="Bondville_PeelbondTests_Roll_No" class="java.lang.Integer"/>
+	<field name="Bondville_PeelbondTests_Color" class="java.lang.String"/>
+	<field name="Bondville_PeelbondTests_Status" class="java.lang.String"/>
+	<variable name="Bondville_PeelbondTests_Roll_No_SUM" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$F{Bondville_PeelbondTests_Roll_No}]]></variableExpression>
+	</variable>
+	<group name="Bondville_LaminationAudits_Year">
+		<groupExpression><![CDATA[]]></groupExpression>
+	</group>
+	<group name="Bondville_LaminationAudits_Month">
+		<groupExpression><![CDATA[]]></groupExpression>
+	</group>
+	<group name="Bondville_PeelbondTest_Year">
+		<groupExpression><![CDATA[]]></groupExpression>
+	</group>
+	<group name="Bondville_PeelbondTest_Month">
+		<groupExpression><![CDATA[]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="45" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="154" height="42" uuid="9d05704c-decd-438f-ac97-d388e8b1f322"/>
+				<imageExpression><![CDATA["E:\\Embellishment Performance Monitor\\src\\Reports\\MAS Logo.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="154" y="0" width="648" height="42" uuid="98a86196-8a11-4097-8478-843da0fa0559"/>
+				<textElement textAlignment="Right">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BONDVILLE - PEELBOND TEST PERFORMANCE]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="42" width="802" height="1" forecolor="#660066" uuid="88d96985-d599-40fb-91ce-40aa12a6b4c0"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="29" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="4" width="122" height="20" uuid="1126ead0-0fd1-4e1f-966c-12ad7ff8d8e0"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[YEAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="121" y="4" width="156" height="20" uuid="9bc60cbf-e2ad-4bb7-b725-e289b5689724"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[MONTH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="277" y="4" width="163" height="20" uuid="27526c74-2be3-4b9f-bedc-29ad2c2e69d5"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[STYLE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="4" width="140" height="20" uuid="7941ac57-5cc6-4e81-a13c-ccb6017d2bce"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[COLOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="580" y="4" width="108" height="20" uuid="e3e56d4a-2f13-4891-acb9-fce2eca7754e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[NO OF ROLLS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="688" y="4" width="114" height="20" backcolor="#FFFF66" uuid="1fe8941e-03ce-4436-b59a-8a9f5ca98943"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[STATUS]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="24" width="802" height="1" forecolor="#660066" uuid="05636ddf-6db6-44b1-a85c-a5828d5fe4b7"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="122" height="20" uuid="83b916aa-7609-42c9-8a96-d84e0c31b92c"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Bondville_PeelbondTests_Year}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="122" y="0" width="156" height="20" uuid="839dd69c-1eb6-4d4e-a840-742edaad7da7"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Bondville_PeelbondTests_Month}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="277" y="0" width="163" height="20" uuid="e2175032-0659-4b64-a29d-d0d7813c5d22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Bondville_PeelbondTests_Style}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="0" width="140" height="20" uuid="bd4708ea-4b08-475a-9d7f-036fba20f4c5"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Bondville_PeelbondTests_Color}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="580" y="0" width="108" height="20" uuid="3e9bbb5b-5418-494a-a85d-ec25dff28a79"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Bondville_PeelbondTests_Roll_No}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="688" y="0" width="114" height="20" backcolor="#FFFF66" uuid="604e5880-d640-48ca-a221-0266914bedd0"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Bondville_PeelbondTests_Status}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="702" y="0" width="100" height="20" uuid="a4926ca2-12de-46fc-8ead-73e70644a46a"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="0" y="0" width="100" height="20" uuid="6fc82d68-1eb5-48c2-96fb-52e8a8dad9c2"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="214" splitType="Stretch">
+			<pie3DChart>
+				<chart isShowLegend="true">
+					<reportElement x="216" y="18" width="364" height="192" uuid="2fcd685b-583b-47e6-93b2-387e35463b13"/>
+					<chartTitle>
+						<titleExpression><![CDATA[$F{Bondville_PeelbondTests_Style}]]></titleExpression>
+					</chartTitle>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<pieDataset>
+					<keyExpression><![CDATA[$F{Bondville_PeelbondTests_Status}]]></keyExpression>
+					<valueExpression><![CDATA[$F{Bondville_PeelbondTests_Roll_No}]]></valueExpression>
+				</pieDataset>
+				<pie3DPlot isShowLabels="true" isCircular="false">
+					<plot/>
+					<itemLabel/>
+				</pie3DPlot>
+			</pie3DChart>
+			<textField evaluationTime="Auto" pattern="#,##0.00%">
+				<reportElement x="615" y="44" width="100" height="20" uuid="16542b25-01b6-41c3-9a42-bd1e5ab02cbe"/>
+				<textFieldExpression><![CDATA[new Double( $V{COLUMN_COUNT} / $V{Bondville_PeelbondTests_Roll_No_SUM}.doubleValue() )]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

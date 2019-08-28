@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Bondville_Audit_Performance" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="dac95596-3fe4-471b-a110-5a36ba8f0205">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="list" class="java.util.List">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     Bondville_LaminationAudits."Year" AS Bondville_LaminationAudits_Year,
+     Bondville_LaminationAudits."Month" AS Bondville_LaminationAudits_Month,
+     Bondville_LaminationAudits."Style" AS Bondville_LaminationAudits_Style,
+     Bondville_LaminationAudits."Color" AS Bondville_LaminationAudits_Color,
+     sum(Bondville_LaminationAudits."Lot_Size") AS Bondville_LaminationAudits_Lot_Size,
+     sum(Bondville_LaminationAudits."Sam_Size") AS Bondville_LaminationAudits_Sam_Size,
+     sum(Bondville_LaminationAudits."Def_Panel_QTY") AS Bondville_LaminationAudits_Def_Panel_QTY,
+     avg(Bondville_LaminationAudits."Defect_Pec") AS Bondville_LaminationAudits_Defect_Pec
+FROM
+     "dbo"."Bondville_LaminationAudits" Bondville_LaminationAudits
+WHERE
+     $X{ IN ,Year,list}
+     and $X{ IN ,Month,list}
+     and $X{ IN ,Style,list}
+GROUP BY
+     Bondville_LaminationAudits.Year,
+     Bondville_LaminationAudits.Month,
+     Bondville_LaminationAudits.Style,
+     Bondville_LaminationAudits.Color;]]>
+	</queryString>
+	<field name="Bondville_LaminationAudits_Year" class="java.lang.String"/>
+	<field name="Bondville_LaminationAudits_Month" class="java.lang.String"/>
+	<field name="Bondville_LaminationAudits_Style" class="java.lang.String"/>
+	<field name="Bondville_LaminationAudits_Color" class="java.lang.String"/>
+	<field name="Bondville_LaminationAudits_Lot_Size" class="java.lang.Double"/>
+	<field name="Bondville_LaminationAudits_Sam_Size" class="java.lang.Double"/>
+	<field name="Bondville_LaminationAudits_Def_Panel_QTY" class="java.lang.Double"/>
+	<field name="Bondville_LaminationAudits_Defect_Pec" class="java.lang.Double"/>
+	<variable name="Bondville_LaminationAudits_Defect_Pec_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{Bondville_LaminationAudits_Defect_Pec}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="48" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="163" height="41" uuid="e9626b3d-e2bf-4d4e-9428-30a646b6a501"/>
+				<imageExpression><![CDATA["D:\\Embellishment Performance Monitor\\src\\Reports\\MAS Logo.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="163" y="0" width="639" height="41" uuid="2bc48a44-e10c-4e7d-bd44-240bf8c7c300"/>
+				<textElement textAlignment="Right">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BONDVILLE - LAMINATION AUDIT PERFORMANCE]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="45" width="802" height="1" forecolor="#009966" uuid="3da5ce32-c5a8-4b36-bff7-610fd1b50e4a"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="7" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="20" width="802" height="1" forecolor="#009966" uuid="023bdbd2-4a84-4b4c-b0f8-136b256ef158"/>
+			</line>
+			<elementGroup>
+				<staticText>
+					<reportElement x="47" y="0" width="100" height="20" uuid="51a44dbb-1d0c-4be3-a280-2bcbc3891e64"/>
+					<textElement>
+						<font fontName="Times New Roman" size="11"/>
+					</textElement>
+					<text><![CDATA[MONTH]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="547" y="0" width="133" height="20" backcolor="#FF0000" uuid="3287cf9d-146f-4f45-bda9-fe33891f1083"/>
+					<textElement>
+						<font fontName="Times New Roman" size="11"/>
+					</textElement>
+					<text><![CDATA[DEFECTIVE PANEL QTY]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="247" y="0" width="100" height="20" uuid="c15cb7a3-18f6-4558-9887-42ba95e9eba1"/>
+					<textElement>
+						<font fontName="Times New Roman" size="11"/>
+					</textElement>
+					<text><![CDATA[COLOR]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="147" y="0" width="100" height="20" uuid="cdee70a0-5c69-44d1-bb17-d2e33af328bd"/>
+					<textElement>
+						<font fontName="Times New Roman" size="11"/>
+					</textElement>
+					<text><![CDATA[STYLE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="347" y="0" width="100" height="20" uuid="b68e56b1-a66d-4104-98a7-40467adac25b"/>
+					<textElement>
+						<font fontName="Times New Roman" size="11"/>
+					</textElement>
+					<text><![CDATA[LOT SIZE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="447" y="0" width="100" height="20" uuid="7f596c8b-d6ab-4963-a849-3b43a4992a7a"/>
+					<textElement>
+						<font fontName="Times New Roman" size="11"/>
+					</textElement>
+					<text><![CDATA[SAMPLE SIZE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="680" y="0" width="122" height="20" backcolor="#FFFF33" uuid="02b7de67-e694-4fb5-9f9e-ccfb5c2a2a37"/>
+					<textElement>
+						<font fontName="Times New Roman" size="11"/>
+					</textElement>
+					<text><![CDATA[DEFECT (%)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="0" width="47" height="20" uuid="377cb862-be27-4a40-a360-030fe938739e"/>
+					<textElement>
+						<font fontName="Times New Roman" size="11"/>
+					</textElement>
+					<text><![CDATA[YEAR]]></text>
+				</staticText>
+			</elementGroup>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="47" height="20" uuid="5528804d-6033-48bf-bb12-f2e90736407d"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Bondville_LaminationAudits_Year}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="47" y="0" width="100" height="20" uuid="a5f36d85-0d77-48f2-b506-75638cae8879"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Bondville_LaminationAudits_Month}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="147" y="0" width="100" height="20" uuid="fbec8e28-b43a-4f03-a919-8f4bd79b97a3"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Bondville_LaminationAudits_Style}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="247" y="0" width="100" height="20" uuid="4c93f14c-c391-4d9a-bdaf-062eb58091d2"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Bondville_LaminationAudits_Color}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="347" y="0" width="100" height="20" uuid="47800474-d88d-459e-bb1c-6dc8a304e231"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Bondville_LaminationAudits_Lot_Size}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="447" y="0" width="100" height="20" uuid="96ce1e18-ce69-41cc-b774-dabb023c9bf5"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Bondville_LaminationAudits_Sam_Size}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="547" y="0" width="133" height="20" backcolor="#FF0000" uuid="1dbb64ac-fa8d-4c8d-87e5-6e72bd99ac98"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Bondville_LaminationAudits_Def_Panel_QTY}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto" pattern="#,##0.00%">
+				<reportElement mode="Opaque" x="680" y="0" width="122" height="20" backcolor="#FFFF33" uuid="47c89e09-d9e5-45cb-a4c4-10b8deebc111"/>
+				<textFieldExpression><![CDATA[new Double( $F{Bondville_LaminationAudits_Defect_Pec}.doubleValue()) / 100]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="18" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="702" y="0" width="100" height="20" uuid="f12e1562-d1cb-41ca-82d9-aca86a391612"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="0" y="0" width="100" height="20" uuid="625b88eb-444f-4079-a5ec-03a381aa4cd1"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="219" splitType="Stretch">
+			<pie3DChart>
+				<chart>
+					<reportElement x="224" y="20" width="343" height="199" uuid="966754fc-1087-4495-b622-fe7ad1abf1fb"/>
+					<chartTitle>
+						<titleExpression><![CDATA[$F{Bondville_LaminationAudits_Style}]]></titleExpression>
+					</chartTitle>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<pieDataset>
+					<keyExpression><![CDATA[$F{Bondville_LaminationAudits_Color}]]></keyExpression>
+					<valueExpression><![CDATA[$F{Bondville_LaminationAudits_Defect_Pec}]]></valueExpression>
+				</pieDataset>
+				<pie3DPlot isCircular="false">
+					<plot/>
+					<itemLabel/>
+				</pie3DPlot>
+			</pie3DChart>
+		</band>
+	</summary>
+</jasperReport>

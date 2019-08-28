@@ -1,0 +1,24 @@
+
+package util;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+
+
+
+public class JDBCConnector {
+    static Connection con;
+    
+    public static Connection getConnection(){
+        try {
+            Class.forName("com.microsoft.jdbc.sqlserver.SQLServerDriver");
+            con = DriverManager.getConnection( "jdbc:microsoft:sqlserver://192.168.1.9:1433;DatabaseName=PC&NetworkSolutions", "sa", "PCNW");
+        } catch (Exception ex) {
+//         ex.printStackTrace();  
+        }
+        return con;
+    }
+    
+    
+}
